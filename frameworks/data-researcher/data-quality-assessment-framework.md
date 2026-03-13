@@ -9,6 +9,7 @@ A structured methodology for evaluating the quality of data sources across multi
 - When research conclusions will drive high-stakes decisions
 - When aggregating data across different collection methodologies or jurisdictions
 - Before citing any statistic as a key finding
+- When a data source has changed ownership, methodology, or scope since it was last used
 
 ## Core Principles
 1. **Quality is multidimensional**: No single metric captures data quality. Accuracy, completeness, timeliness, consistency, and provenance each matter independently.

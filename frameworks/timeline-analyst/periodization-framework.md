@@ -8,6 +8,8 @@ A structured approach for dividing timelines into meaningful periods that reveal
 - When stakeholders need to understand "what changed and when" rather than raw dates
 - When comparing the evolution of multiple entities across shared time horizons
 - When identifying which historical period is most analogous to the present moment
+- When a raw chronology is too dense for readers to extract meaning without grouping
+- When communicating findings that require temporal context to be understood correctly
 
 ## Core Principles
 1. **Periods are interpretive, not given**: Boundaries between eras are analytical choices that must be justified by evidence of meaningful change, not arbitrary calendar divisions.

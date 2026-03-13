@@ -8,6 +8,8 @@ A systematic method for identifying, validating, and interpreting inflection poi
 - When stakeholders ask "when did things change?" or "are we at a turning point?"
 - When forecasting requires understanding whether current trends will continue or reverse
 - When comparing how different domains experienced the same macro shift
+- When validating claims that a market, industry, or phenomenon has "fundamentally changed"
+- When building scenarios that depend on whether current trends persist or reverse
 
 ## Core Principles
 1. **Inflection points are structural, not statistical**: A true inflection point reflects a change in underlying mechanism, not just a data spike.

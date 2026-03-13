@@ -8,6 +8,8 @@ A disciplined methodology for refining search queries through successive iterati
 - When the research topic spans multiple domains, terminologies, or source ecosystems
 - When comprehensive coverage is required and a single search pass is insufficient
 - When early results reveal that the initial query framing missed important dimensions
+- When the topic uses different terminology across disciplines, geographies, or time periods
+- When the information landscape mapping reveals sparse coverage that may be a search problem rather than an availability problem
 
 ## Core Principles
 1. **Each iteration must have a purpose**: Never re-search without articulating what the previous round missed and why the new query should find it.

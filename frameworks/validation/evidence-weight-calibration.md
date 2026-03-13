@@ -61,3 +61,4 @@ Examine whether the conclusion survives if the highest-weighted evidence is remo
 - **Authority-only weighting**: Weighting solely on source prestige without assessing methodological rigor or relevance.
 - **Recency bias weighting**: Automatically weighting newer evidence higher without assessing whether the newer evidence is actually better.
 - **Weight-and-forget**: Assigning weights once and never revisiting them as new evidence emerges or the research question sharpens.
+- **Emotional weighting**: Giving disproportionate weight to vivid, narrative-rich evidence (case studies, anecdotes) over dry but methodologically superior evidence (large-sample studies, meta-analyses).

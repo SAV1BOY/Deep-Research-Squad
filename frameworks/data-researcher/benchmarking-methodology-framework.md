@@ -8,6 +8,8 @@ A structured approach for comparing entities, performance metrics, or outcomes a
 - When evaluating an entity's position relative to peers, standards, or historical baselines
 - When constructing competitive analyses or market positioning assessments
 - When research requires contextualizing a data point within a broader distribution
+- When establishing whether observed performance is typical, exceptional, or concerning
+- When building the evidence base for strategic recommendations that depend on relative positioning
 
 ## Core Principles
 1. **Comparability before comparison**: Entities must be genuinely comparable on the dimension being measured before any ranking or gap analysis is meaningful.

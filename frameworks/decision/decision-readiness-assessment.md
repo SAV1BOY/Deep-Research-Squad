@@ -62,3 +62,4 @@ Synthesize the above into one of four verdicts: ready to decide, ready to decide
 - **Averaging across dimensions**: Declaring overall readiness because most requirements are well-understood while ignoring one critical requirement that is entirely unknown.
 - **Ignoring asymmetric stakes**: Applying the same readiness threshold to reversible and irreversible decisions.
 - **Binary readiness thinking**: Treating readiness as either "yes" or "no" without the nuance of "yes with caveats" or "no but here is what would change that."
+- **Sunk cost anchoring**: Continuing research because significant effort has already been invested, even when the remaining gaps are unlikely to close with further work.

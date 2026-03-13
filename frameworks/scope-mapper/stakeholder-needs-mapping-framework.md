@@ -8,6 +8,8 @@ A structured method for identifying all stakeholders who will consume or act on 
 - When the research requester and the ultimate decision-maker are different people
 - When findings will be presented at multiple organizational levels
 - When prior research was rejected or ignored due to misalignment with stakeholder expectations
+- When the research topic is politically sensitive and different stakeholders have competing interests
+- When scope needs to be negotiated and stakeholder priorities must inform trade-offs
 
 ## Core Principles
 1. **Stakeholders are not interchangeable**: A board member, a product manager, and a technical lead need different things from the same research. Map each separately.

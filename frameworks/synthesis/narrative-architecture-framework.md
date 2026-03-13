@@ -62,3 +62,4 @@ Confirm that the chosen structure serves all primary stakeholders. Key question:
 - **Buried thesis**: Placing the core conclusion at the end of a long document when the audience needs it upfront to frame their reading.
 - **Evidence dumping**: Including every finding regardless of its contribution to the narrative, producing a comprehensive but unreadable document.
 - **Single-audience architecture**: Designing the narrative for one stakeholder type when the document must serve multiple audiences with different needs.
+- **Missing the "so what"**: Presenting extensive evidence and analysis without ever stating what it means for the reader's decisions or understanding.
