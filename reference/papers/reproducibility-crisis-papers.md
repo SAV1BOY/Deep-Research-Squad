@@ -61,27 +61,10 @@
 - Inflates apparent prediction accuracy
 
 ### Solutions and Reforms
-
-#### Pre-Registration
-- Register hypotheses and analysis plans before data collection
-- Eliminates p-hacking and HARKing
-- Registered Reports: peer review before results exist
-- Adoption growing but still not standard
-
-#### Open Science Framework
-- Share data, code, and materials openly
-- Pre-registration platform
-- Enables independent verification
-
-#### Multi-Site Replications
-- Large-scale, pre-registered replications across many labs
-- Many Analysts projects: same data, independent teams
-- Provides robust estimates of true effect sizes
-
-#### Statistical Reforms
-- Report effect sizes and confidence intervals, not just p-values
-- Use Bayesian methods for evidence quantification
-- Redefine threshold (p < 0.005 proposed by Benjamin et al. 2018)
+- **Pre-registration**: Register hypotheses before data collection; Registered Reports
+- **Open Science**: Share data, code, and materials openly for verification
+- **Multi-site replications**: Large-scale replications across many labs
+- **Statistical reforms**: Report effect sizes and CIs; use Bayesian methods; p < 0.005 threshold proposed
 
 ## Application to Deep Research
 - Treat unreplicated findings with explicit uncertainty

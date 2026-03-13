@@ -76,16 +76,9 @@
 - Modify options to improve robustness
 - Choose the portfolio of actions that performs best overall
 
-## Early Warning Systems
-- Each scenario implies different early indicators
-- Monitor indicators to detect which scenario is emerging
-- Pre-define response triggers
-- Update scenarios periodically (at least annually)
-
 ## Application to Deep Research
 - Use scenarios as a framework for presenting uncertain futures
-- Always test conclusions against multiple scenarios
-- Wind-tunnel recommendations against at least 3 different futures
-- Help clients develop robust strategies, not optimal-for-one-scenario strategies
-- Build early warning dashboards into research deliverables
+- Wind-tunnel recommendations against multiple scenarios
+- Build early warning dashboards; monitor which scenario is emerging
+- Help develop robust strategies, not optimal-for-one-scenario strategies
 - Use scenario conversations to surface hidden assumptions

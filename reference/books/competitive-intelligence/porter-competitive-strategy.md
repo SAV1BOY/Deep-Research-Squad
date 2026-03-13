@@ -74,16 +74,9 @@
 6. Analyze recent and expected changes in forces
 7. Identify aspects of structure you can influence
 
-## Competitive Advantage Assessment
-- Where does the company create unique value?
-- Is the advantage sustainable? For how long?
-- What would it take for competitors to replicate?
-- Is the advantage eroding due to market changes?
-
 ## Application to Deep Research
 - Use Five Forces to assess industry attractiveness before deep dives
-- Identify which forces are most impactful in each specific industry
 - Map competitive strategy of each major player
-- Assess sustainability of competitive advantages
+- Assess sustainability of competitive advantages (unique value, replicability)
 - Look for structural shifts that change the force balance
 - Combine with PESTEL for comprehensive external analysis

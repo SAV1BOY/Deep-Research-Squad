@@ -61,31 +61,16 @@
 - **Implication**: Multi-path reasoning improves AI research quality
 
 ### AI-Specific Research Challenges
-
-#### Data Contamination
-- Benchmark data may be in training data (inflating performance)
-- Hard to verify what was in training corpus
-- **Mitigation**: Use novel benchmarks, check for memorization
-
-#### Evaluation Limitations
-- Benchmarks may not reflect real-world performance
-- Goodhart's law: when a measure becomes a target, it ceases to be a good measure
-- **Mitigation**: Use diverse, real-world evaluation criteria
-
-#### Hallucination and Confabulation
-- AI models generate plausible but false information
-- Especially problematic for research applications
-- **Mitigation**: Verify all AI-generated claims against primary sources
+- **Data contamination**: Benchmark data may be in training data; use novel benchmarks
+- **Evaluation limits**: Benchmarks may not reflect real-world performance (Goodhart's law)
+- **Hallucination**: AI generates plausible but false information; always verify against primary sources
 
 ## AI Methodology Assessment Checklist
-- What training data was used? (potential biases, recency)
-- Were benchmarks appropriate and representative?
-- Is evaluation on held-out data or in-distribution only?
+- What training data was used? (biases, recency)
+- Were benchmarks appropriate? Is there contamination risk?
 - Are confidence intervals or error bars reported?
 - Has the result been independently reproduced?
 - What are the known failure modes and limitations?
-- Is there data contamination risk in benchmarks?
-- Are code and data available for verification?
 
 ## Application to Deep Research
 - Always verify AI-generated claims against primary sources

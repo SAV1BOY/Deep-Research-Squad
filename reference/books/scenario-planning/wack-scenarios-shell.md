@@ -68,22 +68,12 @@ Pierre Wack led Royal Dutch Shell's scenario planning team in the 1970s. Shell's
 - Make the journey from present to future vivid
 
 ## The "Remarkable People" Method
-- Interview remarkable people: mavericks, contrarians, edge thinkers
-- They see what mainstream analysts miss
-- Their perspectives seed scenario elements
+- Interview mavericks and contrarians who see what mainstream analysts miss
 - Not for prediction, but for perception expansion
-
-## Key Quantitative Practices
-- Always quantify scenarios (GDP, prices, volumes)
-- Use consistent frameworks across scenarios
-- Make assumptions explicit and testable
-- Track leading indicators against each scenario
 
 ## Application to Deep Research
 - Focus on predetermined elements first (what is already certain?)
 - Separate certainties from uncertainties explicitly
-- Build scenarios that challenge the client's mental model
-- Communicate through narrative, not just analysis
-- Quantify scenarios to make them concrete and testable
-- Seek out contrarian perspectives to expand scenario range
-- Remember: the purpose is changed thinking, not accurate prediction
+- Build scenarios that challenge mental models; communicate through narrative
+- Quantify scenarios; make assumptions explicit and testable
+- Seek contrarian perspectives; purpose is changed thinking, not prediction

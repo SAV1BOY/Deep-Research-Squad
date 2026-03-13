@@ -74,17 +74,12 @@
 - Memorable (easy to reference in discussions)
 
 ## Common Mistakes
-- Treating scenarios as forecasts
-- Making one scenario obviously "best"
-- Not challenging core assumptions
-- Too many scenarios (more than 4)
-- Not connecting scenarios to actual decisions
-- Failing to identify early warning indicators
+- Treating scenarios as forecasts or making one scenario obviously "best"
+- Not challenging core assumptions; too many scenarios (more than 4)
+- Not connecting scenarios to actual decisions or early warning indicators
 
 ## Application to Deep Research
 - Use scenarios whenever uncertainty is high and consequences are significant
-- Always connect scenarios back to actionable decisions
+- Connect scenarios back to actionable decisions
 - Look for robust strategies that work across multiple scenarios
-- Monitor early warning indicators actively
-- Update scenarios as new information emerges
-- Present scenarios as narratives, not just data tables
+- Monitor early warning indicators and present scenarios as narratives

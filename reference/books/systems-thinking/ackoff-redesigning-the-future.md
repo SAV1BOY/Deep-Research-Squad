@@ -79,9 +79,6 @@ Problems do not exist in isolation. They exist in systems of interacting problem
 
 ## Application to Deep Research
 - Treat research problems as messes, not isolated questions
-- Use dissolution (redesign) thinking, not just resolution
-- Interactive planning: design the desired future, then research how to reach it
-- Synthesize findings across domains; do not just analyze within silos
+- Use dissolution thinking; synthesize across domains rather than analyzing in silos
 - Question whether improving one metric may worsen the system
-- Consider stakeholder perspectives when framing research questions
 - Map interactions between problems before proposing solutions

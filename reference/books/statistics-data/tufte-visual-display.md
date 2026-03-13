@@ -74,18 +74,9 @@
 - Label directly (avoid legends when possible)
 - Use color purposefully, not decoratively
 
-### Information Density
-- High-quality graphics pack dense information into small space
-- Do not oversimplify; trust the reader's intelligence
-- Multiple layers of detail for different levels of reading
-- Every element earns its space
-
 ## Application to Deep Research
 - Apply data-ink ratio to all charts and tables in reports
 - Use small multiples for cross-market or cross-competitor comparisons
-- Include sparklines in tables for trend indication
-- Avoid chartjunk: no 3D effects, no unnecessary decoration
-- Check lie factor on all visual comparisons
-- Label charts directly; minimize reliance on legends
-- Show data distributions, not just averages
+- Avoid chartjunk; check lie factor on all visual comparisons
+- Label charts directly; show data distributions, not just averages
 - Ensure every visual element serves the reader's understanding

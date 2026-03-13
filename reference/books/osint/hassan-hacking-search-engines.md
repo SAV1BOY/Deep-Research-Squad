@@ -62,33 +62,18 @@ inurl:admin OR inurl:dashboard site:company.com
 "market share" "company name" "percent"
 ```
 
-## Search Engine Alternatives
-
-### Specialized Search Tools
-- **Google Scholar**: Academic papers, citations, legal opinions
-- **Google Patents**: Patent search with classification browsing
-- **Google Books/Ngrams**: Historical text analysis
+## Alternative Search Tools
+- **Google Scholar**: Academic papers and citations
 - **Archive.org**: Historical web pages
-- **Shodan**: Internet-connected devices
-- **Censys**: Internet infrastructure
-
-### Search Aggregators
-- **Carrot2**: Clusters search results by topic
-- **Searx**: Meta-search engine aggregating multiple sources
+- **Shodan/Censys**: Internet infrastructure
+- **Carrot2**: Clusters results by topic
 - **Wolfram Alpha**: Computational answers
 
-## Search Automation Tips
+## Search Automation
 - Save complex queries for reuse
-- Set up Google Alerts for ongoing monitoring
+- Set up Google Alerts for monitoring
 - Use RSS feeds for regular source checking
-- Create custom search engines (Google CSE) for specific domains
-- Combine operators for precision
-
-## Boolean Logic for Complex Queries
-- `(term1 OR term2) AND (term3 OR term4)` - Combine groups
-- Use parentheses to group logical operations
-- Build queries incrementally: test each component separately
-- Document working queries for future use
+- Document working queries for future reuse
 
 ## Application to Deep Research
 - Master site-specific operators for targeted intelligence gathering

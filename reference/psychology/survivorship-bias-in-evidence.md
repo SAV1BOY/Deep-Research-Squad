@@ -1,66 +1,72 @@
 # Survivorship Bias in Evidence
 
 ## Definition
-Survivorship bias is the logical error of concentrating on entities that "survived" a selection process while overlooking those that did not. This creates a false impression of success rates, best practices, and causal factors.
+Survivorship bias is the logical error of focusing on entities that passed a selection process (survivors) while overlooking those that did not (failures), leading to false conclusions.
 
-## Classic Example
-- Abraham Wald (WWII): Military wanted to armor bullet-hole locations on returning bombers. Wald said: armor where there are NO holes - planes hit there didn't return.
-- The visible evidence (returning planes) systematically excluded the critical data (lost planes).
+## How It Distorts Research
 
-## How It Manifests in Research
+### The Classic Example: WWII Aircraft
+- Military studied bullet holes on returning aircraft to add armor
+- Abraham Wald pointed out: the planes that did NOT return had holes in other places
+- Survivors are visible; non-survivors are invisible
+- The missing data is often the most important data
 
-### Business and Strategy Research
-- Studying only successful companies to find "success factors"
-- **Problem**: Failed companies may have had the same factors
-- Jim Collins' "Good to Great" companies: many subsequently underperformed or failed
-- "Best practices" derived from survivors may be coincidental, not causal
-- **Counter**: Always include failed cases in comparative analysis
+### In Business Research
+- Studying successful companies teaches about survivors, not success
+- "Built to Last" companies: many subsequently failed or declined
+- Best practices from winners may be irrelevant (luck, timing, context)
+- Failed companies with identical practices are invisible
 
-### Startup and Innovation Research
-- Funding databases overrepresent funded startups (unfunded ones disappear)
-- Success stories dominate media coverage; failures are quietly forgotten
-- Accelerator/VC portfolio performance shown from surviving investments
-- **Counter**: Track cohort data (all startups from year X), not just survivors
+### In Market Analysis
+- Active funds that survived show better performance (dead funds excluded)
+- Startup ecosystems look successful (failed startups disappear)
+- Technology platforms seem inevitable (failed alternatives are forgotten)
+- Industry data reflects survivors, not the full competitive landscape
 
-### Market and Industry Analysis
-- Stock indices show survivorship bias (failed companies are delisted)
-- Industry reports focus on current players, not those who exited
-- Technology "success stories" ignore the many failed competitors
-- **Counter**: Use historical cohort data; include delisted/failed entities
+### In Academic Research
+- Published studies are survivors (publication bias)
+- Successful methodologies are documented; failed approaches are not
+- Positive results are visible; null results are in file drawers
+- Cited papers survive; uncited papers disappear from view
 
-### Academic Research
-- Publication bias: only "successful" (statistically significant) studies published
-- Failed experiments and null results are rarely reported
-- Meta-analyses based on published literature overestimate effects
-- **Counter**: Search for unpublished studies, pre-registrations, grey literature
+## Signs You May Be Affected
+- You are studying only successes without a failure comparison group
+- Your data source only includes currently active entities
+- You are drawing lessons from survivors without checking if failures followed the same practices
+- Historical data begins at a convenient point (not at the start of the relevant period)
+- Your sample has a built-in selection filter you have not accounted for
 
-### Historical Analysis
-- History is written by winners; losers' perspectives are lost
-- Surviving artifacts/records create biased picture of the past
-- Successful institutions' records are preserved; failed ones are discarded
-- **Counter**: Actively seek out failure narratives and lost perspectives
+## Examples of Survivorship Bias in Practice
 
-## The Invisible Evidence Problem
-- What you CAN'T see is often more important than what you CAN see
-- The denominator (total attempts) is always larger than the visible numerator (successes)
-- Absence of evidence is not evidence of absence
+### "Successful Startup Patterns"
+- Study 100 successful startups, find commonalities
+- Problem: 10,000 failed startups had the same commonalities
+- The pattern does not distinguish success from failure
+- Need to compare survivors with non-survivors
 
-## Quantifying the Bias
-- Startup failure rate: ~90% (but most coverage is of the 10%)
-- Drug development: ~90% of clinical trials fail (but published literature emphasizes successes)
-- Fund performance: mutual funds that close are excluded from historical returns
-- Restaurant failure: ~60% fail within first year (but food industry coverage focuses on openings)
+### "Durable Companies"
+- Study companies that lasted 100+ years for longevity secrets
+- Problem: You cannot study companies that also tried these strategies but died
+- Selection on the dependent variable invalidates conclusions
+
+### "Investment Performance"
+- Mutual funds with 10-year track records look good
+- Problem: Funds that performed poorly were merged or closed
+- The surviving fund universe has an upward performance bias
 
 ## Debiasing Strategies
-1. **Ask "What's missing?"** - Who/what didn't survive to be in this dataset?
-2. **Seek failure data** - Actively research failed companies, products, and strategies
-3. **Use base rates** - What is the overall success/failure rate for this category?
-4. **Track cohorts** - Follow all entities from a starting point, not just current survivors
-5. **Include the denominator** - Report "5 of 100 succeeded" not just "5 succeeded"
-6. **Check for selection effects** - How were the studied entities selected?
-7. **Complement case studies with statistical data** - Anecdotes show possibilities; data shows probabilities
+1. **Always ask**: What is missing from this sample? Who did not survive?
+2. **Seek failure data**: Actively look for failed companies, abandoned projects, null results
+3. **Use inception cohorts**: Start tracking from the beginning, not from survival point
+4. **Compare survivors to non-survivors**: The difference is what matters, not survivor traits alone
+5. **Check data sources for selection filters**: Does the database only include active entities?
+6. **Use base rates**: What percentage of all attempts succeed? (The denominator matters)
+7. **Look for the silent evidence**: What stories are NOT being told?
 
-## Key References
-- Wald, A. (1943). "A Method of Estimating Plane Vulnerability Based on Damage of Survivors." Statistical Research Group, Columbia University.
-- Elton, E.J., Gruber, M.J. & Blake, C.R. (1996). "Survivorship Bias and Mutual Fund Performance." *Review of Financial Studies*, 9(4), 1097-1120.
-- Denrell, J. (2003). "Vicarious Learning, Undersampling of Failure, and the Myths of Management." *Organization Science*, 14(3), 227-243.
+## Application to Deep Research
+- When analyzing successful companies, always study failures in the same space
+- Use databases that include historical (defunct) entities, not just current ones
+- In competitive analysis, include companies that exited the market
+- When citing "best practices," verify they differentiate winners from losers
+- Report the denominator: not just "10 successes" but "10 out of 500 attempts"
+- Flag when your analysis may be subject to survivorship bias

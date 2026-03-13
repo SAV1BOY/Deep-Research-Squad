@@ -78,9 +78,7 @@
 
 ## Application to Deep Research
 - Frame research questions as decision problems when possible
-- Build simple decision trees for key strategic choices
 - Calculate information value before recommending additional research
-- Use multi-attribute analysis for comparing complex alternatives
-- Make trade-offs explicit rather than implicit
+- Use multi-attribute analysis for complex alternatives; make trade-offs explicit
 - Sensitivity analysis reveals which assumptions matter most
 - Present uncertainty ranges, not just best estimates
