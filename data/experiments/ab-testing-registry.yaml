@@ -1,0 +1,87 @@
+# A/B Testing Registry
+# Tracks experiments comparing different research methods and configurations
+
+metadata:
+  name: "A/B Testing Registry"
+  version: "1.0.0"
+  description: "Registry of A/B tests for research method optimization"
+  last_updated: "2026-03-13"
+  maintainer: "experimentation-team"
+
+# Each experiment: id, name, hypothesis, variants, metrics, status, results
+experiments:
+  - id: "exp_001"
+    name: "Iterative vs Single-Pass Synthesis"
+    hypothesis: >
+      Two-pass synthesis produces higher coherence scores than single-pass
+      synthesis without significantly increasing latency.
+    start_date: "2026-01-10"
+    end_date: "2026-02-10"
+    status: "completed"  # draft | running | completed | archived
+    variants:
+      control:
+        name: "single_pass"
+        description: "Standard single-pass synthesis pipeline"
+      treatment:
+        name: "two_pass"
+        description: "Two iterative synthesis passes with self-review between passes"
+    primary_metric: "coherence"
+    secondary_metrics: ["end_to_end_latency", "completeness"]
+    sample_size: 120
+    results:
+      control_score: 0.71
+      treatment_score: 0.84
+      p_value: 0.003
+      latency_increase_percent: 18
+      decision: "adopt_treatment"
+
+  - id: "exp_002"
+    name: "Broad vs Targeted Source Retrieval"
+    hypothesis: >
+      Targeted retrieval with query-specific filters yields higher evidence
+      yield than broad retrieval with post-hoc filtering.
+    start_date: "2026-02-01"
+    end_date: "2026-03-01"
+    status: "completed"
+    variants:
+      control:
+        name: "broad_retrieval"
+        description: "Retrieve top 50 sources, filter afterward"
+      treatment:
+        name: "targeted_retrieval"
+        description: "Apply domain and recency filters at retrieval time, top 20"
+    primary_metric: "evidence_yield"
+    secondary_metrics: ["source_diversity", "retrieval_time"]
+    sample_size: 95
+    results:
+      control_score: 0.42
+      treatment_score: 0.61
+      p_value: 0.01
+      decision: "adopt_treatment"
+
+  - id: "exp_003"
+    name: "Adversarial Review Impact"
+    hypothesis: >
+      Adding an adversarial review step improves factual accuracy by at
+      least 5 percentage points.
+    start_date: "2026-03-01"
+    end_date: null
+    status: "running"
+    variants:
+      control:
+        name: "standard_review"
+        description: "Peer review without adversarial challenge"
+      treatment:
+        name: "adversarial_review"
+        description: "Dedicated adversarial agent challenges all key claims"
+    primary_metric: "factual_accuracy"
+    secondary_metrics: ["latency_compliance", "confidence_score"]
+    sample_size_target: 100
+    current_sample_size: 47
+    results: null  # Experiment in progress
+
+# Guidelines for new experiments:
+# 1. File a proposal with hypothesis and expected impact
+# 2. Minimum sample size: 50 queries per variant
+# 3. Run for at least 30 days unless early stopping criteria are met
+# 4. Document results and decision regardless of outcome

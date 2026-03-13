@@ -1,0 +1,81 @@
+# Research Quality Metrics
+# Definitions for evaluating the quality of research outputs
+
+metadata:
+  name: "Research Quality Metrics"
+  version: "1.0.0"
+  description: "Metric definitions for assessing research output quality"
+  last_updated: "2026-03-13"
+  maintainer: "quality-team"
+
+# Each metric: id, name, description, evaluation_method, scale, examples
+metrics:
+  - id: "rqm_001"
+    name: "citation_integrity"
+    description: "Accuracy and traceability of all cited sources in the output"
+    evaluation_method: "Verify each citation links to a real, accessible source that supports the stated claim"
+    scale:
+      min: 0.0
+      max: 1.0
+    scoring_guide:
+      poor: "< 0.50 - Multiple broken or fabricated citations"
+      acceptable: "0.50-0.74 - Most citations valid, some unsupported claims"
+      good: "0.75-0.89 - Nearly all citations verified and relevant"
+      excellent: "0.90-1.0 - All citations verified, relevant, and correctly attributed"
+
+  - id: "rqm_002"
+    name: "argument_structure"
+    description: "Logical coherence and strength of reasoning chains"
+    evaluation_method: "Rubric assessment of claim-evidence-reasoning connections"
+    scale:
+      min: 1
+      max: 5
+    scoring_guide:
+      poor: "1 - No clear logical structure"
+      acceptable: "2-3 - Basic structure present, some logical gaps"
+      good: "4 - Strong structure with minor gaps"
+      excellent: "5 - Rigorous reasoning with explicit warrant for each claim"
+
+  - id: "rqm_003"
+    name: "bias_awareness"
+    description: "Extent to which the output identifies and accounts for potential biases"
+    evaluation_method: "Check for acknowledgment of source bias, framing effects, and limitations"
+    scale:
+      min: 0.0
+      max: 1.0
+    scoring_guide:
+      poor: "< 0.30 - No mention of limitations or bias"
+      acceptable: "0.30-0.59 - Some biases noted but not addressed"
+      good: "0.60-0.84 - Key biases identified with mitigation noted"
+      excellent: "0.85-1.0 - Comprehensive bias analysis with explicit mitigation steps"
+
+  - id: "rqm_004"
+    name: "actionability"
+    description: "Degree to which findings translate into clear, usable recommendations"
+    evaluation_method: "Count of specific, implementable recommendations with supporting evidence"
+    scale:
+      min: 1
+      max: 5
+    scoring_guide:
+      poor: "1 - No actionable takeaways"
+      acceptable: "2-3 - General recommendations without specifics"
+      good: "4 - Clear recommendations with supporting rationale"
+      excellent: "5 - Prioritized recommendations with implementation guidance"
+
+  - id: "rqm_005"
+    name: "novelty_contribution"
+    description: "Whether the output adds insight beyond what a simple search would yield"
+    evaluation_method: "Compare against top-5 search results for the same query"
+    scale:
+      min: 0.0
+      max: 1.0
+    scoring_guide:
+      poor: "< 0.20 - Pure regurgitation of existing content"
+      acceptable: "0.20-0.49 - Minor synthesis across sources"
+      good: "0.50-0.79 - Meaningful cross-source analysis and new connections"
+      excellent: "0.80-1.0 - Original insights, novel framings, or unique synthesis"
+
+# Composite quality score:
+#   Normalize all metrics to 0-1 scale, then weighted average
+#   Weights: citation_integrity (0.20), argument_structure (0.25),
+#   bias_awareness (0.15), actionability (0.25), novelty_contribution (0.15)

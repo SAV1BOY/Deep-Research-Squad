@@ -1,0 +1,67 @@
+# Quality Benchmarks
+# Reference scores for evaluating research output quality
+
+metadata:
+  name: "Quality Benchmarks"
+  version: "1.0.0"
+  description: "Target and baseline quality scores for research outputs"
+  last_updated: "2026-03-13"
+  maintainer: "quality-team"
+
+# Scoring scale: 0.0 (lowest) to 1.0 (highest)
+# Each benchmark: metric, baseline, target, exceptional, measurement_method
+
+benchmarks:
+  - metric: "factual_accuracy"
+    description: "Proportion of verifiable claims that are correct"
+    baseline: 0.85
+    target: 0.93
+    exceptional: 0.98
+    measurement_method: "Manual spot-check of 20 random claims per output"
+    weight: 0.30  # Weight in composite quality score
+
+  - metric: "source_diversity"
+    description: "Variety of source types and origins referenced"
+    baseline: 0.60
+    target: 0.75
+    exceptional: 0.90
+    measurement_method: "Count of unique source categories divided by total available"
+    weight: 0.15
+
+  - metric: "analytical_depth"
+    description: "Degree to which findings go beyond surface-level summary"
+    baseline: 0.55
+    target: 0.72
+    exceptional: 0.88
+    measurement_method: "Rubric-based evaluation: evidence of causal reasoning, nuance, limitations"
+    weight: 0.25
+
+  - metric: "coherence"
+    description: "Logical flow and internal consistency of the output"
+    baseline: 0.70
+    target: 0.85
+    exceptional: 0.95
+    measurement_method: "Structural review for contradictions, logical gaps, and narrative flow"
+    weight: 0.20
+
+  - metric: "completeness"
+    description: "Coverage of all key aspects identified in the research plan"
+    baseline: 0.65
+    target: 0.80
+    exceptional: 0.92
+    measurement_method: "Checklist comparison against research plan subtopics"
+    weight: 0.10
+
+# Composite score calculation:
+#   composite = sum(metric_score * weight) for each benchmark
+#   Minimum acceptable composite: 0.70
+#   Target composite: 0.82
+
+thresholds:
+  minimum_acceptable: 0.70
+  target: 0.82
+  exceptional: 0.92
+
+# Review cadence: benchmarks are recalibrated quarterly
+# Last calibration: 2026-01-15
+# Next calibration: 2026-04-15

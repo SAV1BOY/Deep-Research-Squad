@@ -1,0 +1,59 @@
+# Research Terminology Glossary
+# Core terms used across the Deep Research Squad system
+
+metadata:
+  name: "Research Terminology Glossary"
+  version: "1.0.0"
+  description: "Canonical definitions for core research terms used by all agents"
+  last_updated: "2026-03-13"
+  maintainer: "research-ops"
+
+# Each term entry includes: definition, context, related_terms, and usage_note
+terms:
+  - term: "research_depth"
+    definition: >
+      The level of thoroughness applied when investigating a topic, measured
+      by the number of sources consulted, analytical layers explored, and
+      counter-arguments considered.
+    context: "agent-evaluation"
+    related_terms: ["breadth_of_coverage", "analytical_rigor"]
+    usage_note: "Prefer 'research depth' over 'how deep' in formal outputs."
+
+  - term: "source_triangulation"
+    definition: >
+      The practice of verifying a claim by cross-referencing at least three
+      independent sources of differing type or origin.
+    context: "verification"
+    related_terms: ["cross_validation", "source_reliability"]
+    usage_note: "Triangulation is required before any claim reaches confidence level 4+."
+
+  - term: "confidence_score"
+    definition: >
+      A numeric value (0.0 to 1.0) representing the system's assessed
+      reliability of a finding, based on evidence strength, source quality,
+      and internal consistency.
+    context: "scoring"
+    related_terms: ["uncertainty_band", "calibration_accuracy"]
+    usage_note: "Always present with an uncertainty band in final reports."
+
+  - term: "knowledge_gap"
+    definition: >
+      An identified area where available evidence is insufficient to
+      support a conclusion at the required confidence threshold.
+    context: "gap-analysis"
+    related_terms: ["research_depth", "coverage_map"]
+    usage_note: "Explicitly flag knowledge gaps rather than omitting them."
+
+  - term: "synthesis_pass"
+    definition: >
+      A single iteration of combining findings from multiple research
+      threads into a coherent narrative or structured output.
+    context: "workflow"
+    related_terms: ["aggregation", "final_synthesis"]
+    usage_note: "Most queries require two or more synthesis passes for quality output."
+
+# Guidelines for adding new terms
+# 1. Check for duplicates in this file and methodology-glossary.yaml
+# 2. Include all four fields: definition, context, related_terms, usage_note
+# 3. Keep definitions under 50 words
+# 4. Assign a context from: agent-evaluation, verification, scoring, gap-analysis, workflow

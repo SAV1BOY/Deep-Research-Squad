@@ -80,25 +80,25 @@ The system supports 8 project types out of the box: competitor war rooms, decisi
 ## Directory Structure
 
 ```
-Deep-Research-Squad/
-├── agents/             # Agent definitions and configurations
-├── archive/            # Archived outputs, deprecated templates, lessons learned
-├── authority/          # Standards, agent summaries, workshop kits
-├── checklists/         # Per-agent and cross-squad quality checklists
-├── data/               # Benchmarks, case studies, confidence maps, experiments
-├── docs/               # Documentation and guides
-├── frameworks/         # Agent-specific analytical frameworks
-├── lib/                # Shared components, patterns, taxonomies, utilities
-├── phrases/            # Controlled vocabulary and phrase libraries
-├── projects/           # Project type templates (8 types)
-├── reference/          # Books, case studies, databases, industry references
-├── scripts/            # Analysis, generation, and operations scripts
-├── swipe/              # Gold-standard example outputs for calibration
-├── swipe-sources/      # Source material for swipe file examples
-├── tasks/              # Task definitions: collection, delivery, planning, review
-├── templates/          # Output templates: analysis, briefs, evidence, scorecards
-├── voice/              # Tone profiles, language guides, channel calibration
-└── workflows/          # End-to-end workflow definitions
+Deep-Research-Squad/                  754+ files
+├── agents/             (17)    Agent definitions with HRM prompt engineering
+├── archive/            (21)    Archived outputs, deprecated templates, lessons learned
+├── authority/          (22)    Standards, agent summaries, workshop kits
+├── checklists/        (130)    Per-agent gates, macro, and system-level quality gates
+├── data/               (34)    Registries, benchmarks, metrics, glossaries, experiments
+├── docs/               (18)    Documentation, guides, policies, operating manuals
+├── frameworks/        (114)    Universal, agent-specific, layer, and reference frameworks
+├── lib/                (32)    Shared components, patterns, taxonomies, utilities
+├── phrases/            (18)    Controlled vocabulary and reasoning phrase libraries
+├── projects/           (55)    8 project types with phased execution templates
+├── reference/          (91)    Books, papers, reports, databases, methods, psychology
+├── scripts/            (14)    Generation, analysis, and operations automation
+├── swipe/              (30)    Gold-standard example outputs for calibration
+├── swipe-sources/       (8)    Source material references for swipe files
+├── tasks/              (55)    Planning, collection, validation, synthesis, review, ops
+├── templates/          (45)    Briefs, outputs, evidence, analysis, scorecards
+├── voice/              (22)    Tone profiles, language guides, calibration, channels
+└── workflows/          (21)    End-to-end pipeline workflow definitions (00-20)
 ```
 
 ---
@@ -146,6 +146,51 @@ Deep-Research-Squad/
 
 ---
 
+## System Statistics
+
+| Category | Count | Description |
+|---|---|---|
+| Total Files | **754+** | Complete system across 17 directories |
+| Agents | 17 | Specialized research agents with full CoT/ReAct protocols |
+| Frameworks | 114 | Universal, agent-specific, layer, and reference frameworks |
+| Checklists | 130 | Quality gates at every pipeline stage |
+| Templates | 45 | Structured output templates for all deliverable types |
+| Tasks | 55 | Executable task definitions across 7 categories |
+| Workflows | 21 | End-to-end pipeline workflows (00-20) |
+| Reference | 91 | Books, papers, methods, psychology, industry references |
+| Projects | 55 | 8 project types with phased execution |
+| Data/Registries | 34 | YAML registries, benchmarks, metrics, glossaries |
+
+## Prompt Engineering
+
+Every agent uses state-of-the-art prompt engineering:
+
+- **Hierarchical Role Modeling (HRM)** — Identity, mission, scope, pipeline position
+- **Chain-of-Thought (CoT)** — Step-by-step reasoning protocols
+- **ReAct** — Reasoning + Acting interleaved patterns
+- **Role-based Prompting** — Deep identity anchors with anti-patterns
+- **Quality Gates** — Mandatory checkpoints before handoff
+- **Escalation Protocols** — Clear rules for when to escalate vs. resolve
+
+## Cross-Squad Integration
+
+DeepResearch Squad integrates with 10 specialized squads:
+
+| Squad | Integration |
+|---|---|
+| Data Squad | Raw datasets, statistical analysis, data visualizations |
+| Advisory Board | Board-level reviews, governance, strategic priorities |
+| C-Level Squad | Executive briefs, competitive intelligence, M&A mandates |
+| Copy Squad | Fact-checking, evidence-sourced claims, data narratives |
+| Brand Squad | Market perception, brand positioning, audience segmentation |
+| Design Squad | UX research, design benchmarks, A/B test analysis |
+| Storytelling Squad | Narrative research, case studies, historical context |
+| Movement Squad | Community sentiment, social trends, advocacy landscape |
+| Traffic Squad | SEO research, content gaps, channel benchmarks |
+| Cybersecurity Squad | Threat landscape, vulnerability intelligence, compliance |
+
+---
+
 ## License
 
-See repository license file for details.
+MIT License. See [LICENSE](LICENSE) for details.

@@ -1,0 +1,82 @@
+# Monthly Performance Scorecard Template
+# Template for generating monthly system-wide performance reports
+
+metadata:
+  name: "Monthly Performance Scorecard Template"
+  version: "1.0.0"
+  description: "Structured template for monthly research system performance review"
+  last_updated: "2026-03-13"
+  maintainer: "ops-team"
+
+# Instructions: Copy this template and fill in values for the reporting month.
+# Replace placeholder values (marked with __PLACEHOLDER__) with actual data.
+
+scorecard:
+  reporting_period:
+    month: "__MONTH__"       # e.g., "2026-02"
+    start_date: "__START__"  # e.g., "2026-02-01"
+    end_date: "__END__"      # e.g., "2026-02-28"
+
+  # Section 1: Volume
+  volume:
+    total_queries: 0
+    queries_by_complexity:
+      simple: 0
+      standard: 0
+      complex: 0
+      deep: 0
+    queries_completed: 0
+    queries_abandoned: 0
+    completion_rate: 0.0  # queries_completed / total_queries
+
+  # Section 2: Quality (reference: quality-benchmarks.yaml)
+  quality:
+    avg_composite_score: 0.0
+    avg_factual_accuracy: 0.0
+    avg_coherence: 0.0
+    avg_completeness: 0.0
+    avg_analytical_depth: 0.0
+    queries_above_target: 0      # Composite >= 0.82
+    queries_below_minimum: 0     # Composite < 0.70
+
+  # Section 3: Throughput (reference: throughput-benchmarks.yaml)
+  throughput:
+    avg_end_to_end_minutes: 0.0
+    p50_latency_minutes: 0.0
+    p95_latency_minutes: 0.0
+    latency_target_hit_rate: 0.0  # % within tier target
+    peak_concurrent_sessions: 0
+
+  # Section 4: Agent Performance (reference: agent-performance-metrics.yaml)
+  agent_summary:
+    total_agents_active: 0
+    avg_task_completion_rate: 0.0
+    avg_evidence_yield: 0.0
+    avg_accuracy_after_review: 0.0
+    agents_below_alert_threshold: 0
+
+  # Section 5: Confidence Calibration
+  calibration:
+    expected_calibration_error: 0.0
+    overconfidence_bias: 0.0
+    calibration_trend: "stable"  # improving | stable | degrading
+
+  # Section 6: Highlights and Actions
+  highlights:
+    top_performing_query: "__QUERY_ID__"
+    biggest_improvement_area: "__AREA__"
+    new_experiments_launched: 0
+    experiments_concluded: 0
+
+  action_items:
+    - description: "__ACTION_1__"
+      owner: "__OWNER__"
+      due_date: "__DATE__"
+    - description: "__ACTION_2__"
+      owner: "__OWNER__"
+      due_date: "__DATE__"
+
+# Scorecard review process:
+# 1. Auto-populate sections 1-5 from pipeline telemetry by the 3rd of each month
+# 2. Ops team fills section 6 (highlights and actions) by the 5th
+# 3. Review meeting held on the second Monday of each month

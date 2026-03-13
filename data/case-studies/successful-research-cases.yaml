@@ -1,0 +1,77 @@
+# Successful Research Cases
+# Registry of notable research sessions with high-quality outcomes
+
+metadata:
+  name: "Successful Research Cases"
+  version: "1.0.0"
+  description: "Documented cases of high-performing research sessions for reference and learning"
+  last_updated: "2026-03-13"
+  maintainer: "quality-team"
+
+# Each case: id, title, query_type, complexity, scores, key_factors, lessons
+cases:
+  - id: "case_001"
+    title: "Comparative Analysis of Federated Learning Frameworks"
+    date: "2026-01-22"
+    query_type: "technology_comparison"
+    complexity_tier: "complex"
+    sub_tasks: 7
+    duration_minutes: 48
+    scores:
+      composite_quality: 0.91
+      factual_accuracy: 0.96
+      coherence: 0.88
+      completeness: 0.90
+    key_factors:
+      - "Early query decomposition identified non-obvious sub-topics"
+      - "Adversarial review caught two inaccurate performance claims"
+      - "Source triangulation across academic papers, vendor docs, and benchmarks"
+    lessons_learned: >
+      Splitting the comparison into per-framework analysis before cross-cutting
+      synthesis produced a more balanced and thorough output.
+
+  - id: "case_002"
+    title: "Regulatory Impact Assessment for EU AI Act Compliance"
+    date: "2026-02-05"
+    query_type: "policy_analysis"
+    complexity_tier: "deep"
+    sub_tasks: 12
+    duration_minutes: 82
+    scores:
+      composite_quality: 0.88
+      factual_accuracy: 0.94
+      coherence: 0.85
+      actionability: 0.92
+    key_factors:
+      - "Dedicated sub-task for tracking regulatory amendments since last draft"
+      - "Cross-referencing legal text with industry compliance guides"
+      - "Structured output with clear action items per article"
+    lessons_learned: >
+      Policy analysis benefits from a separate timeline sub-task to capture
+      the evolution of the regulation, not just its current state.
+
+  - id: "case_003"
+    title: "Market Entry Feasibility for Southeast Asian SaaS Expansion"
+    date: "2026-02-18"
+    query_type: "market_research"
+    complexity_tier: "complex"
+    sub_tasks: 8
+    duration_minutes: 55
+    scores:
+      composite_quality: 0.86
+      source_diversity: 0.91
+      analytical_depth: 0.83
+      actionability: 0.89
+    key_factors:
+      - "Used local-language sources for three target markets"
+      - "Included competitor pricing data from recent funding announcements"
+      - "Provided country-by-country risk matrix"
+    lessons_learned: >
+      Market research quality improves significantly when agents access
+      non-English sources, even via translation layers.
+
+# How to add a new case:
+# 1. Only include cases with composite quality >= 0.85
+# 2. Document at least two key_factors that drove success
+# 3. Write a lessons_learned statement that is actionable for future research
+# 4. Tag the correct complexity_tier: simple, standard, complex, deep

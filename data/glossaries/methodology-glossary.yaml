@@ -1,0 +1,64 @@
+# Methodology Glossary
+# Terms specific to research methods and analytical approaches
+
+metadata:
+  name: "Methodology Glossary"
+  version: "1.0.0"
+  description: "Definitions for research methodology terms used in agent workflows"
+  last_updated: "2026-03-13"
+  maintainer: "research-ops"
+
+# Each entry: definition, applicable_phases, example, related_terms
+terms:
+  - term: "systematic_review"
+    definition: >
+      A structured approach to gathering and evaluating all relevant evidence
+      on a topic using predefined search criteria and quality filters.
+    applicable_phases: ["planning", "collection"]
+    example: "Reviewing all papers on LLM evaluation published 2023-2026."
+    related_terms: ["literature_scan", "evidence_mapping"]
+
+  - term: "thematic_analysis"
+    definition: >
+      A method for identifying, organizing, and reporting patterns (themes)
+      within a body of qualitative data or textual evidence.
+    applicable_phases: ["analysis", "synthesis"]
+    example: "Extracting recurring concerns from user feedback on research outputs."
+    related_terms: ["coding_framework", "pattern_recognition"]
+
+  - term: "comparative_benchmarking"
+    definition: >
+      Evaluating research output quality against established standards or
+      competing systems using a fixed set of metrics.
+    applicable_phases: ["evaluation"]
+    example: "Scoring agent output against the quality-benchmarks dataset."
+    related_terms: ["baseline_comparison", "performance_delta"]
+
+  - term: "iterative_refinement"
+    definition: >
+      A cyclic process where initial findings are reviewed, critiqued, and
+      improved through successive passes until quality thresholds are met.
+    applicable_phases: ["analysis", "synthesis", "review"]
+    example: "Running three refinement cycles on a draft before final delivery."
+    related_terms: ["feedback_loop", "convergence_check"]
+
+  - term: "adversarial_validation"
+    definition: >
+      Testing research conclusions by deliberately constructing counter-arguments
+      or seeking disconfirming evidence to stress-test robustness.
+    applicable_phases: ["review", "evaluation"]
+    example: "Assigning a devil's-advocate agent to challenge primary findings."
+    related_terms: ["red_teaming", "counter_evidence_scan"]
+
+# Phase reference:
+#   planning    - Scoping and query decomposition
+#   collection  - Source gathering and retrieval
+#   analysis    - Evidence evaluation and interpretation
+#   synthesis   - Combining findings into coherent output
+#   review      - Quality checks and refinement
+#   evaluation  - Final scoring and benchmarking
+
+# Adding new terms:
+# 1. Verify the term is methodology-specific (general terms go in research-terminology-glossary.yaml)
+# 2. Include all four fields
+# 3. Assign one or more applicable_phases from the reference above

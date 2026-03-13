@@ -1,0 +1,75 @@
+# Throughput Benchmarks
+# Performance targets for research processing speed and capacity
+
+metadata:
+  name: "Throughput Benchmarks"
+  version: "1.0.0"
+  description: "Speed and capacity benchmarks for the research pipeline"
+  last_updated: "2026-03-13"
+  maintainer: "platform-team"
+
+# Units vary by metric; see unit field
+# Each benchmark: metric, unit, baseline, target, exceptional, notes
+
+benchmarks:
+  - metric: "query_decomposition_time"
+    description: "Time to break a research query into actionable sub-tasks"
+    unit: "seconds"
+    baseline: 12.0
+    target: 6.5
+    exceptional: 3.0
+    notes: "Measured from query receipt to sub-task plan finalization"
+
+  - metric: "source_retrieval_rate"
+    description: "Number of relevant sources retrieved per minute"
+    unit: "sources_per_minute"
+    baseline: 15
+    target: 30
+    exceptional: 50
+    notes: "Counts only sources passing minimum relevance threshold (0.4)"
+
+  - metric: "end_to_end_latency"
+    description: "Total time from query submission to final report delivery"
+    unit: "minutes"
+    baseline: 45
+    target: 25
+    exceptional: 12
+    notes: "For standard-complexity queries (3-5 sub-tasks)"
+
+  - metric: "concurrent_research_capacity"
+    description: "Maximum simultaneous research sessions without quality degradation"
+    unit: "sessions"
+    baseline: 3
+    target: 8
+    exceptional: 15
+    notes: "Quality degradation defined as composite score dropping below 0.70"
+
+  - metric: "synthesis_passes_per_hour"
+    description: "Number of complete synthesis iterations achievable per hour"
+    unit: "passes_per_hour"
+    baseline: 4
+    target: 8
+    exceptional: 14
+    notes: "Each pass includes aggregation, conflict resolution, and draft update"
+
+# Complexity tiers for latency expectations:
+#   simple   (1-2 sub-tasks):  target 10 min
+#   standard (3-5 sub-tasks):  target 25 min
+#   complex  (6-10 sub-tasks): target 55 min
+#   deep     (11+ sub-tasks):  target 90 min
+
+complexity_tiers:
+  simple:
+    sub_tasks: "1-2"
+    target_minutes: 10
+  standard:
+    sub_tasks: "3-5"
+    target_minutes: 25
+  complex:
+    sub_tasks: "6-10"
+    target_minutes: 55
+  deep:
+    sub_tasks: "11+"
+    target_minutes: 90
+
+# Benchmarks are updated monthly based on rolling 30-day performance data

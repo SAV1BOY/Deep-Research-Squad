@@ -1,0 +1,66 @@
+# Confidence Calibration Data
+# Reference data for calibrating confidence scores against actual accuracy
+
+metadata:
+  name: "Confidence Calibration Data"
+  version: "1.0.0"
+  description: "Historical calibration data mapping predicted confidence to observed accuracy"
+  last_updated: "2026-03-13"
+  maintainer: "calibration-team"
+
+# Calibration measures how well confidence scores predict actual correctness.
+# A well-calibrated system: when it says 80% confident, it is correct ~80% of the time.
+
+# Calibration bins: predicted_confidence_range, observed_accuracy, sample_count
+calibration_bins:
+  - range: [0.00, 0.20]
+    observed_accuracy: 0.12
+    sample_count: 85
+    status: "well_calibrated"  # |predicted - observed| < 0.10
+
+  - range: [0.20, 0.40]
+    observed_accuracy: 0.28
+    sample_count: 142
+    status: "well_calibrated"
+
+  - range: [0.40, 0.60]
+    observed_accuracy: 0.53
+    sample_count: 310
+    status: "well_calibrated"
+
+  - range: [0.60, 0.80]
+    observed_accuracy: 0.64
+    sample_count: 475
+    status: "slightly_overconfident"  # predicted > observed by 0.06
+
+  - range: [0.80, 1.00]
+    observed_accuracy: 0.79
+    sample_count: 388
+    status: "slightly_overconfident"  # predicted > observed by 0.11
+
+# Summary statistics
+summary:
+  total_samples: 1400
+  expected_calibration_error: 0.054  # Weighted average of |predicted - observed|
+  max_calibration_error: 0.11       # Worst single-bin deviation
+  overconfidence_bias: 0.04         # System tends to be slightly overconfident
+  measurement_period: "2025-12-01 to 2026-02-28"
+
+# Correction factors to apply when raw confidence is produced
+# Apply: adjusted_confidence = raw_confidence * correction_factor
+correction_factors:
+  high_confidence_adjustment: 0.95   # Apply when raw >= 0.80
+  mid_confidence_adjustment: 1.00    # Apply when 0.40 <= raw < 0.80
+  low_confidence_adjustment: 1.05    # Apply when raw < 0.40
+
+# Domain-specific calibration notes
+domain_notes:
+  - domain: "technology"
+    note: "Calibration is tightest here; largest sample size"
+  - domain: "policy_regulation"
+    note: "Tends to be overconfident due to rapidly changing source material"
+  - domain: "market_research"
+    note: "Source diversity compensates; calibration is acceptable"
+
+# Recalibration schedule: monthly, using rolling 90-day window
+# Next recalibration: 2026-04-01

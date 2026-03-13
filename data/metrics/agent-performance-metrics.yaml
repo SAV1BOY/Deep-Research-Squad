@@ -1,0 +1,75 @@
+# Agent Performance Metrics
+# Definitions for per-agent evaluation metrics
+
+metadata:
+  name: "Agent Performance Metrics"
+  version: "1.0.0"
+  description: "Metric definitions for evaluating individual agent contributions"
+  last_updated: "2026-03-13"
+  maintainer: "agent-ops"
+
+# Each metric: id, name, description, calculation, range, alert_threshold
+metrics:
+  - id: "apm_001"
+    name: "task_completion_rate"
+    description: "Percentage of assigned sub-tasks completed within the allotted time"
+    calculation: "completed_tasks / assigned_tasks * 100"
+    range: [0, 100]
+    unit: "percent"
+    alert_threshold: 80  # Alert if below this value
+    target: 95
+
+  - id: "apm_002"
+    name: "evidence_yield"
+    description: "Ratio of usable evidence items to total items retrieved"
+    calculation: "usable_evidence / total_retrieved"
+    range: [0.0, 1.0]
+    unit: "ratio"
+    alert_threshold: 0.40
+    target: 0.65
+
+  - id: "apm_003"
+    name: "accuracy_after_review"
+    description: "Proportion of agent claims surviving peer review without correction"
+    calculation: "uncorrected_claims / total_claims_reviewed"
+    range: [0.0, 1.0]
+    unit: "ratio"
+    alert_threshold: 0.75
+    target: 0.90
+
+  - id: "apm_004"
+    name: "collaboration_score"
+    description: "Quality of handoffs and information sharing with other agents"
+    calculation: "Rubric-based: clarity of handoff notes, completeness of context passed"
+    range: [1, 5]
+    unit: "score"
+    alert_threshold: 2
+    target: 4
+
+  - id: "apm_005"
+    name: "latency_compliance"
+    description: "Percentage of tasks completed within the expected time window"
+    calculation: "on_time_tasks / total_tasks * 100"
+    range: [0, 100]
+    unit: "percent"
+    alert_threshold: 70
+    target: 90
+
+# Aggregation rules:
+#   - Agent score = weighted average of all metrics
+#   - Weights: task_completion_rate (0.25), evidence_yield (0.20),
+#     accuracy_after_review (0.30), collaboration_score (0.10),
+#     latency_compliance (0.15)
+#   - Minimum sample size: 10 tasks before computing a stable score
+
+aggregation:
+  method: "weighted_average"
+  weights:
+    apm_001: 0.25
+    apm_002: 0.20
+    apm_003: 0.30
+    apm_004: 0.10
+    apm_005: 0.15
+  minimum_sample_size: 10
+
+# Evaluation cadence: weekly rolling window, reported every Monday
