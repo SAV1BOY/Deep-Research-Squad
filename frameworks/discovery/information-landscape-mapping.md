@@ -1,7 +1,7 @@
 # Information Landscape Mapping
 
 ## Purpose
-A method for surveying and documenting the full terrain of available information on a research topic before deep investigation begins. Produces a map showing where information is abundant, where it is sparse, where it is contested, and where it does not exist, enabling strategic allocation of research effort.
+A method for surveying and documenting the full terrain of available information on a research topic before deep investigation begins. Produces a map showing where information is abundant, where it is sparse, where it is contested, and where it does not exist, enabling strategic allocation of research effort and honest scoping of what the research can deliver.
 
 ## When to Apply
 - At the outset of a new research topic where the information ecosystem is unfamiliar

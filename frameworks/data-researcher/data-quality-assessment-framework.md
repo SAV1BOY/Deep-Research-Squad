@@ -1,7 +1,7 @@
 # Data Quality Assessment Framework
 
 ## Purpose
-A structured methodology for evaluating the quality of data sources across multiple dimensions before incorporating them into research findings. Ensures that conclusions are built on data whose strengths and limitations are explicitly understood, documented, and communicated.
+A structured methodology for evaluating the quality of data sources across multiple dimensions before incorporating them into research findings. Ensures that conclusions are built on data whose strengths and limitations are explicitly understood, documented, and communicated to downstream consumers.
 
 ## When to Apply
 - When incorporating quantitative data from unfamiliar or unvetted sources

@@ -1,7 +1,7 @@
 # Narrative Architecture Framework
 
 ## Purpose
-A method for structuring research findings into a coherent, compelling narrative that guides the reader from context through evidence to conclusions. Ensures that the logical flow of the research story is deliberate rather than accidental, and that the structure serves comprehension rather than merely reflecting the order in which findings were discovered.
+A method for structuring research findings into a coherent, compelling narrative that guides the reader from context through evidence to conclusions. Ensures that the logical flow of the research story is deliberate rather than accidental, and that the structure serves comprehension and decision-making rather than merely reflecting the order in which findings were discovered.
 
 ## When to Apply
 - When translating a body of research findings into a written deliverable

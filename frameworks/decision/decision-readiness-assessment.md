@@ -1,7 +1,7 @@
 # Decision Readiness Assessment
 
 ## Purpose
-A structured evaluation of whether sufficient information, analysis, and confidence exist to support a specific decision. Prevents both premature decisions based on incomplete research and indefinite research delays when enough information already exists. Provides a clear, defensible answer to the question: "Do we know enough to decide?"
+A structured evaluation of whether sufficient information, analysis, and confidence exist to support a specific decision. Prevents both premature decisions based on incomplete research and indefinite research delays when enough information already exists. Provides a clear, defensible answer to the question: "Do we know enough to decide?" Applicable at any decision gate in the research-to-action pipeline.
 
 ## When to Apply
 - When a stakeholder asks whether research is "done enough" to act on

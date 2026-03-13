@@ -1,7 +1,7 @@
 # Search Iteration Framework
 
 ## Purpose
-A disciplined methodology for refining search queries through successive iterations, ensuring that each round of searching builds on what was learned in prior rounds. Prevents the common failure of running the same search repeatedly with minor keyword variations while systematically expanding coverage and closing information gaps.
+A disciplined methodology for refining search queries through successive iterations, ensuring that each round of searching builds on what was learned in prior rounds. Prevents the common failure of running the same search repeatedly with minor keyword variations while systematically expanding coverage and closing information gaps. Provides a reproducible search trail.
 
 ## When to Apply
 - When initial searches return too many irrelevant results or too few useful ones

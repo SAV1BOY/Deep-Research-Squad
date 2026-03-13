@@ -1,7 +1,7 @@
 # Evidence Weight Calibration
 
 ## Purpose
-A structured approach for assigning and adjusting the relative weight of individual pieces of evidence when forming research conclusions. Ensures that stronger evidence exerts proportionally more influence on findings than weaker evidence, and that the weighting rationale is transparent and defensible.
+A structured approach for assigning and adjusting the relative weight of individual pieces of evidence when forming research conclusions. Ensures that stronger evidence exerts proportionally more influence on findings than weaker evidence, and that the weighting rationale is transparent, defensible, and documented for stakeholder review.
 
 ## When to Apply
 - When multiple pieces of evidence point in different directions and a conclusion must be reached

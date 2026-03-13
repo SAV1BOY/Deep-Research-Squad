@@ -1,7 +1,7 @@
 # Periodization Framework
 
 ## Purpose
-A structured approach for dividing timelines into meaningful periods that reveal patterns, transitions, and causal relationships. Transforms raw chronologies into interpretive narratives by identifying the boundaries, character, and significance of distinct eras within a subject's history.
+A structured approach for dividing timelines into meaningful periods that reveal patterns, transitions, and causal relationships. Transforms raw chronologies into interpretive narratives by identifying the boundaries, character, and significance of distinct eras within a subject's history. Essential for any research that requires temporal context beyond simple date listing.
 
 ## When to Apply
 - When a timeline spans multiple years or decades and needs interpretive structure

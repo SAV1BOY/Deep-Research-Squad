@@ -1,7 +1,7 @@
 # Benchmarking Methodology Framework
 
 ## Purpose
-A structured approach for comparing entities, performance metrics, or outcomes against meaningful reference points. Ensures that benchmarking exercises produce valid, actionable comparisons rather than misleading rankings driven by inconsistent definitions, cherry-picked comparators, or incomparable contexts.
+A structured approach for comparing entities, performance metrics, or outcomes against meaningful reference points. Ensures that benchmarking exercises produce valid, actionable comparisons rather than misleading rankings driven by inconsistent definitions, cherry-picked comparators, or incomparable contexts. Applicable to competitive analysis, performance evaluation, and any research requiring relative positioning.
 
 ## When to Apply
 - When stakeholders ask "how does X compare to Y?" or "is this performance good or bad?"

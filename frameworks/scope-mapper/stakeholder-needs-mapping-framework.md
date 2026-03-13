@@ -1,7 +1,7 @@
 # Stakeholder Needs Mapping Framework
 
 ## Purpose
-A structured method for identifying all stakeholders who will consume or act on research findings, understanding their distinct information needs, and ensuring that research scope, depth, and output format are calibrated to serve each audience. Prevents the common failure mode of producing research that answers the wrong question for the wrong audience at the wrong level of detail.
+A structured method for identifying all stakeholders who will consume or act on research findings, understanding their distinct information needs, and ensuring that research scope, depth, and output format are calibrated to serve each audience. Prevents the common failure mode of producing research that answers the wrong question for the wrong audience at the wrong level of detail. Should be completed before deep research begins.
 
 ## When to Apply
 - At the start of any research project with multiple consumers of findings
