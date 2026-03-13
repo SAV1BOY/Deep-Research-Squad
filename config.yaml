@@ -1,0 +1,806 @@
+# ============================================================================
+# Deep Research Squad — config.yaml
+# The routing brain of the entire research system
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Squad Metadata
+# ----------------------------------------------------------------------------
+squad:
+  name: "Deep Research Squad"
+  version: "1.0.0"
+  description: >
+    Elite autonomous research unit that decomposes complex questions,
+    hunts primary sources, validates evidence, stress-tests theses,
+    and delivers decision-grade intelligence briefs.
+  chief_agent: "chief-research-officer"
+  agents:
+    - chief-research-officer
+    - scope-mapper
+    - query-strategist
+    - source-hunter
+    - data-researcher
+    - evidence-verifier
+    - literature-analyst
+    - osint-investigator
+    - timeline-analyst
+    - contrarian-analyst
+    - insight-modeler
+    - synthesis-writer
+    - decision-analyst
+    - validation-auditor
+    - discovery-scout
+    - reference-intellectual
+  pipeline:
+    - build-research-plan
+    - design-source-strategy
+    - run-deep-dive
+    - run-thesis-test
+    - run-contrarian-pass
+    - build-synthesis-report
+    - build-decision-brief
+    - audit-research-quality
+
+# ----------------------------------------------------------------------------
+# Principles
+# ----------------------------------------------------------------------------
+principles:
+  - id: evidence-first
+    statement: >
+      Every claim must be anchored to a verifiable source. Assertions without
+      evidence are flagged, not published. Primary sources always outrank
+      secondary commentary.
+
+  - id: intellectual-honesty
+    statement: >
+      Report what is true, not what is convenient. Actively surface findings
+      that contradict the working thesis. Confidence levels must reflect
+      genuine epistemic state, never inflated certainty.
+
+  - id: question-decomposition
+    statement: >
+      Complex questions are broken into atomic, answerable sub-questions
+      before any research begins. Each sub-question gets its own evidence
+      trail and confidence score.
+
+  - id: adversarial-rigor
+    statement: >
+      Every thesis is stress-tested through contrarian analysis, steel-man
+      counter-arguments, and red-team scenarios before it reaches the
+      synthesis stage.
+
+  - id: decision-grade-output
+    statement: >
+      Research exists to enable decisions. Every deliverable must clearly
+      articulate what the decision-maker needs to know, what remains
+      uncertain, and what the recommended action is.
+
+  - id: source-diversity
+    statement: >
+      Guard against confirmation bias by deliberately seeking sources from
+      opposing viewpoints, different geographies, alternative methodologies,
+      and underrepresented perspectives.
+
+# ----------------------------------------------------------------------------
+# Routing — every route the squad can execute
+# ----------------------------------------------------------------------------
+routing:
+
+  build-research-plan:
+    description: "Decompose research question into sub-questions, define scope, and build execution plan"
+    agents:
+      - chief-research-officer
+      - scope-mapper
+      - query-strategist
+    frameworks:
+      - "frameworks/scope-mapper"
+      - "frameworks/query-strategist"
+      - "frameworks/discovery"
+    checklists:
+      - "checklists/chief"
+      - "checklists/scope"
+      - "checklists/query"
+      - "checklists/architect"
+    templates:
+      - "templates/operational"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  design-source-strategy:
+    description: "Identify optimal source mix, databases, and collection methods for the research plan"
+    agents:
+      - source-hunter
+      - query-strategist
+      - discovery-scout
+    frameworks:
+      - "frameworks/source-hunter"
+      - "frameworks/query-strategist"
+      - "frameworks/discovery"
+    checklists:
+      - "checklists/source"
+      - "checklists/query"
+      - "checklists/discovery"
+    templates:
+      - "templates/operational"
+    registry:
+      - "data/registries"
+
+  run-deep-dive:
+    description: "Execute primary research across sources, collect evidence, and build data corpus"
+    agents:
+      - data-researcher
+      - source-hunter
+      - evidence-verifier
+      - timeline-analyst
+    frameworks:
+      - "frameworks/data-researcher"
+      - "frameworks/source-hunter"
+      - "frameworks/evidence-verifier"
+      - "frameworks/timeline-analyst"
+    checklists:
+      - "checklists/data"
+      - "checklists/source"
+      - "checklists/evidence"
+      - "checklists/timeline"
+      - "checklists/verification"
+    templates:
+      - "templates/evidence"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  run-competitor-research:
+    description: "Map competitive landscape, benchmark positioning, and identify strategic gaps"
+    agents:
+      - data-researcher
+      - source-hunter
+      - insight-modeler
+      - contrarian-analyst
+    frameworks:
+      - "frameworks/data-researcher"
+      - "frameworks/source-hunter"
+      - "frameworks/insight-modeler"
+      - "frameworks/contrarian-analyst"
+    checklists:
+      - "checklists/data"
+      - "checklists/source"
+      - "checklists/modeling"
+      - "checklists/domain-stacks"
+    templates:
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  run-market-research:
+    description: "Analyze market size, segmentation, trends, and customer dynamics"
+    agents:
+      - data-researcher
+      - source-hunter
+      - insight-modeler
+      - timeline-analyst
+    frameworks:
+      - "frameworks/data-researcher"
+      - "frameworks/source-hunter"
+      - "frameworks/insight-modeler"
+      - "frameworks/timeline-analyst"
+    checklists:
+      - "checklists/data"
+      - "checklists/source"
+      - "checklists/modeling"
+      - "checklists/timeline"
+    templates:
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  run-technical-research:
+    description: "Evaluate technology stacks, architectures, patents, and technical feasibility"
+    agents:
+      - data-researcher
+      - source-hunter
+      - evidence-verifier
+      - reference-intellectual
+    frameworks:
+      - "frameworks/data-researcher"
+      - "frameworks/source-hunter"
+      - "frameworks/evidence-verifier"
+      - "frameworks/reference-intellectual"
+    checklists:
+      - "checklists/data"
+      - "checklists/source"
+      - "checklists/evidence"
+      - "checklists/verification"
+      - "checklists/domain-stacks"
+    templates:
+      - "templates/evidence"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  run-literature-review:
+    description: "Systematic review of academic papers, reports, and published research"
+    agents:
+      - literature-analyst
+      - reference-intellectual
+      - evidence-verifier
+    frameworks:
+      - "frameworks/literature-analyst"
+      - "frameworks/reference-intellectual"
+      - "frameworks/evidence-verifier"
+    checklists:
+      - "checklists/literature"
+      - "checklists/evidence"
+      - "checklists/verification"
+    templates:
+      - "templates/evidence"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  run-osint-investigation:
+    description: "Open-source intelligence gathering across public records, social, and digital footprints"
+    agents:
+      - osint-investigator
+      - source-hunter
+      - evidence-verifier
+      - timeline-analyst
+    frameworks:
+      - "frameworks/osint-investigator"
+      - "frameworks/source-hunter"
+      - "frameworks/evidence-verifier"
+      - "frameworks/timeline-analyst"
+    checklists:
+      - "checklists/osint"
+      - "checklists/source"
+      - "checklists/evidence"
+      - "checklists/timeline"
+      - "checklists/verification"
+    templates:
+      - "templates/evidence"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  run-due-diligence:
+    description: "Comprehensive due diligence on entities, financials, legal, and operational risk"
+    agents:
+      - data-researcher
+      - osint-investigator
+      - evidence-verifier
+      - timeline-analyst
+      - contrarian-analyst
+    frameworks:
+      - "frameworks/data-researcher"
+      - "frameworks/osint-investigator"
+      - "frameworks/evidence-verifier"
+      - "frameworks/timeline-analyst"
+      - "frameworks/contrarian-analyst"
+    checklists:
+      - "checklists/data"
+      - "checklists/osint"
+      - "checklists/evidence"
+      - "checklists/timeline"
+      - "checklists/verification"
+      - "checklists/contrarian"
+    templates:
+      - "templates/evidence"
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  run-trend-analysis:
+    description: "Identify, validate, and project trends across time-series data and qualitative signals"
+    agents:
+      - timeline-analyst
+      - insight-modeler
+      - data-researcher
+      - discovery-scout
+    frameworks:
+      - "frameworks/timeline-analyst"
+      - "frameworks/insight-modeler"
+      - "frameworks/data-researcher"
+      - "frameworks/discovery"
+    checklists:
+      - "checklists/timeline"
+      - "checklists/modeling"
+      - "checklists/data"
+      - "checklists/discovery"
+    templates:
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  run-thesis-test:
+    description: "Stress-test the working thesis against evidence, counter-arguments, and edge cases"
+    agents:
+      - contrarian-analyst
+      - evidence-verifier
+      - insight-modeler
+    frameworks:
+      - "frameworks/contrarian-analyst"
+      - "frameworks/evidence-verifier"
+      - "frameworks/insight-modeler"
+    checklists:
+      - "checklists/contrarian"
+      - "checklists/evidence"
+      - "checklists/modeling"
+      - "checklists/validation"
+    templates:
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  run-contrarian-pass:
+    description: "Dedicated adversarial review — steel-man opposites, find blind spots, rate confidence"
+    agents:
+      - contrarian-analyst
+      - reference-intellectual
+    frameworks:
+      - "frameworks/contrarian-analyst"
+      - "frameworks/reference-intellectual"
+    checklists:
+      - "checklists/contrarian"
+      - "checklists/validation"
+    templates:
+      - "templates/analysis"
+      - "templates/scorecards"
+    registry:
+      - "data/registries"
+
+  build-synthesis-report:
+    description: "Weave all evidence, analysis, and contrarian findings into a unified research report"
+    agents:
+      - synthesis-writer
+      - insight-modeler
+      - chief-research-officer
+    frameworks:
+      - "frameworks/synthesis-writer"
+      - "frameworks/synthesis"
+      - "frameworks/insight-modeler"
+    checklists:
+      - "checklists/synthesis"
+      - "checklists/synthesis-stack"
+      - "checklists/modeling"
+    templates:
+      - "templates/outputs"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  build-decision-brief:
+    description: "Distill research into an actionable decision brief with recommendations and risk map"
+    agents:
+      - decision-analyst
+      - synthesis-writer
+      - chief-research-officer
+    frameworks:
+      - "frameworks/decision-analyst"
+      - "frameworks/decision"
+      - "frameworks/synthesis-writer"
+    checklists:
+      - "checklists/decision"
+      - "checklists/synthesis"
+      - "checklists/chief"
+    templates:
+      - "templates/briefs"
+      - "templates/outputs"
+    registry:
+      - "data/registries"
+
+  audit-research-quality:
+    description: "Post-delivery quality audit — evidence integrity, bias check, completeness score"
+    agents:
+      - validation-auditor
+      - chief-research-officer
+    frameworks:
+      - "frameworks/validation"
+      - "frameworks/evidence-verifier"
+    checklists:
+      - "checklists/audit"
+      - "checklists/validation"
+      - "checklists/verification"
+    templates:
+      - "templates/scorecards"
+      - "templates/operational"
+    registry:
+      - "data/registries"
+
+  compress-to-executive-summary:
+    description: "Compress full research output into a one-page executive summary for time-constrained stakeholders"
+    agents:
+      - synthesis-writer
+      - decision-analyst
+    frameworks:
+      - "frameworks/synthesis-writer"
+      - "frameworks/decision-analyst"
+    checklists:
+      - "checklists/synthesis"
+      - "checklists/decision"
+    templates:
+      - "templates/briefs"
+      - "templates/outputs"
+    registry:
+      - "data/registries"
+
+  cross-squad-research-handoff:
+    description: "Package and hand off research artifacts to other squads with context and usage notes"
+    agents:
+      - chief-research-officer
+      - synthesis-writer
+    frameworks:
+      - "frameworks/synthesis-writer"
+      - "frameworks/synthesis"
+    checklists:
+      - "checklists/cross-squad"
+      - "checklists/chief"
+    templates:
+      - "templates/operational"
+      - "templates/briefs"
+    registry:
+      - "data/registries"
+
+  update-registries:
+    description: "Refresh source registries, confidence maps, and benchmark data stores"
+    agents:
+      - chief-research-officer
+      - validation-auditor
+      - data-researcher
+    frameworks:
+      - "frameworks/validation"
+      - "frameworks/data-researcher"
+    checklists:
+      - "checklists/chief"
+      - "checklists/audit"
+      - "checklists/data"
+    templates:
+      - "templates/operational"
+    registry:
+      - "data/registries"
+
+  quarterly-research-quality-review:
+    description: "Quarterly meta-review of research accuracy, prediction tracking, and process improvement"
+    agents:
+      - chief-research-officer
+      - validation-auditor
+      - insight-modeler
+    frameworks:
+      - "frameworks/validation"
+      - "frameworks/insight-modeler"
+    checklists:
+      - "checklists/audit"
+      - "checklists/validation"
+      - "checklists/chief"
+    templates:
+      - "templates/scorecards"
+      - "templates/operational"
+    registry:
+      - "data/registries"
+      - "data/metrics"
+      - "data/scorecards"
+
+# ----------------------------------------------------------------------------
+# Cross-Squad Integration
+# ----------------------------------------------------------------------------
+cross_squad:
+
+  data_squad:
+    handoff_to:
+      - "raw datasets requiring statistical analysis"
+      - "data-cleaning and normalization requests"
+      - "quantitative modeling tasks"
+    handoff_from:
+      - "cleaned datasets with methodology notes"
+      - "statistical models and significance tests"
+      - "data visualizations and dashboards"
+    shared_assets:
+      - "data/benchmarks"
+      - "data/metrics"
+      - "data/registries"
+
+  advisory_board:
+    handoff_to:
+      - "decision briefs requiring board-level review"
+      - "strategic research findings for governance input"
+      - "risk assessments needing executive sign-off"
+    handoff_from:
+      - "strategic priorities and research questions"
+      - "board-mandated due diligence requests"
+      - "governance feedback on research methodology"
+    shared_assets:
+      - "templates/briefs"
+      - "data/decisions"
+
+  c_level_squad:
+    handoff_to:
+      - "executive intelligence briefs"
+      - "competitive landscape summaries"
+      - "market opportunity assessments"
+    handoff_from:
+      - "strategic research commissions"
+      - "urgent competitive intelligence requests"
+      - "M&A due diligence mandates"
+    shared_assets:
+      - "templates/briefs"
+      - "templates/outputs"
+      - "data/decisions"
+
+  copy_squad:
+    handoff_to:
+      - "research-backed talking points"
+      - "evidence-sourced claims for copy"
+      - "statistical proof points and data narratives"
+    handoff_from:
+      - "fact-check requests on draft copy"
+      - "source verification for published claims"
+      - "competitor messaging analysis requests"
+    shared_assets:
+      - "reference/reports"
+      - "data/case-studies"
+
+  brand_squad:
+    handoff_to:
+      - "market perception research"
+      - "brand positioning competitive analysis"
+      - "audience segmentation data"
+    handoff_from:
+      - "brand audit research requests"
+      - "category landscape mapping needs"
+      - "cultural trend research briefs"
+    shared_assets:
+      - "reference/reports"
+      - "data/research"
+
+  design_squad:
+    handoff_to:
+      - "UX research findings and usability data"
+      - "design trend analysis reports"
+      - "accessibility research and compliance data"
+    handoff_from:
+      - "user research study requests"
+      - "design benchmark and best-practice research"
+      - "A/B test result analysis needs"
+    shared_assets:
+      - "reference/case-studies"
+      - "data/experiments"
+
+  storytelling_squad:
+    handoff_to:
+      - "narrative-ready research findings"
+      - "case study evidence packages"
+      - "historical context and timeline data"
+    handoff_from:
+      - "story angle research requests"
+      - "fact-verification for narratives"
+      - "primary source interview analysis"
+    shared_assets:
+      - "reference/case-studies"
+      - "reference/transcripts"
+      - "data/timelines"
+
+  movement_squad:
+    handoff_to:
+      - "community sentiment research"
+      - "social movement trend analysis"
+      - "audience behavior and motivation data"
+    handoff_from:
+      - "community insight research requests"
+      - "movement trajectory analysis needs"
+      - "advocacy landscape mapping briefs"
+    shared_assets:
+      - "reference/reports"
+      - "data/research"
+
+  traffic_squad:
+    handoff_to:
+      - "SEO keyword research and opportunity data"
+      - "content gap analysis reports"
+      - "channel performance benchmarks"
+    handoff_from:
+      - "search trend research requests"
+      - "audience intent analysis needs"
+      - "platform algorithm research briefs"
+    shared_assets:
+      - "data/benchmarks"
+      - "data/metrics"
+
+  cybersecurity_squad:
+    handoff_to:
+      - "threat landscape research reports"
+      - "vulnerability intelligence briefings"
+      - "regulatory compliance research"
+    handoff_from:
+      - "threat actor research requests"
+      - "security incident investigation briefs"
+      - "compliance requirement research needs"
+    shared_assets:
+      - "reference/reports"
+      - "reference/databases"
+      - "data/registries"
+
+# ----------------------------------------------------------------------------
+# Quality Gates
+# ----------------------------------------------------------------------------
+quality_gates:
+
+  mandatory:
+    - gate: source-verification
+      description: "Every cited source must be verified as accessible, current, and authoritative"
+      enforced_by: evidence-verifier
+      threshold: "100% of cited sources verified"
+
+    - gate: confidence-calibration
+      description: "Confidence levels must be calibrated against evidence strength, not intuition"
+      enforced_by: validation-auditor
+      threshold: "All claims tagged with evidence-backed confidence scores"
+
+    - gate: contrarian-review
+      description: "No thesis reaches synthesis without at least one adversarial challenge pass"
+      enforced_by: contrarian-analyst
+      threshold: "Minimum 1 contrarian pass per thesis"
+
+    - gate: bias-audit
+      description: "Check for confirmation bias, selection bias, and source homogeneity"
+      enforced_by: validation-auditor
+      threshold: "Bias score below 0.2 on internal rubric"
+
+    - gate: question-coverage
+      description: "All decomposed sub-questions must be addressed with evidence or marked as gaps"
+      enforced_by: chief-research-officer
+      threshold: "100% sub-question coverage or explicit gap declaration"
+
+    - gate: recency-check
+      description: "Time-sensitive research must use sources within acceptable recency windows"
+      enforced_by: timeline-analyst
+      threshold: "Primary sources within domain-appropriate recency window"
+
+    - gate: cross-reference-minimum
+      description: "Key claims must be corroborated by multiple independent sources"
+      enforced_by: evidence-verifier
+      threshold: "Minimum 2 independent sources per key claim"
+
+    - gate: decision-readiness
+      description: "Decision briefs must contain clear recommendations, risk assessment, and confidence bands"
+      enforced_by: decision-analyst
+      threshold: "All three components present and internally consistent"
+
+  per_domain:
+    financial:
+      - "Numerical claims verified against primary filings (SEC, annual reports)"
+      - "Currency and date normalization applied"
+      - "Forward-looking statements clearly labeled as projections"
+
+    legal:
+      - "Jurisdiction explicitly stated for all legal claims"
+      - "Case law citations verified against official records"
+      - "Regulatory status checked against current enforcement"
+
+    medical:
+      - "Clinical claims traced to peer-reviewed studies"
+      - "Sample sizes and study design reported"
+      - "Regulatory approval status verified (FDA, EMA, etc.)"
+
+    technology:
+      - "Technical claims verified against official documentation"
+      - "Version numbers and release dates confirmed"
+      - "Open-source license compliance checked"
+
+    geopolitical:
+      - "Multiple regional perspectives included"
+      - "Source government affiliations disclosed"
+      - "Timeline of events independently verified"
+
+# ----------------------------------------------------------------------------
+# KPIs
+# ----------------------------------------------------------------------------
+kpis:
+
+  research_quality:
+    - metric: evidence-density-score
+      description: "Ratio of evidence-backed claims to total claims in output"
+      target: ">= 0.90"
+      measurement: "Automated count via validation-auditor"
+
+    - metric: source-diversity-index
+      description: "Shannon diversity index across source types, geographies, and viewpoints"
+      target: ">= 2.5"
+      measurement: "Computed per deliverable"
+
+    - metric: confidence-calibration-accuracy
+      description: "How well stated confidence levels predict actual accuracy over time"
+      target: "Brier score <= 0.15"
+      measurement: "Quarterly retrospective scoring"
+
+    - metric: contrarian-survival-rate
+      description: "Percentage of theses that survive adversarial review without material revision"
+      target: "60-80% (too high suggests weak contrarian; too low suggests weak research)"
+      measurement: "Per-engagement tracking"
+
+  efficiency:
+    - metric: time-to-first-brief
+      description: "Elapsed time from research commission to first draft brief"
+      target: "Domain-dependent; tracked against rolling average"
+      measurement: "Timestamp delta"
+
+    - metric: source-hit-rate
+      description: "Percentage of identified sources that yield usable evidence"
+      target: ">= 0.50"
+      measurement: "Source-hunter tracking log"
+
+    - metric: rework-rate
+      description: "Percentage of deliverables requiring revision after quality gate"
+      target: "<= 0.15"
+      measurement: "Audit pass/fail log"
+
+    - metric: sub-question-resolution-rate
+      description: "Percentage of sub-questions resolved per research cycle"
+      target: ">= 0.85"
+      measurement: "Scope-mapper tracking"
+
+  impact:
+    - metric: decision-adoption-rate
+      description: "Percentage of research recommendations adopted by decision-makers"
+      target: ">= 0.70"
+      measurement: "Post-decision follow-up survey"
+
+    - metric: prediction-accuracy
+      description: "Accuracy of forward-looking assessments when verifiable"
+      target: ">= 0.65"
+      measurement: "Quarterly prediction scorecard"
+
+    - metric: stakeholder-satisfaction
+      description: "Decision-maker satisfaction with research quality and usefulness"
+      target: ">= 4.2 / 5.0"
+      measurement: "Post-engagement feedback"
+
+    - metric: cross-squad-utility
+      description: "How often research outputs are referenced by other squads"
+      target: ">= 3 cross-squad references per deliverable"
+      measurement: "Asset reference tracking"
+
+  operational:
+    - metric: registry-freshness
+      description: "Percentage of registry entries updated within their recency window"
+      target: ">= 0.90"
+      measurement: "Automated registry audit"
+
+    - metric: pipeline-completion-rate
+      description: "Percentage of research engagements that complete the full pipeline"
+      target: ">= 0.85"
+      measurement: "Pipeline stage tracking"
+
+    - metric: quality-gate-pass-rate
+      description: "First-pass rate through mandatory quality gates"
+      target: ">= 0.80"
+      measurement: "Gate log aggregation"
+
+    - metric: agent-utilization
+      description: "Percentage of available agent capacity actively engaged"
+      target: "70-90% (avoids both idle time and burnout)"
+      measurement: "Task assignment tracking"
+
+# ----------------------------------------------------------------------------
+# Defaults
+# ----------------------------------------------------------------------------
+defaults:
+  confidence_scale: "0.0-1.0 (0 = no evidence, 1 = incontrovertible)"
+  default_confidence_threshold: 0.6
+  max_sub_questions: 12
+  min_sources_per_claim: 2
+  recency_window_days: 365
+  contrarian_passes: 1
+  synthesis_format: "structured-brief"
+  evidence_format: "claim-source-confidence triad"
+  output_directory: "data/research"
+  archive_directory: "archive"
+  log_level: "info"
+  timezone: "UTC"
+  language: "en"
+  citation_style: "APA-7"
+  max_report_pages: 25
+  executive_summary_max_words: 500
