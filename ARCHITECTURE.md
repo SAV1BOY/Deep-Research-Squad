@@ -18,12 +18,12 @@ The DeepResearch Squad is built on three architectural convictions:
 
 ## Hierarchical Agent Model
 
-The 16 agents are organized into seven functional layers. Each layer has clear responsibilities and defined interfaces with adjacent layers.
+The 19 agents are organized into seven functional layers. Each layer has clear responsibilities and defined interfaces with adjacent layers.
 
 ```
 ┌─────────────────────────────────────────────────┐
 │  COMMAND                                        │
-│  Chief Research Architect                       │
+│  DeepResearch Chief                       │
 │  (orchestration, routing, quality enforcement)  │
 ├─────────────────────────────────────────────────┤
 │  DECOMPOSITION                                  │
@@ -56,7 +56,7 @@ The 16 agents are organized into seven functional layers. Each layer has clear r
 
 ### Layer Responsibilities
 
-**Command** -- The Chief Research Architect receives the initial request, classifies the project type, selects the agent sequence, and manages the full lifecycle. It is the only agent that communicates with the requester. All other agents communicate exclusively through structured handoffs.
+**Command** -- The DeepResearch Chief receives the initial request, classifies the project type, selects the agent sequence, and manages the full lifecycle. It is the only agent that communicates with the requester. All other agents communicate exclusively through structured handoffs.
 
 **Decomposition** -- The Scope Mapper breaks the question into bounded sub-questions. The Query Strategist translates those sub-questions into executable search plans. The Discovery Agent explores adjacent territory for signals the scope might miss.
 
@@ -128,7 +128,7 @@ Every transition between pipeline stages passes through a quality gate. Gates ar
 The central configuration file acts as the system's routing brain. It defines:
 
 - **Project type classification rules** -- How incoming requests are mapped to one of the 8 supported project types.
-- **Agent sequences** -- Which agents are activated and in what order for each project type. Not every project type uses all 16 agents.
+- **Agent sequences** -- Which agents are activated and in what order for each project type. Not every project type uses all 19 agents.
 - **Quality thresholds** -- Minimum confidence scores, minimum source counts, and maximum allowed data gaps per project type.
 - **Template mappings** -- Which output templates from `/templates/` are used for each project type.
 - **Timeout and escalation rules** -- Maximum time per stage and escalation paths when agents stall.

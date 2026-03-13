@@ -6,8 +6,8 @@ All notable changes to the DeepResearch Squad system are documented here.
 
 ### Added
 
-- **16 Specialized Agents** — Full agent roster with HRM prompt engineering
-  - Chief Research Officer (orchestrator)
+- **19 Specialized Agents** — Full agent roster with HRM prompt engineering
+  - DeepResearch Chief (orchestrator)
   - Research Architect (methodology designer)
   - Scope Mapper (problem decomposition)
   - Query Strategist (search planning)
@@ -22,6 +22,8 @@ All notable changes to the DeepResearch Squad system are documented here.
   - Synthesis Writer (report generation)
   - Insight Modeler (mental models)
   - Decision Analyst (decision support)
+  - Discovery Scout (adjacent-topic exploration)
+  - Reference Intellectual (theoretical grounding)
   - Domain Specialist (adaptable expert)
   - Knowledge Librarian (knowledge management)
 

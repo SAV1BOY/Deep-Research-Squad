@@ -13,9 +13,10 @@ squad:
     Elite autonomous research unit that decomposes complex questions,
     hunts primary sources, validates evidence, stress-tests theses,
     and delivers decision-grade intelligence briefs.
-  chief_agent: "chief-research-officer"
+  chief_agent: "deepresearch-chief"
   agents:
-    - chief-research-officer
+    - deepresearch-chief
+    - research-architect
     - scope-mapper
     - query-strategist
     - source-hunter
@@ -28,9 +29,11 @@ squad:
     - insight-modeler
     - synthesis-writer
     - decision-analyst
-    - validation-auditor
+    - research-auditor
     - discovery-scout
     - reference-intellectual
+    - domain-specialist
+    - knowledge-librarian
   pipeline:
     - build-research-plan
     - design-source-strategy
@@ -89,7 +92,7 @@ routing:
   build-research-plan:
     description: "Decompose research question into sub-questions, define scope, and build execution plan"
     agents:
-      - chief-research-officer
+      - deepresearch-chief
       - scope-mapper
       - query-strategist
     frameworks:
@@ -358,7 +361,7 @@ routing:
     agents:
       - synthesis-writer
       - insight-modeler
-      - chief-research-officer
+      - deepresearch-chief
     frameworks:
       - "frameworks/synthesis-writer"
       - "frameworks/synthesis"
@@ -378,7 +381,7 @@ routing:
     agents:
       - decision-analyst
       - synthesis-writer
-      - chief-research-officer
+      - deepresearch-chief
     frameworks:
       - "frameworks/decision-analyst"
       - "frameworks/decision"
@@ -396,8 +399,8 @@ routing:
   audit-research-quality:
     description: "Post-delivery quality audit — evidence integrity, bias check, completeness score"
     agents:
-      - validation-auditor
-      - chief-research-officer
+      - research-auditor
+      - deepresearch-chief
     frameworks:
       - "frameworks/validation"
       - "frameworks/evidence-verifier"
@@ -431,7 +434,7 @@ routing:
   cross-squad-research-handoff:
     description: "Package and hand off research artifacts to other squads with context and usage notes"
     agents:
-      - chief-research-officer
+      - deepresearch-chief
       - synthesis-writer
     frameworks:
       - "frameworks/synthesis-writer"
@@ -448,8 +451,8 @@ routing:
   update-registries:
     description: "Refresh source registries, confidence maps, and benchmark data stores"
     agents:
-      - chief-research-officer
-      - validation-auditor
+      - deepresearch-chief
+      - research-auditor
       - data-researcher
     frameworks:
       - "frameworks/validation"
@@ -466,8 +469,8 @@ routing:
   quarterly-research-quality-review:
     description: "Quarterly meta-review of research accuracy, prediction tracking, and process improvement"
     agents:
-      - chief-research-officer
-      - validation-auditor
+      - deepresearch-chief
+      - research-auditor
       - insight-modeler
     frameworks:
       - "frameworks/validation"
@@ -636,7 +639,7 @@ quality_gates:
 
     - gate: confidence-calibration
       description: "Confidence levels must be calibrated against evidence strength, not intuition"
-      enforced_by: validation-auditor
+      enforced_by: research-auditor
       threshold: "All claims tagged with evidence-backed confidence scores"
 
     - gate: contrarian-review
@@ -646,12 +649,12 @@ quality_gates:
 
     - gate: bias-audit
       description: "Check for confirmation bias, selection bias, and source homogeneity"
-      enforced_by: validation-auditor
+      enforced_by: research-auditor
       threshold: "Bias score below 0.2 on internal rubric"
 
     - gate: question-coverage
       description: "All decomposed sub-questions must be addressed with evidence or marked as gaps"
-      enforced_by: chief-research-officer
+      enforced_by: deepresearch-chief
       threshold: "100% sub-question coverage or explicit gap declaration"
 
     - gate: recency-check
@@ -704,7 +707,7 @@ kpis:
     - metric: evidence-density-score
       description: "Ratio of evidence-backed claims to total claims in output"
       target: ">= 0.90"
-      measurement: "Automated count via validation-auditor"
+      measurement: "Automated count via research-auditor"
 
     - metric: source-diversity-index
       description: "Shannon diversity index across source types, geographies, and viewpoints"

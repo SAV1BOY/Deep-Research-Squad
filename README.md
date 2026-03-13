@@ -2,7 +2,7 @@
 
 **Transform any complex request into deep, verifiable, multi-angle research oriented toward decision-making.**
 
-DeepResearch Squad is a multi-agent research system built on the orchestrator-worker pattern. Sixteen specialized agents collaborate through a structured pipeline to turn ambiguous questions into evidence-backed, decision-ready outputs. Every claim is sourced, every contradiction is surfaced, and every conclusion is traceable back to the evidence that supports it.
+DeepResearch Squad is a multi-agent research system built on the orchestrator-worker pattern. Nineteen specialized agents collaborate through a structured pipeline to turn ambiguous questions into evidence-backed, decision-ready outputs. Every claim is sourced, every contradiction is surfaced, and every conclusion is traceable back to the evidence that supports it.
 
 ---
 
@@ -45,8 +45,8 @@ Question → Scope → Source Plan → Evidence → Contradictions → Synthesis
 
 DeepResearch Squad follows an **orchestrator-worker** architecture:
 
-- A **Chief Research Architect** acts as the orchestrator, routing tasks, enforcing quality gates, and managing the overall pipeline.
-- **15 specialist agents** act as workers, each owning a specific stage or capability within the pipeline.
+- A **DeepResearch Chief** acts as the orchestrator, routing tasks, enforcing quality gates, and managing the overall pipeline.
+- **18 specialist agents** act as workers, each owning a specific stage or capability within the pipeline.
 - Communication flows through structured handoffs with defined input/output contracts at each stage.
 - A central `config.yaml` serves as the routing brain, mapping request types to agent sequences and quality thresholds.
 
@@ -58,22 +58,25 @@ The system supports 8 project types out of the box: competitor war rooms, decisi
 
 | # | Agent | Role |
 |---|---|---|
-| 1 | **Chief Research Architect** | Orchestrator. Decomposes requests, assigns agents, enforces quality gates, and delivers final outputs. |
-| 2 | **Scope Mapper** | Defines research boundaries, sub-questions, and deliverable expectations. |
-| 3 | **Query Strategist** | Designs search strategies, keyword taxonomies, and database query plans. |
-| 4 | **Source Hunter** | Identifies, ranks, and validates primary and secondary sources. |
-| 5 | **Data Researcher** | Collects, cleans, and structures quantitative and qualitative data. |
-| 6 | **OSINT Investigator** | Gathers intelligence from open sources, public records, and digital footprints. |
-| 7 | **Literature Analyst** | Conducts systematic reviews of academic and professional literature. |
-| 8 | **Evidence Verifier** | Cross-checks claims, validates sources, and assigns confidence scores. |
-| 9 | **Contrarian Analyst** | Actively seeks disconfirming evidence, alternative explanations, and blind spots. |
-| 10 | **Timeline Analyst** | Maps events, trends, and evolution patterns across time. |
-| 11 | **Insight Modeler** | Builds mental models, scenarios, and analytical frameworks from evidence. |
-| 12 | **Synthesis Writer** | Merges multi-source evidence into coherent, structured narratives. |
-| 13 | **Reference Intellectual** | Provides domain context, theoretical grounding, and cross-disciplinary connections. |
-| 14 | **Decision Analyst** | Translates research into actionable options with trade-offs and confidence levels. |
-| 15 | **Validation Agent** | Runs final quality checks on completeness, accuracy, and internal consistency. |
-| 16 | **Discovery Agent** | Explores adjacent topics, emerging signals, and unexpected connections. |
+| 1 | **DeepResearch Chief** | Orchestrator. Decomposes requests, assigns agents, enforces quality gates, and delivers final outputs. |
+| 2 | **Research Architect** | Methodology designer. Structures investigation layers, defines research strategy, and designs agent coordination. |
+| 3 | **Scope Mapper** | Defines research boundaries, sub-questions, and deliverable expectations. |
+| 4 | **Query Strategist** | Designs search strategies, keyword taxonomies, and database query plans. |
+| 5 | **Source Hunter** | Identifies, ranks, and validates primary and secondary sources. |
+| 6 | **Data Researcher** | Collects, cleans, and structures quantitative and qualitative data. |
+| 7 | **OSINT Investigator** | Gathers intelligence from open sources, public records, and digital footprints. |
+| 8 | **Literature Analyst** | Conducts systematic reviews of academic and professional literature. |
+| 9 | **Evidence Verifier** | Cross-checks claims, validates sources, and assigns confidence scores. |
+| 10 | **Contrarian Analyst** | Actively seeks disconfirming evidence, alternative explanations, and blind spots. |
+| 11 | **Timeline Analyst** | Maps events, trends, and evolution patterns across time. |
+| 12 | **Insight Modeler** | Builds mental models, scenarios, and analytical frameworks from evidence. |
+| 13 | **Synthesis Writer** | Merges multi-source evidence into coherent, structured narratives. |
+| 14 | **Reference Intellectual** | Provides theoretical grounding, cross-disciplinary connections, and intellectual depth. |
+| 15 | **Decision Analyst** | Translates research into actionable options with trade-offs and confidence levels. |
+| 16 | **Research Auditor** | Runs final quality checks on completeness, accuracy, and internal consistency. |
+| 17 | **Discovery Scout** | Explores adjacent topics, emerging signals, and unexpected connections. |
+| 18 | **Domain Specialist** | Adaptable domain expert that provides context-specific knowledge across industries. |
+| 19 | **Knowledge Librarian** | Manages institutional memory, registries, and cross-investigation knowledge transfer. |
 
 ---
 
@@ -81,7 +84,7 @@ The system supports 8 project types out of the box: competitor war rooms, decisi
 
 ```
 Deep-Research-Squad/                  754+ files
-├── agents/             (17)    Agent definitions with HRM prompt engineering
+├── agents/             (19)    Agent definitions with HRM prompt engineering
 ├── archive/            (21)    Archived outputs, deprecated templates, lessons learned
 ├── authority/          (22)    Standards, agent summaries, workshop kits
 ├── checklists/        (130)    Per-agent gates, macro, and system-level quality gates
@@ -151,7 +154,7 @@ Deep-Research-Squad/                  754+ files
 | Category | Count | Description |
 |---|---|---|
 | Total Files | **754+** | Complete system across 17 directories |
-| Agents | 17 | Specialized research agents with full CoT/ReAct protocols |
+| Agents | 19 | Specialized research agents with full CoT/ReAct protocols |
 | Frameworks | 114 | Universal, agent-specific, layer, and reference frameworks |
 | Checklists | 130 | Quality gates at every pipeline stage |
 | Templates | 45 | Structured output templates for all deliverable types |
