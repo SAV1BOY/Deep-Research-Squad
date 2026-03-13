@@ -41,6 +41,8 @@ Evaluate what is lost by not deciding now: closing windows, competitive disadvan
 ### Step 7: Render the Readiness Judgment
 Synthesize the above into one of four verdicts: ready to decide, ready to decide with stated caveats, not ready with specific gaps to fill, or cannot become ready (fundamental uncertainty that further research will not resolve). Key question: Given the balance of knowledge, gaps, stakes, and delay costs, should the decision be made now?
 
+Document the reasoning behind the verdict so that stakeholders who disagree can engage with the logic rather than the conclusion alone.
+
 ## Output Format
 - Decision statement and options under consideration
 - Critical information requirements table with current knowledge state and confidence level for each

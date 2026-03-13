@@ -44,6 +44,8 @@ Read the section outline as a continuous argument. Check for logical gaps, redun
 ### Step 8: Validate Against Stakeholder Needs
 Confirm that the chosen structure serves all primary stakeholders. Key question: Can each stakeholder find what they need, and does the structure match how they will use the document?
 
+Consider having a representative from each stakeholder group review the outline before full drafting begins to catch structural misalignment early.
+
 ## Output Format
 - Core thesis statement in one to two sentences
 - Narrative structure type selected with rationale

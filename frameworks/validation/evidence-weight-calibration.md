@@ -44,6 +44,8 @@ Place each piece of evidence into a weight category: anchor (forms the foundatio
 ### Step 8: Stress-Test the Weighting
 Examine whether the conclusion survives if the highest-weighted evidence is removed or discredited. Key question: Is our conclusion robust to the loss of any single evidence item, or does it depend entirely on one or two anchor items?
 
+If the conclusion collapses when a single anchor item is removed, flag this as a concentration risk and seek additional independent evidence before finalizing.
+
 ## Output Format
 - Evidence inventory table with columns for source, type, reliability rating, relevance rating, recency, independence flag, and assigned weight category
 - Weight distribution summary showing how many anchor, supporting, contextual, and marginal items support the conclusion
