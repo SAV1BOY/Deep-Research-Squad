@@ -44,6 +44,8 @@ Record practical obstacles: paywalls, language, classification, proprietary data
 ### Step 8: Produce the Landscape Map
 Synthesize findings into a visual or tabular map showing density, quality, contestation, and access for each sub-topic across source ecosystems. Key question: Where should we concentrate research effort for the highest return?
 
+The map should be shareable with stakeholders to set expectations about what the research can and cannot cover given the available information.
+
 ## Output Format
 - Landscape matrix: sub-topics as rows, source ecosystems as columns, cells rated by density and quality
 - Contested zones register with description of the nature and drivers of disagreement

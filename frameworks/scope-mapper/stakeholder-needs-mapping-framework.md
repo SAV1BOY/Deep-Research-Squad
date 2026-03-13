@@ -44,6 +44,8 @@ Define when and how stakeholders will be updated during the research process, no
 ### Step 8: Design the Output Architecture
 Structure the research deliverable to serve all stakeholders, typically through layered outputs (executive summary, main findings, technical appendix). Key question: Can a single deliverable serve all audiences, or do we need multiple outputs?
 
+When multiple outputs are needed, define how they relate to each other and which stakeholders receive which deliverables.
+
 ## Output Format
 - Stakeholder register with name, role, classification, and core decision
 - Information needs matrix mapping each stakeholder to their required depth, format, and confidence level

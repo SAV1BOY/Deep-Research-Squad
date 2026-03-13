@@ -44,6 +44,8 @@ Check that the periodization holds up against primary data. Key question: Do eve
 ### Step 8: Test Alternative Periodizations
 Apply a different lens and compare. Key question: Does an alternative periodization reveal dynamics that the primary one obscures?
 
+Consider testing at least one periodization based on a different dimension (e.g., if the primary is technological, test an economic or regulatory periodization).
+
 ## Output Format
 - Period name, date range, and one-sentence characterization for each era
 - Key actors, conditions, and dynamics for each period

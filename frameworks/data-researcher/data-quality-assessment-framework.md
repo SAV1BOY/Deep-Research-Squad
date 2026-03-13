@@ -44,6 +44,8 @@ Evaluate whether the data collection process introduces systematic bias. Key que
 ### Step 8: Assign a Quality Rating
 Score each dimension (accuracy, completeness, timeliness, consistency, provenance, bias) and produce an overall fitness-for-purpose rating. Key question: Given these scores, what caveats must accompany any findings based on this data?
 
+Use the rating to determine whether the data can support primary conclusions, serve only as supplementary context, or should be excluded with an explanation.
+
 ## Output Format
 - Data source identification card (name, publisher, date, methodology summary)
 - Dimension-by-dimension quality scores (high, adequate, low, unknown) with justifications

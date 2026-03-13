@@ -44,6 +44,8 @@ Test whether conclusions change under different comparator sets, metrics, or nor
 ### Step 8: Formulate Actionable Insights
 Translate benchmark gaps into specific observations about what drives performance differences. Key question: What would the focal entity need to change to close the most important gaps?
 
+Distinguish between gaps that are addressable through action and gaps that reflect structural differences unlikely to change.
+
 ## Output Format
 - Benchmarking objective and scope statement
 - Comparator set with selection rationale

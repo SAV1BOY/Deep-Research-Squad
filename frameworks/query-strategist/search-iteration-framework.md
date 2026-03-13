@@ -45,6 +45,8 @@ Determine whether additional iterations are producing meaningful new information
 ### Step 8: Compile the Search Log
 Document all queries run, sources consulted, and the rationale for each iteration. Key question: Could another researcher review this log and understand why these searches were chosen and what they covered?
 
+The search log serves double duty: it supports reproducibility and it reveals the search strategy for quality review by peers or supervisors.
+
 ## Output Format
 - Search iteration log: query text, source/database, date, number of results, number of relevant results, key findings
 - Coverage map: research sub-questions mapped to iteration rounds that addressed them
