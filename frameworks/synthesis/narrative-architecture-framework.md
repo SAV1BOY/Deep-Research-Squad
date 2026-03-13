@@ -54,9 +54,10 @@ Confirm that the chosen structure serves all primary stakeholders. Key question:
 ## Integration with Other Frameworks
 - **Layered Synthesis**: Provides the content that the narrative architecture organizes and presents.
 - **Executive Compression**: The compression framework governs the executive summary layer within the narrative.
-- **Stakeholder Needs Mapping**: Stakeholder needs determine which narrative structure is most appropriate.
+- **Stakeholder Needs Mapping**: Stakeholder needs determine which narrative structure is most appropriate for the audience.
 - **Implications Engine**: Implications derived from findings are typically placed in the concluding sections of the narrative.
 - **Conclusion Ladder**: The logical progression from evidence to conclusion follows the ladder within the narrative arc.
+- **Evidence Weight Calibration**: The narrative should present high-weight evidence prominently and proportionally.
 
 ## Anti-Patterns
 - **Discovery-order narrative**: Presenting findings in the order they were discovered rather than the order that best serves comprehension.
@@ -65,3 +66,4 @@ Confirm that the chosen structure serves all primary stakeholders. Key question:
 - **Evidence dumping**: Including every finding regardless of its contribution to the narrative, producing a comprehensive but unreadable document.
 - **Single-audience architecture**: Designing the narrative for one stakeholder type when the document must serve multiple audiences with different needs.
 - **Missing the "so what"**: Presenting extensive evidence and analysis without ever stating what it means for the reader's decisions or understanding.
+- **Overloaded introduction**: Front-loading the document with so much context that the reader loses patience before reaching the actual findings.

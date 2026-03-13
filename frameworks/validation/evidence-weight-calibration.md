@@ -54,8 +54,9 @@ Examine whether the conclusion survives if the highest-weighted evidence is remo
 - **Evidence Rating**: Evidence rating provides the quality inputs that inform weight assignment.
 - **Source Reliability**: Source reliability scores feed directly into the source reliability dimension of weight calibration.
 - **Confidence Weighting**: The weight distribution determines the confidence level of the overall finding.
-- **Bayesian Updating**: As new evidence arrives, weights are recalibrated and posterior probabilities updated.
-- **Contradiction Map**: Contradictions between high-weight evidence items require explicit resolution.
+- **Bayesian Updating**: As new evidence arrives, weights are recalibrated and posterior probabilities updated accordingly.
+- **Contradiction Map**: Contradictions between high-weight evidence items require explicit resolution before conclusions can be drawn.
+- **Data Quality Assessment**: Data quality scores for quantitative evidence feed directly into the methodological rigor dimension.
 
 ## Anti-Patterns
 - **Uniform weighting**: Treating all evidence as equally important, which lets low-quality evidence dilute high-quality evidence.
@@ -64,3 +65,5 @@ Examine whether the conclusion survives if the highest-weighted evidence is remo
 - **Recency bias weighting**: Automatically weighting newer evidence higher without assessing whether the newer evidence is actually better.
 - **Weight-and-forget**: Assigning weights once and never revisiting them as new evidence emerges or the research question sharpens.
 - **Emotional weighting**: Giving disproportionate weight to vivid, narrative-rich evidence (case studies, anecdotes) over dry but methodologically superior evidence (large-sample studies, meta-analyses).
+- **Independence illusion**: Treating multiple pieces of evidence as independent when they all derive from the same original source, dataset, or research group.
+- **Omitting disconfirming evidence**: Excluding evidence that contradicts the emerging conclusion from the inventory rather than assigning it an honest weight.

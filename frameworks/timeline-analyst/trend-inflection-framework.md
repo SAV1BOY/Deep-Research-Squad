@@ -54,10 +54,11 @@ Determine what the inflection point implies for projections and decisions. Key q
 
 ## Integration with Other Frameworks
 - **Periodization Framework**: Confirmed inflection points often serve as period boundaries.
-- **Bayesian Updating**: Each candidate inflection point is a hypothesis to be updated with evidence.
-- **Contrarian Inversion**: Ask whether the consensus inflection point is real or a narrative artifact.
-- **Signal vs. Noise Framework**: Apply signal-to-noise analysis before accepting candidate inflection points.
+- **Bayesian Updating**: Each candidate inflection point is a hypothesis to be updated with evidence for and against.
+- **Contrarian Inversion**: Ask whether the consensus inflection point is real or a narrative artifact imposed after the fact.
+- **Signal vs. Noise Framework**: Apply signal-to-noise analysis before accepting candidate inflection points as genuine.
 - **Scenario Analysis**: Post-inflection trajectories feed directly into scenario construction.
+- **Base Rate Context**: Historical base rates for how often apparent inflections revert help calibrate confidence.
 
 ## Anti-Patterns
 - **Narrative-first inflection hunting**: Starting with a story about change and then finding data to support it, rather than letting data surface candidates.
@@ -66,3 +67,4 @@ Determine what the inflection point implies for projections and decisions. Key q
 - **Ignoring mean reversion**: Mistaking a return to baseline after an anomaly for a new inflection point.
 - **Premature declaration**: Calling an inflection point before enough post-inflection data exists to confirm persistence.
 - **Conflating correlation with inflection**: Declaring an inflection because two metrics moved simultaneously without establishing a structural link between them.
+- **Anchoring to a preferred narrative**: Selecting the inflection date that best supports an existing thesis rather than the date best supported by the data.

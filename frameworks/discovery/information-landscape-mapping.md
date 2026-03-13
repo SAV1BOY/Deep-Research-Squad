@@ -55,8 +55,9 @@ Synthesize findings into a visual or tabular map showing density, quality, conte
 - **Scoping Canvas**: The landscape map informs scope decisions by revealing where research effort will be productive.
 - **Search Iteration Framework**: The map guides which areas need intensive iterative searching and which are already well-mapped.
 - **Source Class Routing**: The source ecosystem assessment directly informs source selection strategy.
-- **Epistemic Humility**: Landscape gaps translate directly into epistemic limitations that must be declared.
-- **Search Architecture**: The landscape map is the input to designing the overall search architecture.
+- **Epistemic Humility**: Landscape gaps translate directly into epistemic limitations that must be declared in findings.
+- **Search Architecture**: The landscape map is the primary input to designing the overall search architecture.
+- **Stakeholder Needs Mapping**: Landscape gaps may require resetting stakeholder expectations about what the research can deliver.
 
 ## Anti-Patterns
 - **Assuming uniform coverage**: Treating all sub-topics as equally well-documented and allocating equal research effort to each.
@@ -65,3 +66,4 @@ Synthesize findings into a visual or tabular map showing density, quality, conte
 - **Single-ecosystem bias**: Only surveying source types familiar to the researcher while ignoring ecosystems that may hold critical information.
 - **Static map assumption**: Treating the landscape map as permanent when information availability may shift during the research period.
 - **Over-investing in mapping**: Spending so long mapping the landscape that insufficient time remains for actual research. The map is a means, not an end.
+- **Language bias**: Mapping only English-language sources when significant information exists in other languages, particularly for global or regional topics.

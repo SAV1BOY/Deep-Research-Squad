@@ -52,11 +52,12 @@ Score each dimension (accuracy, completeness, timeliness, consistency, provenanc
 - Recommendations for supplementary data sources to fill identified gaps
 
 ## Integration with Other Frameworks
-- **Benchmarking Methodology Framework**: Quality assessment must precede any benchmarking exercise.
+- **Benchmarking Methodology Framework**: Quality assessment must precede any benchmarking exercise to ensure comparisons are valid.
 - **Evidence Rating**: Data quality scores feed into broader evidence quality ratings.
-- **Source Reliability**: Data quality is one component of overall source reliability.
+- **Source Reliability**: Data quality is one component of overall source reliability assessment.
 - **Confidence Weighting**: Low data quality should directly reduce confidence in dependent findings.
 - **Statistical Literacy**: Understanding methodology issues requires statistical reasoning.
+- **Evidence Weight Calibration**: Data quality scores inform the weight assigned to data-dependent evidence in the calibration process.
 
 ## Anti-Patterns
 - **Authority substitution**: Assuming data is high quality because it comes from a prestigious institution without actually checking.
@@ -65,3 +66,4 @@ Score each dimension (accuracy, completeness, timeliness, consistency, provenanc
 - **Methodology hand-waving**: Accepting "survey data" or "proprietary model" as sufficient methodology description.
 - **Binary quality judgment**: Treating data as either "good enough to use" or "too flawed to use" when the correct response is usually "usable with stated caveats."
 - **Ignoring collection incentives**: Failing to consider whether the data collector had incentives that could introduce systematic bias into the dataset.
+- **Precision theater**: Reporting data to many decimal places when the underlying accuracy does not support that level of precision, creating false confidence.

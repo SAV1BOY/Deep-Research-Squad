@@ -54,9 +54,10 @@ Apply a different lens and compare. Key question: Does an alternative periodizat
 
 ## Integration with Other Frameworks
 - **Timeline Causal Chain**: Periodization provides the macro structure; causal chains operate within and across periods.
-- **Trend Inflection Framework**: Inflection points often coincide with period boundaries but may also occur mid-period.
-- **Scoping Canvas**: Periodization helps bound the temporal scope of research.
+- **Trend Inflection Framework**: Inflection points often coincide with period boundaries but may also occur mid-period, signaling internal evolution.
+- **Scoping Canvas**: Periodization helps bound the temporal scope of research by identifying which periods are relevant.
 - **Layered Synthesis**: Each period can become a layer in the synthesis output.
+- **Counterfactual Analysis**: Period boundaries are natural points for asking "what if this transition had not occurred?"
 
 ## Anti-Patterns
 - **Calendar-driven periods**: Dividing by decade or century without regard to actual shifts produces meaningless structure.
@@ -65,3 +66,4 @@ Apply a different lens and compare. Key question: Does an alternative periodizat
 - **Presentism**: Defining periods based on what matters today rather than what mattered at the time introduces anachronistic bias.
 - **Ignoring overlapping periodizations**: Forcing a single linear scheme when the subject operates on multiple independent cycles loses important nuance.
 - **Teleological periodization**: Defining periods based on their outcomes rather than their contemporary conditions, making history appear more purposeful than it was.
+- **Neglecting internal variation**: Treating a period as monolithic when significant regional, sectoral, or demographic variation existed within it. Always note heterogeneity within periods.

@@ -53,10 +53,11 @@ Document all queries run, sources consulted, and the rationale for each iteratio
 
 ## Integration with Other Frameworks
 - **Query Strategist Expansion**: Provides the vocabulary expansion techniques used in reformulation steps.
-- **Semantic Pivoting**: Pivot techniques are a specific tactic within the iteration framework.
-- **Source Class Routing**: Different iterations may target different source classes.
+- **Semantic Pivoting**: Pivot techniques are a specific tactic within the iteration framework for shifting between terminology domains.
+- **Source Class Routing**: Different iterations may target different source classes to maximize coverage diversity.
 - **Information Landscape Mapping**: The coverage map produced here feeds into the broader information landscape.
 - **Keyword Grid**: The keyword grid is a tool used within each iteration to organize search terms.
+- **Operator Matrix**: Boolean operator strategies from the matrix are applied within individual iterations to refine precision and recall.
 
 ## Anti-Patterns
 - **Keyword treadmill**: Running dozens of minor keyword variations without changing the fundamental search strategy or source set.
@@ -65,3 +66,4 @@ Document all queries run, sources consulted, and the rationale for each iteratio
 - **Undocumented iteration**: Running multiple searches without logging them, making it impossible to assess coverage or reproduce the search.
 - **Premature saturation declaration**: Concluding that the search space is exhausted when only one source type or terminology set has been explored.
 - **Complexity escalation**: Making each successive query more complex and Boolean-heavy when simplification and term substitution would be more effective.
+- **Platform loyalty**: Iterating exclusively within one search engine or database when different platforms index different content and would yield different results.

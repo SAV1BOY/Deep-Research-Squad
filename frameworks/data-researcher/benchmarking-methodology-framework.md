@@ -53,10 +53,11 @@ Translate benchmark gaps into specific observations about what drives performanc
 - Actionable insight summary
 
 ## Integration with Other Frameworks
-- **Data Quality Assessment**: Data quality must be evaluated before any benchmarking exercise begins.
+- **Data Quality Assessment**: Data quality must be evaluated before any benchmarking exercise begins to ensure valid comparisons.
 - **Base Rate Context**: Benchmarks provide the base rates against which individual performance is assessed.
 - **Options Matrix**: Benchmark results feed into decision frameworks by establishing performance context.
 - **Contrarian Inversion**: Challenge the comparator set by asking what the benchmark would show with different peers.
+- **Trend Inflection Framework**: Benchmarks tracked over time reveal whether gaps are widening, narrowing, or inflecting.
 
 ## Anti-Patterns
 - **Cherry-picked comparators**: Selecting only comparators that make the focal entity look favorable or unfavorable to support a predetermined narrative.
@@ -65,3 +66,4 @@ Translate benchmark gaps into specific observations about what drives performanc
 - **Snapshot without trend**: Comparing a single point in time when trajectories diverge significantly.
 - **Benchmark as verdict**: Treating the benchmark result as a final judgment rather than a starting point for investigating performance drivers.
 - **Ignoring structural incomparability**: Benchmarking entities that operate under fundamentally different constraints (regulatory, geographic, scale) without acknowledging that the comparison has inherent limits.
+- **Static comparator set**: Using the same comparator group across years without checking whether the group composition still makes sense as entities evolve.

@@ -56,6 +56,8 @@ Structure the research deliverable to serve all stakeholders, typically through 
 - **Question Pyramid**: Different stakeholders may prioritize different branches of the question hierarchy.
 - **Executive Compression**: Output format design draws on compression techniques for executive stakeholders.
 - **Layered Synthesis**: The layered output model aligns directly with multi-stakeholder delivery.
+- **Decision Readiness Assessment**: Stakeholder-specific readiness thresholds depend on the needs mapped here.
+- **Narrative Architecture**: The narrative structure must be designed to serve the stakeholder map.
 
 ## Anti-Patterns
 - **Requester-only focus**: Treating the person who requested the research as the only stakeholder, ignoring downstream consumers and decision-makers.
@@ -64,3 +66,4 @@ Structure the research deliverable to serve all stakeholders, typically through 
 - **Static mapping**: Mapping needs once at project start and never revisiting, even as the research direction shifts.
 - **Ignoring the silent stakeholder**: Overlooking parties who did not request the research but will be directly affected by decisions made from it.
 - **Format mismatch**: Delivering a 50-page report to stakeholders who needed a one-page brief, or vice versa, regardless of content quality.
+- **Conflating loudness with importance**: Prioritizing the needs of the most vocal stakeholder rather than the stakeholder with the most consequential decision to make.

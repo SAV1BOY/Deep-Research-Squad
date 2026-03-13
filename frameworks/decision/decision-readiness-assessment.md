@@ -56,6 +56,7 @@ Synthesize the above into one of four verdicts: ready to decide, ready to decide
 - **Scenario Analysis**: Scenarios help evaluate consequences of being wrong by mapping gap areas to outcome ranges.
 - **Stakeholder Needs Mapping**: Stakeholder expectations influence how the readiness threshold is set.
 - **Evidence Weight Calibration**: The weight of evidence behind each information requirement determines the knowledge state assessment.
+- **Information Landscape Mapping**: The landscape map reveals whether gaps are fillable or structural, informing the value-of-additional-research estimate.
 
 ## Anti-Patterns
 - **Perfectionism as avoidance**: Continuously demanding more research to avoid the discomfort of deciding under uncertainty, even when further research will not materially reduce uncertainty.
@@ -64,3 +65,5 @@ Synthesize the above into one of four verdicts: ready to decide, ready to decide
 - **Ignoring asymmetric stakes**: Applying the same readiness threshold to reversible and irreversible decisions.
 - **Binary readiness thinking**: Treating readiness as either "yes" or "no" without the nuance of "yes with caveats" or "no but here is what would change that."
 - **Sunk cost anchoring**: Continuing research because significant effort has already been invested, even when the remaining gaps are unlikely to close with further work.
+- **Delegation of judgment**: Expecting the readiness framework to produce a mechanical answer when the final verdict requires synthesizing multiple qualitative factors into a judgment call.
+- **Ignoring optionality**: Failing to consider whether the decision can be staged, with an initial commitment now and a fuller commitment after additional information arrives.
