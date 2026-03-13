@@ -8,6 +8,8 @@ A method for surveying and documenting the full terrain of available information
 - When stakeholders assume information is readily available but it may not be
 - When research spans multiple domains with different information cultures and norms
 - When planning resource allocation across research sub-questions
+- When prior research efforts failed because they searched in the wrong places
+- When the research question is interdisciplinary and information may live in unexpected source ecosystems
 
 ## Core Principles
 1. **Map before mining**: Understanding what exists and where it lives prevents wasted effort searching in barren areas and missing rich veins of information.

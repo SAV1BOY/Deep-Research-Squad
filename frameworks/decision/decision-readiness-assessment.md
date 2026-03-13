@@ -9,6 +9,7 @@ A structured evaluation of whether sufficient information, analysis, and confide
 - When there is pressure to decide before research is complete
 - When research has been ongoing and there is uncertainty about whether further investigation will change the conclusion
 - When the cost of delay may exceed the value of additional information
+- When different stakeholders disagree about whether enough information has been gathered
 
 ## Core Principles
 1. **Sufficiency, not completeness**: The standard is whether enough is known to make a defensible decision, not whether everything is known. Perfect information is never available.

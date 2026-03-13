@@ -8,6 +8,8 @@ A method for structuring research findings into a coherent, compelling narrative
 - When the research covers multiple themes that must be woven into a unified story
 - When findings are complex and the audience needs guided interpretation
 - When prior research reports were criticized as disjointed, unclear, or hard to follow
+- When the deliverable must serve multiple audiences with different reading behaviors
+- When the volume of findings exceeds what can be presented linearly without losing the reader
 
 ## Core Principles
 1. **Structure is an argument**: The order in which information is presented shapes how the reader interprets it. Narrative structure is not neutral.

@@ -8,6 +8,8 @@ A structured approach for assigning and adjusting the relative weight of individ
 - When evidence varies widely in quality, recency, relevance, or source reliability
 - When stakeholders need to understand why certain evidence was prioritized over other evidence
 - When a research finding rests on a small number of high-weight evidence items and this concentration risk should be explicit
+- When synthesizing evidence from heterogeneous source types (academic, industry, journalistic, anecdotal)
+- When prior conclusions were challenged because the weighting rationale was opaque
 
 ## Core Principles
 1. **Not all evidence is equal**: A controlled study and an anonymous blog post both constitute evidence, but they should not carry the same weight in forming conclusions.
