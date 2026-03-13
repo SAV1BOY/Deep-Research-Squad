@@ -50,6 +50,13 @@ Check for survivorship bias in every analysis. Survivorship bias occurs when we 
 - **Assuming the bias is small.** In many domains, survival rates are below 10%, making the bias enormous.
 - **Not looking for the graveyard.** Actively seek out sources that document failures, closures, and dropouts.
 
+## Quality Criteria
+
+- The original population must be quantified, not just the survivor pool.
+- The attrition rate must be calculated explicitly; do not proceed without knowing what fraction survived.
+- Non-survivors must be characterized with as much detail as available, not treated as an undifferentiated mass.
+- The revised conclusion must state how it differs from the pre-audit conclusion and by how much.
+
 ## Related Frameworks
 
 - `contrarian-base-rate-override.md` - Survivorship bias inflates perceived base rates of success.

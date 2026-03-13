@@ -1,0 +1,63 @@
+# Source Registry
+# Track all sources used across research projects
+
+description: >
+  Central registry for tracking all information sources used across
+  research projects. Enables source quality assessment over time,
+  prevents redundant access, and supports evidence chain traceability.
+
+schema:
+  fields:
+    - name: source_id
+      type: string
+      required: true
+      description: Unique identifier (format: SRC-YYYY-NNN)
+    - name: title
+      type: string
+      required: true
+      description: Source title or name
+    - name: type
+      type: enum
+      values: [academic, industry_report, news, expert, database, government, primary_data]
+      description: Classification of the source type
+    - name: url
+      type: string
+      description: URL or location reference
+    - name: author
+      type: string
+      description: Author or publishing organization
+    - name: date_published
+      type: date
+      description: Original publication date
+    - name: date_accessed
+      type: date
+      required: true
+      description: Date the source was last accessed
+    - name: reliability_score
+      type: integer
+      range: [1, 5]
+      description: Assessed reliability (1=low, 5=high)
+    - name: projects_used_in
+      type: list
+      description: List of project IDs that used this source
+    - name: notes
+      type: string
+      description: Assessor notes on quality, bias, or limitations
+
+example_entry:
+  source_id: "SRC-2026-001"
+  title: "Global AI Market Analysis 2026"
+  type: "industry_report"
+  url: "https://example.com/reports/ai-market-2026"
+  author: "TechResearch Corp"
+  date_published: "2026-01-15"
+  date_accessed: "2026-03-10"
+  reliability_score: 4
+  projects_used_in: ["deep-dive-001", "market-intel-003"]
+  notes: "Well-sourced but may overestimate growth due to vendor bias"
+
+usage_notes:
+  - Update reliability_score after each project based on accuracy observed
+  - Always record date_accessed even for stable sources
+  - Cross-reference with citation-registry for full citation details
+  - Review sources with reliability_score below 3 before reusing

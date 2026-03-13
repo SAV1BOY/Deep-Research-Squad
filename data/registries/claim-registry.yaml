@@ -1,0 +1,66 @@
+# Claim Registry
+# Track all claims and their supporting evidence
+
+description: >
+  Central registry for tracking factual claims encountered during
+  research. Each claim is linked to its evidence base, confidence
+  level, and verification status. Enables claim reuse and prevents
+  contradictory claims from going unnoticed.
+
+schema:
+  fields:
+    - name: claim_id
+      type: string
+      required: true
+      description: Unique identifier (format: CLM-YYYY-NNN)
+    - name: claim_text
+      type: string
+      required: true
+      description: The claim stated clearly and precisely
+    - name: domain
+      type: string
+      required: true
+      description: Subject domain the claim belongs to
+    - name: source_ids
+      type: list
+      required: true
+      description: List of source IDs supporting or refuting this claim
+    - name: evidence_strength
+      type: enum
+      values: [strong, moderate, weak, anecdotal]
+      description: Overall strength of supporting evidence
+    - name: verification_status
+      type: enum
+      values: [verified, partially_verified, unverified, refuted]
+      description: Current verification status
+    - name: confidence_level
+      type: float
+      range: [0.0, 1.0]
+      description: Confidence score (0=no confidence, 1=certain)
+    - name: contradiction_ids
+      type: list
+      description: IDs of contradicting claims or entries
+    - name: date_first_recorded
+      type: date
+      description: Date claim was first entered
+    - name: last_verified
+      type: date
+      description: Date of most recent verification check
+
+example_entry:
+  claim_id: "CLM-2026-042"
+  claim_text: "Enterprise AI adoption exceeded 60% in Fortune 500 by Q4 2025"
+  domain: "artificial_intelligence"
+  source_ids: ["SRC-2026-001", "SRC-2026-015"]
+  evidence_strength: "moderate"
+  verification_status: "partially_verified"
+  confidence_level: 0.7
+  contradiction_ids: ["CLM-2026-038"]
+  date_first_recorded: "2026-02-20"
+  last_verified: "2026-03-01"
+
+usage_notes:
+  - Always link claims to source_ids for traceability
+  - Update verification_status when new evidence emerges
+  - Check contradiction_ids before using a claim in synthesis
+  - Claims with confidence below 0.5 require additional verification

@@ -51,6 +51,13 @@ Build a structured taxonomy of a research field from its literature. Organize th
 - **Category reification.** Treating categories as real things rather than useful abstractions.
 - **Forcing MECE.** Some domains genuinely overlap; forcing mutual exclusivity can distort the taxonomy.
 
+## Quality Criteria
+
+- Top-level categories must be justified with evidence from the literature, not imposed from intuition.
+- The taxonomy must be validated by classifying a representative sample of sources; unclassifiable sources indicate missing categories.
+- Boundary cases must be explicitly documented, not silently forced into the nearest category.
+- The taxonomy must include an evolutionary dimension showing how categories have changed over time.
+
 ## Related Frameworks
 
 - `literature-systematic-review.md` - The systematic review provides the literature that the taxonomy organizes.

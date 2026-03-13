@@ -43,6 +43,12 @@ Each branch gets further broken into specific, answerable tasks:
 ### 5. Track Progress
 As each leaf is answered, mark it complete and note whether the answer triggers new branches or modifies existing ones. The tree is a living structure.
 
+### 6. Validate Completeness
+Before moving to execution, review the tree holistically:
+- Does the tree, if fully answered, provide sufficient evidence to answer the root question?
+- Are there blind spots where an entire dimension of the question is missing?
+- Have stakeholders reviewed the tree to confirm it covers their concerns?
+
 ## Outputs
 - A complete question tree with root, branches, and leaves
 - Priority assignments for each leaf task

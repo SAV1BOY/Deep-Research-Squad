@@ -51,6 +51,13 @@ Conduct a pragmatic meta-analysis without heavy statistical machinery. Aggregate
 - **Mixing apples and oranges.** Aggregating findings that measure different things under the same label.
 - **Neglecting context.** Findings from different contexts may not be comparable even if they use the same terms.
 
+## Quality Criteria
+
+- The evidence table must include every source meeting inclusion criteria, with no selective omission.
+- Quality weighting must be explicit: state how source quality affected the aggregate finding.
+- Heterogeneity must be addressed directly; do not present a single conclusion when findings genuinely diverge.
+- Limitations of the lite approach must be stated in the final output, not buried or omitted.
+
 ## Related Frameworks
 
 - `literature-systematic-review.md` - Provides the source set for meta-analysis.

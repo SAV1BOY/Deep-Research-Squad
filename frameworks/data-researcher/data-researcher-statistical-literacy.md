@@ -50,6 +50,13 @@ Provide a reference for key statistical concepts that every research analyst sho
 - **Simpson's paradox.** A trend that appears in aggregate data can reverse when the data is split into subgroups.
 - **Survivorship bias in data.** Only analyzing cases that reached a certain threshold, ignoring those that did not.
 
+## Quality Criteria
+
+- Every statistical claim in the research must be assessed against this checklist before the research is finalized.
+- Corrections must be stated clearly: what the original claim said, what the correct interpretation is, and why it matters.
+- The overall assessment must distinguish between findings with strong statistical support, weak support, and no valid support.
+- Recommendations for additional evidence must be specific about what type of statistical test or data would resolve the issue.
+
 ## Related Frameworks
 
 - `contrarian-null-hypothesis.md` - The null hypothesis framework depends on statistical literacy.

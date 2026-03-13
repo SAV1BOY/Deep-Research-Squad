@@ -51,6 +51,13 @@ Gather and analyze corporate intelligence from publicly available sources. This 
 - **Ignoring subsidiaries.** Significant activity may occur in subsidiaries or entities not obviously linked to the parent company.
 - **Confirmation bias in competitor analysis.** Seeking weaknesses in competitors while ignoring their strengths.
 
+## Quality Criteria
+
+- Every finding must have source attribution with date and reliability assessment.
+- Financial analysis must cover at least three reporting periods to identify trends, not just a single snapshot.
+- Cross-referencing must check at least two independent source types for every major finding.
+- The final report must explicitly state what information was not available and how that limits conclusions.
+
 ## Related Frameworks
 
 - `osint-open-source-intelligence.md` - Corporate intelligence follows the broader OSINT methodology.

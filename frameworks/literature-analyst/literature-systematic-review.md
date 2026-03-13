@@ -51,6 +51,14 @@ Conduct a structured, reproducible review of existing literature on a topic. Unl
 - **Scope creep.** Expanding the research question mid-review, compromising systematic rigor.
 - **Skipping quality assessment.** Treating all sources as equally reliable.
 
+## Quality Criteria
+
+- The search protocol must be documented before execution, not reconstructed afterward.
+- Inclusion and exclusion criteria must be applied consistently; ideally, a sample should be double-checked for consistency.
+- The source flow must be fully documented: total found, duplicates removed, excluded at title/abstract, excluded at full text, included.
+- Quality assessment must use a defined rubric, not ad hoc judgment.
+- The synthesis must address contradictions and gaps, not just summarize agreements.
+
 ## Related Frameworks
 
 - `literature-gap-mapping.md` - Gap mapping is a natural output of systematic review.

@@ -1,0 +1,65 @@
+# Insight Registry
+# Track insights generated from research
+
+description: >
+  Registry of analytical insights derived from research synthesis.
+  Insights represent higher-order understanding beyond raw claims,
+  capturing patterns, implications, and strategic observations.
+
+schema:
+  fields:
+    - name: insight_id
+      type: string
+      required: true
+      description: Unique identifier (format: INS-YYYY-NNN)
+    - name: insight_text
+      type: string
+      required: true
+      description: The insight stated clearly and concisely
+    - name: insight_type
+      type: enum
+      values: [pattern, implication, prediction, opportunity, threat, anomaly]
+      description: Classification of the insight type
+    - name: domain
+      type: string
+      required: true
+      description: Subject domain of the insight
+    - name: supporting_claims
+      type: list
+      description: Claim IDs that support this insight
+    - name: project_id
+      type: string
+      required: true
+      description: Project that generated the insight
+    - name: confidence_level
+      type: float
+      range: [0.0, 1.0]
+      description: Confidence in the insight
+    - name: actionability
+      type: enum
+      values: [immediately_actionable, requires_further_research, informational]
+      description: How actionable the insight is
+    - name: date_generated
+      type: date
+      description: Date the insight was first articulated
+    - name: expiry_date
+      type: date
+      description: Date after which the insight should be re-validated
+
+example_entry:
+  insight_id: "INS-2026-017"
+  insight_text: "Mid-market companies adopting AI show 3x faster revenue growth but 2x higher churn in year two"
+  insight_type: "pattern"
+  domain: "artificial_intelligence"
+  supporting_claims: ["CLM-2026-042", "CLM-2026-055", "CLM-2026-061"]
+  project_id: "deep-dive-001"
+  confidence_level: 0.65
+  actionability: "requires_further_research"
+  date_generated: "2026-03-05"
+  expiry_date: "2026-09-05"
+
+usage_notes:
+  - Insights should synthesize multiple claims, not restate a single one
+  - Set expiry_date based on domain velocity (fast-moving = shorter)
+  - Review expired insights quarterly for re-validation or archival
+  - Link actionable insights to the decision registry
