@@ -1,0 +1,64 @@
+# Lessons Learned Registry
+# Track lessons learned from research projects
+
+description: >
+  Registry for capturing lessons learned during and after research
+  projects. Preserves institutional memory about what works, what
+  fails, and what to do differently in future engagements.
+
+schema:
+  fields:
+    - name: lesson_id
+      type: string
+      required: true
+      description: Unique identifier (format: LSN-YYYY-NNN)
+    - name: lesson_text
+      type: string
+      required: true
+      description: The lesson stated clearly and actionably
+    - name: category
+      type: enum
+      values: [methodology, source_quality, stakeholder, timeline, scope, tools, communication]
+      description: Category of the lesson
+    - name: project_id
+      type: string
+      required: true
+      description: Project that generated the lesson
+    - name: context
+      type: string
+      description: Situation or event that prompted the lesson
+    - name: impact
+      type: enum
+      values: [high, medium, low]
+      description: Impact of applying or ignoring this lesson
+    - name: recommendation
+      type: string
+      required: true
+      description: Specific recommended action based on the lesson
+    - name: date_captured
+      type: date
+      description: Date the lesson was recorded
+    - name: times_applied
+      type: integer
+      description: Number of times this lesson has been applied
+    - name: still_relevant
+      type: boolean
+      description: Whether the lesson is still applicable
+
+example_entry:
+  lesson_id: "LSN-2026-007"
+  lesson_text: "Industry analyst reports consistently overestimate market size by 20-30%"
+  category: "source_quality"
+  project_id: "market-intel-003"
+  context: "Cross-referenced three analyst reports with actual revenue data"
+  impact: "high"
+  recommendation: "Apply a 20-30% discount to analyst market size estimates and cite the adjustment"
+  date_captured: "2026-03-08"
+  times_applied: 0
+  still_relevant: true
+
+usage_notes:
+  - Capture lessons during projects, not just at the end
+  - Focus on actionable lessons with specific recommendations
+  - Increment times_applied to track which lessons get used
+  - Review still_relevant flag annually and archive stale lessons

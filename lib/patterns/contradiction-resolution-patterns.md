@@ -16,11 +16,10 @@ time is load-dependent. Under moderate load, sub-2s; under heavy load, 5-8s.
 
 ## Pattern Name: Temporal Resolution
 
-**Problem:** Claims contradict because they describe the same thing at different points in
-time, and the underlying reality has changed.
+**Problem:** Claims contradict because they describe the same thing at different times.
 
 **Solution:** Verify source dates and check for intervening changes. Identify which claim
-reflects the current state. The older claim may be historically accurate but outdated.
+reflects the current state.
 
 **When to Use:** When sources have different publication dates in a fast-moving domain.
 

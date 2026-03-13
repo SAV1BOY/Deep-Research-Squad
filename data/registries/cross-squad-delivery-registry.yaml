@@ -1,0 +1,70 @@
+# Cross-Squad Delivery Registry
+# Track deliveries and handoffs between squads
+
+description: >
+  Registry for tracking research deliverables shared between squads
+  or teams. Ensures accountability, prevents duplication, and enables
+  downstream teams to trace the provenance of received intelligence.
+
+schema:
+  fields:
+    - name: delivery_id
+      type: string
+      required: true
+      description: Unique identifier (format: XDL-YYYY-NNN)
+    - name: deliverable_name
+      type: string
+      required: true
+      description: Name or title of the deliverable
+    - name: deliverable_type
+      type: enum
+      values: [research_brief, dataset, analysis, recommendation, monitoring_report, registry_update]
+      description: Type of deliverable
+    - name: source_squad
+      type: string
+      required: true
+      description: Squad or team that produced the deliverable
+    - name: target_squad
+      type: string
+      required: true
+      description: Squad or team receiving the deliverable
+    - name: project_id
+      type: string
+      description: Source project identifier
+    - name: date_delivered
+      type: date
+      required: true
+      description: Date the deliverable was handed off
+    - name: status
+      type: enum
+      values: [pending, delivered, acknowledged, integrated, rejected]
+      description: Current delivery status
+    - name: quality_rating
+      type: integer
+      range: [1, 5]
+      description: Receiver's quality rating of the deliverable
+    - name: feedback
+      type: string
+      description: Receiver feedback on the deliverable
+    - name: artifact_location
+      type: string
+      description: Path or URL to the deliverable artifact
+
+example_entry:
+  delivery_id: "XDL-2026-015"
+  deliverable_name: "Q1 2026 AI Market Competitive Landscape"
+  deliverable_type: "analysis"
+  source_squad: "research-squad"
+  target_squad: "strategy-squad"
+  project_id: "market-intel-003"
+  date_delivered: "2026-03-10"
+  status: "acknowledged"
+  quality_rating: 4
+  feedback: "Comprehensive analysis; could use more APAC coverage"
+  artifact_location: "/projects/market-intel-003/deliverables/landscape-v2.pdf"
+
+usage_notes:
+  - Both source and target squads should update this registry
+  - Quality ratings drive source squad improvement over time
+  - Rejected deliveries must include actionable feedback
+  - Track delivery timelines to identify bottleneck patterns

@@ -2,76 +2,61 @@
 
 ## Purpose
 
-Classifies types of evidence encountered during research, enabling appropriate
-strength assessment and aggregation based on evidence category.
+Classifies evidence types to enable appropriate strength assessment and weighted
+aggregation based on evidence category.
 
 ## Categories
 
 ### 1. Empirical Evidence
 Derived from direct observation or measurement.
+- **Experimental** - Controlled experiments with defined variables
+- **Observational** - Real-world observation without controls
+- **Measurement** - Direct instrument readings or quantitative data
 
-**Subcategories:**
-- **Experimental** - Results from controlled experiments with defined variables
-- **Observational** - Data collected from real-world observation without control
-- **Measurement** - Direct instrument readings, metrics, or quantitative data
-
-**Examples:** A/B test results, production latency measurements, load test output
+**Example:** A/B test results, production latency measurements, load test output
 
 ### 2. Statistical Evidence
 Derived from statistical analysis of data sets.
-
-**Subcategories:**
-- **Descriptive** - Summary statistics, distributions, averages, percentiles
-- **Inferential** - Hypothesis tests, confidence intervals, regression analysis
+- **Descriptive** - Summaries, distributions, averages, percentiles
+- **Inferential** - Hypothesis tests, confidence intervals, regression
 - **Predictive** - Model outputs, forecasts, trend projections
 
-**Examples:** p99 latency distribution, correlation between load and response time
+**Example:** p99 latency distribution, correlation between load and response time
 
 ### 3. Testimonial Evidence
-Based on the statements or opinions of individuals.
-
-**Subcategories:**
+Based on statements or opinions of individuals.
 - **Expert Opinion** - Judgment from a recognized domain authority
-- **Practitioner Report** - First-hand experience from someone who used the technology
-- **User Testimony** - End-user feedback, satisfaction reports, reviews
+- **Practitioner Report** - First-hand experience from a technology user
+- **User Testimony** - End-user feedback, reviews
 
-**Examples:** CTO blog post on migration experience, conference talk on production use
+**Example:** CTO blog on migration experience, conference talk on production use
 
 ### 4. Documentary Evidence
 Derived from written or recorded documents.
+- **Specification** - Formal specs, standards, protocol definitions
+- **Documentation** - Official product documentation
+- **Case Study** - Documented implementation with outcomes
+- **Incident Report** - Post-incident analysis, postmortems
 
-**Subcategories:**
-- **Specification** - Formal specifications, standards, protocol definitions
-- **Documentation** - Official product or project documentation
-- **Case Study** - Documented real-world implementation with outcomes
-- **Incident Report** - Post-incident analysis, postmortem documentation
-
-**Examples:** RFC specifications, vendor case study, public postmortem blog post
+**Example:** RFC specifications, vendor case study, public postmortem
 
 ### 5. Comparative Evidence
 Derived from direct comparison between options.
+- **Benchmark** - Standardized performance comparison
+- **Feature Matrix** - Structured capability comparison
+- **Migration Story** - Account of switching with outcomes
 
-**Subcategories:**
-- **Benchmark** - Standardized performance comparison under controlled conditions
-- **Feature Matrix** - Structured comparison of capabilities across options
-- **Migration Story** - Account of switching from one option to another with outcomes
-
-**Examples:** TPC-H benchmark results, feature comparison table, migration blog post
+**Example:** TPC-H benchmark results, feature comparison table
 
 ### 6. Negative Evidence
-Evidence characterized by the absence of something.
+Characterized by the absence of something.
+- **Absence of Reports** - No failures found despite wide adoption
+- **Failed Search** - Deliberate counter-evidence search yielded nothing
+- **Null Result** - Test showed no effect
 
-**Subcategories:**
-- **Absence of Reports** - No failure reports found despite wide adoption
-- **Failed Search** - Deliberate search for counter-evidence yielded nothing
-- **Null Result** - Experiment or test that showed no effect
-
-**Examples:** No data corruption reports across 200+ production case studies
+**Example:** No data corruption reports across 200+ production deployments
 
 ## Usage
 
-Assign each evidence card a type from this taxonomy. Use the classification to:
-- Apply appropriate strength scoring (empirical > testimonial > negative)
-- Ensure evidence diversity (avoid relying solely on one evidence type)
-- Weight evidence correctly during aggregation
-- Identify what types of evidence are missing from the research
+Assign each evidence card a type to apply appropriate strength scoring, ensure
+diversity, weight correctly during aggregation, and identify missing evidence types.

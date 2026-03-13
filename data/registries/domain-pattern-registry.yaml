@@ -1,0 +1,68 @@
+# Domain Pattern Registry
+# Track recurring patterns observed across domains
+
+description: >
+  Registry for documenting recurring patterns observed across research
+  domains. Patterns represent reusable mental models that accelerate
+  future analysis and improve prediction accuracy.
+
+schema:
+  fields:
+    - name: pattern_id
+      type: string
+      required: true
+      description: Unique identifier (format: PAT-YYYY-NNN)
+    - name: pattern_name
+      type: string
+      required: true
+      description: Short descriptive name for the pattern
+    - name: description
+      type: string
+      required: true
+      description: Detailed description of the pattern
+    - name: pattern_type
+      type: enum
+      values: [market_dynamics, technology_adoption, organizational, regulatory, competitive, behavioral]
+      description: Classification of the pattern type
+    - name: domains_observed
+      type: list
+      required: true
+      description: Domains where this pattern has been observed
+    - name: conditions
+      type: string
+      description: Conditions under which the pattern typically appears
+    - name: counter_examples
+      type: list
+      description: Known cases where the pattern did not hold
+    - name: predictive_power
+      type: enum
+      values: [high, moderate, low, untested]
+      description: How well the pattern predicts future outcomes
+    - name: supporting_projects
+      type: list
+      description: Projects that have observed this pattern
+    - name: date_identified
+      type: date
+      description: Date the pattern was first identified
+    - name: last_validated
+      type: date
+      description: Date of most recent pattern validation
+
+example_entry:
+  pattern_id: "PAT-2026-009"
+  pattern_name: "Hype Cycle Correction"
+  description: "New technologies consistently see 40-60% adoption expectation correction 18-24 months after peak hype"
+  pattern_type: "technology_adoption"
+  domains_observed: ["artificial_intelligence", "blockchain", "iot", "cloud_computing"]
+  conditions: "Applies when vendor marketing significantly leads real-world deployment"
+  counter_examples: ["Mobile computing adoption exceeded hype cycle predictions"]
+  predictive_power: "moderate"
+  supporting_projects: ["market-intel-003", "trend-monitor-001"]
+  date_identified: "2026-01-20"
+  last_validated: "2026-03-01"
+
+usage_notes:
+  - Patterns require at least three independent observations to register
+  - Always document counter_examples to avoid over-applying patterns
+  - Update predictive_power based on forecast accuracy over time
+  - Patterns with low predictive_power should be flagged for review

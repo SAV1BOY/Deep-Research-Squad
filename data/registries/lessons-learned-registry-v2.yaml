@@ -1,0 +1,88 @@
+# Lessons Learned Registry v2 (Enhanced)
+# Enhanced tracking of lessons learned with richer context
+
+description: >
+  Enhanced lessons learned registry with structured context capture,
+  root cause analysis, and integration with other registries. Builds
+  on v1 by adding causal analysis, applicability scoring, and
+  automated trigger conditions for surfacing relevant lessons.
+
+schema:
+  fields:
+    - name: lesson_id
+      type: string
+      required: true
+      description: Unique identifier (format: LL2-YYYY-NNN)
+    - name: lesson_text
+      type: string
+      required: true
+      description: The lesson stated clearly and actionably
+    - name: category
+      type: enum
+      values: [methodology, source_quality, stakeholder, timeline, scope, tools, communication, bias, estimation]
+      description: Category with expanded taxonomy
+    - name: project_id
+      type: string
+      required: true
+      description: Project that generated the lesson
+    - name: root_cause
+      type: string
+      required: true
+      description: Root cause analysis of why this lesson exists
+    - name: trigger_conditions
+      type: list
+      description: Conditions that should surface this lesson automatically
+    - name: applicability_domains
+      type: list
+      description: Domains where this lesson is most relevant
+    - name: severity
+      type: enum
+      values: [critical, important, helpful, minor]
+      description: Severity if the lesson is ignored
+    - name: evidence_base
+      type: list
+      description: Source and claim IDs supporting the lesson
+    - name: related_lessons
+      type: list
+      description: IDs of related lessons for pattern detection
+    - name: recommendation
+      type: string
+      required: true
+      description: Specific recommended action
+    - name: implementation_checklist
+      type: list
+      description: Steps to implement the recommendation
+    - name: date_captured
+      type: date
+      description: Date the lesson was recorded
+    - name: validated_in_projects
+      type: list
+      description: Projects where this lesson was confirmed
+
+example_entry:
+  lesson_id: "LL2-2026-003"
+  lesson_text: "Expert interviews before desk research saves 30% total project time"
+  category: "methodology"
+  project_id: "deep-dive-001"
+  root_cause: "Experts quickly identify which research paths are dead ends"
+  trigger_conditions:
+    - "New deep-dive project starting"
+    - "Research plan phase with available expert network"
+  applicability_domains: ["technology", "market_intelligence"]
+  severity: "important"
+  evidence_base: ["CLM-2026-090", "SRC-2026-040"]
+  related_lessons: ["LL2-2026-001", "LSN-2026-012"]
+  recommendation: "Schedule 2-3 expert interviews in the first week of any deep-dive project"
+  implementation_checklist:
+    - "Identify 3-5 domain experts from network"
+    - "Prepare structured interview guide"
+    - "Schedule interviews within first 5 business days"
+    - "Synthesize interview insights before planning desk research"
+  date_captured: "2026-03-08"
+  validated_in_projects: ["deep-dive-001", "tech-eval-002"]
+
+usage_notes:
+  - v2 lessons should include root_cause analysis; if unknown, investigate
+  - trigger_conditions enable automated lesson surfacing in project planning
+  - Link related_lessons to detect meta-patterns across lessons
+  - Migrate high-value v1 lessons to v2 format for enhanced tracking

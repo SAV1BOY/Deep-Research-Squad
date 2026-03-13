@@ -1,0 +1,65 @@
+# Citation Registry
+# Track all citations used across research
+
+description: >
+  Central registry for managing bibliographic citations across all
+  research projects. Ensures consistent citation formatting, prevents
+  duplicate entries, and enables citation frequency analysis.
+
+schema:
+  fields:
+    - name: citation_id
+      type: string
+      required: true
+      description: Unique identifier (format: CIT-YYYY-NNN)
+    - name: source_id
+      type: string
+      required: true
+      description: Linked source registry ID
+    - name: citation_text
+      type: string
+      required: true
+      description: Full formatted citation string
+    - name: citation_format
+      type: enum
+      values: [apa, chicago, mla, ieee, custom]
+      description: Citation format style used
+    - name: authors
+      type: list
+      required: true
+      description: List of author names
+    - name: title
+      type: string
+      required: true
+      description: Title of the cited work
+    - name: publication
+      type: string
+      description: Journal, publisher, or platform name
+    - name: year
+      type: integer
+      required: true
+      description: Publication year
+    - name: doi
+      type: string
+      description: Digital Object Identifier if available
+    - name: times_cited_internally
+      type: integer
+      description: Number of times cited across our projects
+
+example_entry:
+  citation_id: "CIT-2026-089"
+  source_id: "SRC-2026-001"
+  citation_text: "TechResearch Corp. (2026). Global AI Market Analysis 2026. TechResearch Publishing."
+  citation_format: "apa"
+  authors: ["TechResearch Corp"]
+  title: "Global AI Market Analysis 2026"
+  publication: "TechResearch Publishing"
+  year: 2026
+  doi: "10.1234/example.2026.001"
+  times_cited_internally: 5
+
+usage_notes:
+  - Link every citation to a source_id for full metadata access
+  - Increment times_cited_internally each time the source is referenced
+  - Maintain consistent citation_format within each project
+  - Use DOI when available for permanent reference

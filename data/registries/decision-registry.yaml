@@ -1,0 +1,68 @@
+# Decision Registry
+# Track decisions made based on research
+
+description: >
+  Registry for tracking decisions informed by research projects.
+  Captures the decision context, options considered, rationale,
+  and eventual outcome to build institutional decision intelligence.
+
+schema:
+  fields:
+    - name: decision_id
+      type: string
+      required: true
+      description: Unique identifier (format: DEC-YYYY-NNN)
+    - name: decision_statement
+      type: string
+      required: true
+      description: Clear statement of the decision made
+    - name: decision_maker
+      type: string
+      required: true
+      description: Person or group who made the decision
+    - name: date_decided
+      type: date
+      required: true
+      description: Date the decision was finalized
+    - name: project_id
+      type: string
+      description: Research project that informed the decision
+    - name: options_considered
+      type: list
+      description: All options that were evaluated
+    - name: option_selected
+      type: string
+      description: The option that was chosen
+    - name: rationale
+      type: string
+      description: Key reasoning behind the decision
+    - name: confidence_at_decision
+      type: float
+      range: [0.0, 1.0]
+      description: Confidence level when decision was made
+    - name: outcome_status
+      type: enum
+      values: [pending, successful, partially_successful, unsuccessful, reversed]
+      description: Eventual outcome of the decision
+    - name: outcome_notes
+      type: string
+      description: Notes on actual outcomes observed
+
+example_entry:
+  decision_id: "DEC-2026-011"
+  decision_statement: "Adopt platform X for internal ML infrastructure"
+  decision_maker: "CTO Office"
+  date_decided: "2026-03-10"
+  project_id: "tech-eval-002"
+  options_considered: ["Platform X", "Platform Y", "Build in-house"]
+  option_selected: "Platform X"
+  rationale: "Best trade-off between capability and migration effort"
+  confidence_at_decision: 0.78
+  outcome_status: "pending"
+  outcome_notes: ""
+
+usage_notes:
+  - Record outcome_status once enough time has passed for assessment
+  - Low confidence_at_decision flags decisions needing closer monitoring
+  - Reversed decisions should document what changed
+  - Use for retrospective analysis of research-to-decision quality

@@ -1,0 +1,64 @@
+# Contradiction Registry
+# Track contradictions found during research
+
+description: >
+  Registry for tracking contradictions discovered between claims,
+  sources, or analyses. Contradictions are often the most valuable
+  findings and must be systematically documented and resolved.
+
+schema:
+  fields:
+    - name: contradiction_id
+      type: string
+      required: true
+      description: Unique identifier (format: CTR-YYYY-NNN)
+    - name: claim_a_id
+      type: string
+      required: true
+      description: First contradicting claim ID
+    - name: claim_b_id
+      type: string
+      required: true
+      description: Second contradicting claim ID
+    - name: contradiction_type
+      type: enum
+      values: [factual, interpretive, methodological, temporal, contextual]
+      description: Nature of the contradiction
+    - name: severity
+      type: enum
+      values: [critical, major, minor]
+      description: Impact severity on research conclusions
+    - name: resolution_status
+      type: enum
+      values: [unresolved, resolved_a_wins, resolved_b_wins, resolved_both_partial, irreconcilable]
+      description: Current resolution status
+    - name: resolution_notes
+      type: string
+      description: Explanation of how the contradiction was resolved
+    - name: project_id
+      type: string
+      description: Project where contradiction was discovered
+    - name: date_discovered
+      type: date
+      description: Date the contradiction was identified
+    - name: date_resolved
+      type: date
+      description: Date the contradiction was resolved
+
+example_entry:
+  contradiction_id: "CTR-2026-008"
+  claim_a_id: "CLM-2026-042"
+  claim_b_id: "CLM-2026-038"
+  contradiction_type: "methodological"
+  severity: "major"
+  resolution_status: "resolved_both_partial"
+  resolution_notes: "Different survey methodologies; both correct within their sample frames"
+  project_id: "deep-dive-001"
+  date_discovered: "2026-03-02"
+  date_resolved: "2026-03-08"
+
+usage_notes:
+  - Always log contradictions even if they seem minor
+  - Critical contradictions must be resolved before synthesis
+  - Irreconcilable contradictions should be reported with uncertainty bounds
+  - Cross-reference with claim-registry to update claim confidence

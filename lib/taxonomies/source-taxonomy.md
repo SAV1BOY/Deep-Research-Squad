@@ -2,70 +2,56 @@
 
 ## Purpose
 
-Classifies information sources into a structured hierarchy, enabling consistent
-source type identification, trust calibration, and coverage analysis across research.
+Classifies information sources into a structured hierarchy for consistent type
+identification, trust calibration, and coverage analysis.
 
 ## Categories
 
 ### 1. Primary Sources
 Direct, first-hand information from the origin.
-
-**Subcategories:**
-- **Official Documentation** - Vendor or project docs, API references, specifications
+- **Official Documentation** - Vendor docs, API references, specifications
 - **Primary Research** - Original studies, experiments, peer-reviewed papers
-- **Raw Data** - Datasets, benchmarks run by the researcher, logs, metrics
+- **Raw Data** - Datasets, researcher-run benchmarks, logs, metrics
 - **Official Announcements** - Release notes, changelogs, press releases
 
-**Examples:** PostgreSQL official docs, a Jepsen consistency test report, AWS pricing page
+**Example:** PostgreSQL official docs, Jepsen test report, AWS pricing page
 
 ### 2. Secondary Sources
-Analysis, interpretation, or commentary on primary sources.
-
-**Subcategories:**
-- **Expert Analysis** - In-depth articles by recognized domain experts
+Analysis or commentary on primary sources.
+- **Expert Analysis** - In-depth articles by domain experts
 - **Review Articles** - Comparative reviews, technology evaluations
-- **Conference Talks** - Recorded presentations at industry conferences
-- **Curated Guides** - Tutorials and guides from reputable authors or organizations
-- **Books** - Published technical books on the subject
+- **Conference Talks** - Presentations at industry conferences
+- **Books** - Published technical books
 
-**Examples:** Martin Kleppmann's blog on distributed systems, InfoQ architecture reviews
+**Example:** Martin Kleppmann's distributed systems blog, InfoQ reviews
 
 ### 3. Tertiary Sources
-Aggregated, summarized, or community-generated information.
+Aggregated or community-generated information.
+- **Community Forums** - Stack Overflow, Reddit, Hacker News
+- **Wiki Sources** - Wikipedia, project wikis, community knowledge bases
+- **Social Media** - Twitter/X threads, LinkedIn posts
 
-**Subcategories:**
-- **Community Forums** - Stack Overflow, Reddit, Hacker News discussions
-- **Wiki Sources** - Wikipedia, project wikis, community-maintained knowledge bases
-- **Social Media** - Twitter/X threads, LinkedIn posts, Mastodon discussions
-- **Aggregator Sites** - News aggregators, content curation platforms
-
-**Examples:** Stack Overflow answers, Reddit r/database threads, Wikipedia articles
+**Example:** Stack Overflow answers, Reddit r/database threads
 
 ### 4. Vendor / Commercial Sources
-Information produced by entities with commercial interest in the topic.
+Information from entities with commercial interest.
+- **Vendor Whitepapers** - Technical papers by vendors
+- **Marketing Material** - Product pages, sales collateral
+- **Sponsored Content** - Paid posts, sponsored benchmarks
+- **Analyst Reports** - Gartner, Forrester reports
 
-**Subcategories:**
-- **Vendor Whitepapers** - Technical papers published by vendors
-- **Marketing Material** - Product pages, sales collateral, case studies by vendors
-- **Sponsored Content** - Paid blog posts, sponsored benchmarks, advertorials
-- **Analyst Reports** - Gartner, Forrester, IDC reports (paid, may have vendor influence)
-
-**Examples:** MongoDB whitepaper on scaling, Datadog-sponsored performance comparison
+**Example:** MongoDB scaling whitepaper, Datadog-sponsored comparison
 
 ### 5. Internal Sources
-Information from within the organization conducting the research.
-
-**Subcategories:**
+Information from within the researching organization.
 - **Internal Documentation** - Architecture docs, ADRs, runbooks
-- **Internal Data** - Production metrics, incident reports, team surveys
-- **Institutional Knowledge** - Team expertise, historical decisions, verbal accounts
+- **Internal Data** - Production metrics, incident reports
+- **Institutional Knowledge** - Team expertise, historical decisions
 
-**Examples:** Company's existing database performance metrics, past migration postmortems
+**Example:** Company database metrics, past migration postmortems
 
 ## Usage
 
-Assign each source card a source type from this taxonomy. Use the classification to:
-- Ensure source diversity (aim for 3+ categories per research question)
-- Calibrate trust scores (primary sources generally score higher)
-- Identify coverage gaps (e.g., no primary sources consulted)
-- Flag over-reliance on vendor or tertiary sources
+Assign each source card a type to ensure diversity (aim for 3+ categories),
+calibrate trust scores, identify coverage gaps, and flag over-reliance on
+vendor or tertiary sources.

@@ -1,0 +1,67 @@
+# Hypothesis Registry
+# Track hypotheses and their status through research
+
+description: >
+  Registry for tracking research hypotheses from formulation through
+  testing to conclusion. Enables systematic hypothesis-driven research
+  and prevents confirmation bias by tracking disconfirming evidence.
+
+schema:
+  fields:
+    - name: hypothesis_id
+      type: string
+      required: true
+      description: Unique identifier (format: HYP-YYYY-NNN)
+    - name: hypothesis_text
+      type: string
+      required: true
+      description: The hypothesis stated in testable form
+    - name: domain
+      type: string
+      required: true
+      description: Subject domain of the hypothesis
+    - name: status
+      type: enum
+      values: [proposed, under_investigation, supported, refuted, inconclusive, revised]
+      description: Current hypothesis status
+    - name: supporting_evidence
+      type: list
+      description: Claim IDs and source IDs supporting the hypothesis
+    - name: disconfirming_evidence
+      type: list
+      description: Claim IDs and source IDs against the hypothesis
+    - name: confidence_level
+      type: float
+      range: [0.0, 1.0]
+      description: Current confidence in the hypothesis
+    - name: project_id
+      type: string
+      description: Project that generated or tested the hypothesis
+    - name: date_proposed
+      type: date
+      description: Date the hypothesis was first proposed
+    - name: date_concluded
+      type: date
+      description: Date conclusion was reached
+    - name: revision_history
+      type: list
+      description: Previous versions if the hypothesis was revised
+
+example_entry:
+  hypothesis_id: "HYP-2026-003"
+  hypothesis_text: "Companies with dedicated AI ops teams achieve 40% faster model deployment"
+  domain: "artificial_intelligence"
+  status: "under_investigation"
+  supporting_evidence: ["CLM-2026-070", "SRC-2026-022"]
+  disconfirming_evidence: ["CLM-2026-075"]
+  confidence_level: 0.55
+  project_id: "deep-dive-001"
+  date_proposed: "2026-02-15"
+  date_concluded: null
+  revision_history: []
+
+usage_notes:
+  - Always track disconfirming evidence alongside supporting evidence
+  - Hypotheses should be falsifiable; reject vague hypotheses
+  - Update confidence_level as new evidence accumulates
+  - Revised hypotheses should preserve the original in revision_history

@@ -1,0 +1,62 @@
+# Domain Registry
+# Track domain knowledge accumulated through research
+
+description: >
+  Registry for tracking domain expertise and knowledge accumulated
+  through research projects. Maps organizational knowledge assets,
+  identifies expertise gaps, and guides team development.
+
+schema:
+  fields:
+    - name: domain_id
+      type: string
+      required: true
+      description: Unique identifier (format: DOM-YYYY-NNN)
+    - name: domain_name
+      type: string
+      required: true
+      description: Name of the knowledge domain
+    - name: parent_domain
+      type: string
+      description: Parent domain for hierarchical organization
+    - name: description
+      type: string
+      required: true
+      description: Brief description of the domain scope
+    - name: expertise_level
+      type: enum
+      values: [novice, developing, competent, proficient, expert]
+      description: Current team expertise level in this domain
+    - name: key_sources
+      type: list
+      description: Source IDs of foundational references
+    - name: key_insights
+      type: list
+      description: Insight IDs of major findings in this domain
+    - name: projects_in_domain
+      type: list
+      description: Project IDs that have researched this domain
+    - name: last_updated
+      type: date
+      description: Date of most recent knowledge update
+    - name: knowledge_gaps
+      type: list
+      description: Known gaps in our understanding of this domain
+
+example_entry:
+  domain_id: "DOM-2026-005"
+  domain_name: "MLOps and Model Deployment"
+  parent_domain: "Artificial Intelligence"
+  description: "Practices for deploying, monitoring, and maintaining ML models in production"
+  expertise_level: "competent"
+  key_sources: ["SRC-2026-001", "SRC-2026-022", "SRC-2026-031"]
+  key_insights: ["INS-2026-017", "INS-2026-023"]
+  projects_in_domain: ["deep-dive-001", "tech-eval-002"]
+  last_updated: "2026-03-10"
+  knowledge_gaps: ["Cost optimization patterns", "Multi-cloud deployment strategies"]
+
+usage_notes:
+  - Update expertise_level after each project in the domain
+  - Knowledge gaps should drive future research priorities
+  - Parent domain linkage enables hierarchical knowledge navigation
+  - Review domains with expertise below competent for training needs

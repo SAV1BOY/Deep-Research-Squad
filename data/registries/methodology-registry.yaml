@@ -1,0 +1,69 @@
+# Methodology Registry
+# Track research methodologies used across projects
+
+description: >
+  Registry for documenting research methodologies, analytical
+  frameworks, and techniques used across projects. Enables
+  methodology reuse, quality improvement, and standardization.
+
+schema:
+  fields:
+    - name: methodology_id
+      type: string
+      required: true
+      description: Unique identifier (format: MTH-YYYY-NNN)
+    - name: name
+      type: string
+      required: true
+      description: Name of the methodology or technique
+    - name: category
+      type: enum
+      values: [collection, analysis, synthesis, validation, visualization, decision_support]
+      description: Phase of research the methodology applies to
+    - name: description
+      type: string
+      required: true
+      description: Brief description of the methodology
+    - name: when_to_use
+      type: string
+      required: true
+      description: Conditions under which this methodology is appropriate
+    - name: when_not_to_use
+      type: string
+      description: Conditions where this methodology should be avoided
+    - name: steps
+      type: list
+      description: Ordered list of execution steps
+    - name: tools_required
+      type: list
+      description: Tools or resources needed for execution
+    - name: projects_applied
+      type: list
+      description: Project IDs where this methodology was used
+    - name: effectiveness_rating
+      type: float
+      range: [0.0, 5.0]
+      description: Average effectiveness across applications
+
+example_entry:
+  methodology_id: "MTH-2026-004"
+  name: "Triangulated Source Validation"
+  category: "validation"
+  description: "Cross-reference claims across three independent source types to assess validity"
+  when_to_use: "High-stakes claims where accuracy is critical and multiple sources exist"
+  when_not_to_use: "Emerging fields where independent sources are scarce"
+  steps:
+    - "Identify the claim to validate"
+    - "Find at least three independent sources of different types"
+    - "Compare claim details across sources"
+    - "Rate agreement level and note discrepancies"
+    - "Assign confidence based on convergence"
+  tools_required: ["Source registry access", "Cross-reference template"]
+  projects_applied: ["deep-dive-001", "due-diligence-004"]
+  effectiveness_rating: 4.2
+
+usage_notes:
+  - Update effectiveness_rating after each application
+  - Document methodology failures as well as successes
+  - Prefer proven methodologies (rating above 3.5) for critical projects
+  - New methodologies should be piloted before full deployment
