@@ -11,10 +11,10 @@ Evaluate the diversity of sources used in the research across multiple dimension
 - When building best practices for source selection
 
 ## Agents Involved
-- **Lead**: Source Curator
-- **Executing**: Evidence Validator
-- **Supporting**: Contrarian Reviewer
-- **Consulted**: Domain Analyst (for domain-specific diversity expectations)
+- **Lead**: Source Hunter
+- **Executing**: Evidence Verifier
+- **Supporting**: Contrarian Analyst
+- **Consulted**: Domain Specialist (for domain-specific diversity expectations)
 
 ## Inputs
 - Source registry with all sources used in the research

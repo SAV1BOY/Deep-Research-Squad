@@ -10,9 +10,9 @@ Transform validated research findings into a structured presentation format opti
 - When the delivery format requires a different structure than the written report
 
 ## Agents Involved
-- **Lead**: Synthesis Architect
-- **Supporting**: Research Orchestrator, Domain Analyst
-- **Consulted**: Contrarian Reviewer (for anticipating tough questions)
+- **Lead**: Synthesis Writer
+- **Supporting**: DeepResearch Chief, Domain Specialist
+- **Consulted**: Contrarian Analyst (for anticipating tough questions)
 
 ## Inputs
 - Finalized research report and executive summary

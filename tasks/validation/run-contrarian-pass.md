@@ -10,9 +10,9 @@ Challenge the research conclusions by systematically arguing against them, ident
 - When conclusions seem too clean or unanimous (potential groupthink indicator)
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Supporting**: Evidence Validator, Domain Analyst
-- **Consulted**: Research Orchestrator
+- **Lead**: Contrarian Analyst
+- **Supporting**: Evidence Verifier, Domain Specialist
+- **Consulted**: DeepResearch Chief
 - **Observed by**: All agents involved in the research (for learning)
 
 ## Inputs

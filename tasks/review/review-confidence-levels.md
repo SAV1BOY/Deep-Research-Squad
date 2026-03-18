@@ -11,9 +11,9 @@ Critically review the confidence levels assigned to research findings to ensure 
 - For calibration exercises to improve future confidence assignments
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Executing**: Evidence Validator
-- **Supporting**: Research Orchestrator, Domain Analyst
+- **Lead**: Contrarian Analyst
+- **Executing**: Evidence Verifier
+- **Supporting**: DeepResearch Chief, Domain Specialist
 - **Consulted**: Agents who assigned original confidence levels
 
 ## Inputs

@@ -10,10 +10,10 @@ Systematically identify, document, and analyze contradictions between sources, f
 - When stakeholders report inconsistencies in preliminary findings
 
 ## Agents Involved
-- **Lead**: Evidence Validator
-- **Executing**: Contrarian Reviewer, Domain Analyst
-- **Supporting**: Deep Researcher
-- **Consulted**: Source Curator (for source credibility context)
+- **Lead**: Evidence Verifier
+- **Executing**: Contrarian Analyst, Domain Specialist
+- **Supporting**: Data Researcher
+- **Consulted**: Source Hunter (for source credibility context)
 
 ## Inputs
 - Completed evidence table with claim-source mappings

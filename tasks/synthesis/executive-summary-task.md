@@ -10,9 +10,9 @@ Distill a comprehensive research report into a concise executive summary that co
 - When a quick-reference document is needed alongside the full report
 
 ## Agents Involved
-- **Lead**: Synthesis Architect
-- **Supporting**: Research Orchestrator, Domain Analyst
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: Synthesis Writer
+- **Supporting**: DeepResearch Chief, Domain Specialist
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Completed synthesis report with validated findings

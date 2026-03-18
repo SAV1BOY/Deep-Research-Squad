@@ -11,10 +11,10 @@ Distill research findings into a focused decision brief that presents the key in
 - As a companion to detailed research reports for executive audiences
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Synthesis Specialist, Domain Analyst
-- **Supporting**: Evidence Validator
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: DeepResearch Chief
+- **Executing**: Synthesis Specialist, Domain Specialist
+- **Supporting**: Evidence Verifier
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Synthesis report with validated findings

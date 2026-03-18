@@ -11,10 +11,10 @@ Construct a causal map that identifies and documents cause-and-effect relationsh
 - When policy or strategy recommendations require causal understanding
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Executing**: Synthesis Specialist, Deep Researcher
-- **Supporting**: Evidence Validator
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: Domain Specialist
+- **Executing**: Synthesis Specialist, Data Researcher
+- **Supporting**: Evidence Verifier
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Validated research findings with identified factors and outcomes

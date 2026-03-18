@@ -11,10 +11,10 @@ Organize research findings into a structured classification system that categori
 - When the research domain lacks an established classification system
 
 ## Agents Involved
-- **Lead**: Domain Analyst
+- **Lead**: Domain Specialist
 - **Executing**: Synthesis Specialist
-- **Supporting**: Deep Researcher
-- **Reviewed by**: Contrarian Reviewer, Evidence Validator
+- **Supporting**: Data Researcher
+- **Reviewed by**: Contrarian Analyst, Evidence Verifier
 
 ## Inputs
 - Research findings with identified entities, concepts, and categories

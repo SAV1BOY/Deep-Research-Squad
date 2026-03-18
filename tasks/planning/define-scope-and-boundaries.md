@@ -10,9 +10,9 @@ Establish clear boundaries for a research effort, specifying what is in scope, w
 - During plan revision when constraints change
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Domain Analyst
-- **Consulted**: Contrarian Reviewer (to challenge boundary decisions)
+- **Lead**: DeepResearch Chief
+- **Supporting**: Domain Specialist
+- **Consulted**: Contrarian Analyst (to challenge boundary decisions)
 
 ## Inputs
 - Core research question and sub-questions

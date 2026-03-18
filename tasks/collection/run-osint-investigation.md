@@ -12,9 +12,9 @@ Execute an open-source intelligence investigation to gather, analyze, and correl
 
 ## Agents Involved
 - **Lead**: OSINT Investigator
-- **Executing**: Deep Researcher, Data Collector
-- **Supporting**: Source Curator, Domain Analyst
-- **Validating**: Evidence Validator
+- **Executing**: OSINT Investigator, Timeline Analyst
+- **Supporting**: Source Hunter, Domain Specialist
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Investigation target (entity, person, organization, event)

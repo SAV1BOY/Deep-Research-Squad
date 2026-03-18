@@ -10,9 +10,9 @@ Create visual representations of research findings that make complex relationshi
 - When synthesizing large volumes of information into digestible overviews
 
 ## Agents Involved
-- **Lead**: Synthesis Architect
-- **Supporting**: Data Collector, Domain Analyst
-- **Consulted**: Research Orchestrator
+- **Lead**: Synthesis Writer
+- **Supporting**: Data Researcher, Domain Specialist
+- **Consulted**: DeepResearch Chief
 
 ## Inputs
 - Validated research findings and synthesis report

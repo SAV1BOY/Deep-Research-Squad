@@ -11,8 +11,8 @@ Transfer research knowledge, methodology insights, and domain expertise gained d
 - When transitioning ongoing research between team members
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Domain Analyst, Source Curator
+- **Lead**: DeepResearch Chief
+- **Supporting**: Domain Specialist, Source Hunter
 - **Receiving**: All agents who may work on related topics in the future
 
 ## Inputs

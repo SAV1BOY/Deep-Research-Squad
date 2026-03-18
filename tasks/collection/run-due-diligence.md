@@ -12,9 +12,9 @@ Execute a structured due diligence investigation to verify claims, assess risks,
 
 ## Agents Involved
 - **Lead**: Due Diligence Analyst
-- **Executing**: Deep Researcher, OSINT Investigator, Domain Analyst
-- **Supporting**: Source Curator, Data Collector
-- **Validating**: Evidence Validator, Contrarian Reviewer
+- **Executing**: Data Researcher, OSINT Investigator, Domain Specialist
+- **Supporting**: Source Hunter, Data Researcher
+- **Validating**: Evidence Verifier, Contrarian Analyst
 
 ## Inputs
 - Target entity and transaction context

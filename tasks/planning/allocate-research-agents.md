@@ -10,9 +10,9 @@ Assign the right agents to each branch of the research plan based on domain expe
 - When a research branch requires specialized expertise not yet assigned
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
+- **Lead**: DeepResearch Chief
 - **Supporting**: All available research agents (for capability assessment)
-- **Consulted**: Domain Analyst (for expertise matching)
+- **Consulted**: Domain Specialist (for expertise matching)
 
 ## Inputs
 - Finalized research plan with question tree

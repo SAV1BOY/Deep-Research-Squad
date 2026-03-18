@@ -11,10 +11,10 @@ Prepare and structure a presentation of research findings optimized for the targ
 - When findings need to be defended in a review or challenge session
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
+- **Lead**: DeepResearch Chief
 - **Executing**: Synthesis Specialist
-- **Supporting**: Domain Analyst, Evidence Validator
-- **Reviewed by**: Contrarian Reviewer
+- **Supporting**: Domain Specialist, Evidence Verifier
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Synthesis report and executive summary

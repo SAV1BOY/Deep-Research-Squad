@@ -12,9 +12,9 @@ Develop and analyze multiple plausible future scenarios based on research findin
 
 ## Agents Involved
 - **Lead**: Synthesis Specialist
-- **Executing**: Domain Analyst, Trend Analyst
-- **Supporting**: Contrarian Reviewer, Deep Researcher
-- **Consulted**: Research Orchestrator
+- **Executing**: Domain Specialist, Timeline Analyst
+- **Supporting**: Contrarian Analyst, Data Researcher
+- **Consulted**: DeepResearch Chief
 
 ## Inputs
 - Validated research findings and trend analysis

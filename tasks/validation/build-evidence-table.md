@@ -10,10 +10,10 @@ Construct a structured evidence table that maps every claim in the research to i
 - As a standard quality step before any research delivery
 
 ## Agents Involved
-- **Lead**: Evidence Validator
-- **Executing**: Deep Researcher, Domain Analyst
-- **Supporting**: Source Curator
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: Evidence Verifier
+- **Executing**: Data Researcher, Domain Specialist
+- **Supporting**: Source Hunter
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - All collected findings organized by research branch

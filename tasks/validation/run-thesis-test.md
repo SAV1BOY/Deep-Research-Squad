@@ -10,10 +10,10 @@ Rigorously test a thesis or hypothesis against the collected evidence, applying 
 - When stakeholders have a specific theory they want tested
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Executing**: Evidence Validator, Domain Analyst
-- **Supporting**: Deep Researcher
-- **Consulted**: Research Orchestrator (for alignment with research goals)
+- **Lead**: Contrarian Analyst
+- **Executing**: Evidence Verifier, Domain Specialist
+- **Supporting**: Data Researcher
+- **Consulted**: DeepResearch Chief (for alignment with research goals)
 
 ## Inputs
 - Clearly stated thesis or hypothesis to test

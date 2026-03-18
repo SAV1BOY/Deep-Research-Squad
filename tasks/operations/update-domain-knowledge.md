@@ -11,9 +11,9 @@ Capture and organize domain knowledge gained during research projects into the s
 - When preparing for research in a domain where prior knowledge exists
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Executing**: Deep Researcher, Source Curator
-- **Supporting**: Research Orchestrator
+- **Lead**: Domain Specialist
+- **Executing**: Data Researcher, Source Hunter
+- **Supporting**: DeepResearch Chief
 - **Consulted**: All agents who gained domain knowledge during research
 
 ## Inputs

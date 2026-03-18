@@ -11,9 +11,9 @@ Conduct a structured peer review of research findings and methodology, providing
 - When a fresh perspective is needed on long-running research projects
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer (or a qualified agent not involved in the original research)
-- **Supporting**: Evidence Validator, Research Orchestrator
-- **Consulted**: Domain Analyst (for domain-specific technical review)
+- **Lead**: Contrarian Analyst (or a qualified agent not involved in the original research)
+- **Supporting**: Evidence Verifier, DeepResearch Chief
+- **Consulted**: Domain Specialist (for domain-specific technical review)
 
 ## Inputs
 - Complete draft of the research deliverable

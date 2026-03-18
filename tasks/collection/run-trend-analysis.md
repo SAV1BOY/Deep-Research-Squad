@@ -11,10 +11,10 @@ Execute a structured trend analysis to identify, validate, and project patterns 
 - For periodic trend monitoring and update cycles
 
 ## Agents Involved
-- **Lead**: Trend Analyst
-- **Executing**: Deep Researcher, Market Researcher, Domain Analyst
-- **Supporting**: Source Curator, Data Collector
-- **Validating**: Contrarian Reviewer, Evidence Validator
+- **Lead**: Timeline Analyst
+- **Executing**: Insight Modeler, Data Researcher, Discovery Scout
+- **Supporting**: Source Hunter
+- **Validating**: Contrarian Analyst, Evidence Verifier
 
 ## Inputs
 - Domain or market to analyze for trends

@@ -11,10 +11,10 @@ Execute a systematic literature review to survey, evaluate, and synthesize exist
 - As a foundation for original analysis or recommendations
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Executing**: Deep Researcher, Literature Specialist
-- **Supporting**: Source Curator
-- **Validating**: Evidence Validator, Contrarian Reviewer
+- **Lead**: Domain Specialist
+- **Executing**: Data Researcher, Literature Specialist
+- **Supporting**: Source Hunter
+- **Validating**: Evidence Verifier, Contrarian Analyst
 
 ## Inputs
 - Research question or topic for the review

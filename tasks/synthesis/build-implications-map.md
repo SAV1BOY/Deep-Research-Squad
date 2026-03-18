@@ -12,9 +12,9 @@ Map the downstream implications of research findings across multiple dimensions 
 
 ## Agents Involved
 - **Lead**: Synthesis Specialist
-- **Executing**: Domain Analyst
-- **Supporting**: Deep Researcher, Research Orchestrator
-- **Reviewed by**: Contrarian Reviewer
+- **Executing**: Domain Specialist
+- **Supporting**: Data Researcher, DeepResearch Chief
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Validated research findings with confidence levels

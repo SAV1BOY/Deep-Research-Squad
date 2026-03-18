@@ -11,9 +11,9 @@ Evaluate the research methodology used in the investigation to assess whether th
 - When establishing methodological standards for the squad
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Executing**: Research Orchestrator, Evidence Validator
-- **Supporting**: Domain Analyst
+- **Lead**: Contrarian Analyst
+- **Executing**: DeepResearch Chief, Evidence Verifier
+- **Supporting**: Domain Specialist
 - **Consulted**: Agents who executed the research methodology
 
 ## Inputs

@@ -11,9 +11,9 @@ Conduct a pre-mortem analysis on the research findings by imagining scenarios wh
 - When the cost of being wrong significantly exceeds the cost of additional analysis
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Executing**: Domain Analyst, Evidence Validator
-- **Supporting**: Research Orchestrator
+- **Lead**: Contrarian Analyst
+- **Executing**: Domain Specialist, Evidence Verifier
+- **Supporting**: DeepResearch Chief
 - **Consulted**: All research agents (for diverse failure mode identification)
 
 ## Inputs

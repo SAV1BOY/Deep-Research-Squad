@@ -11,10 +11,10 @@ Execute a structured benchmarking analysis to compare performance, practices, or
 - As part of continuous improvement or quality management processes
 
 ## Agents Involved
-- **Lead**: Benchmarking Analyst
-- **Executing**: Deep Researcher, Data Collector, Domain Analyst
-- **Supporting**: Source Curator
-- **Validating**: Evidence Validator
+- **Lead**: Data Researcher
+- **Executing**: Data Researcher, Domain Specialist
+- **Supporting**: Source Hunter
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Subject to benchmark (product, process, performance metric, practice)

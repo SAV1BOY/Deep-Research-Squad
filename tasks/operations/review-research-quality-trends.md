@@ -11,9 +11,9 @@ Analyze quality metrics and patterns across multiple research projects over time
 - When evaluating the impact of process improvements
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Evidence Validator, Contrarian Reviewer
-- **Supporting**: Source Curator, Domain Analyst
+- **Lead**: DeepResearch Chief
+- **Executing**: Evidence Verifier, Contrarian Analyst
+- **Supporting**: Source Hunter, Domain Specialist
 - **Consulted**: All squad agents (for feedback and observations)
 
 ## Inputs

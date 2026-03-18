@@ -11,10 +11,10 @@ Maintain and curate the squad's source library to ensure it remains current, hig
 - When preparing the source library for a major upcoming research effort
 
 ## Agents Involved
-- **Lead**: Source Curator
-- **Executing**: Data Collector
-- **Supporting**: Domain Analyst
-- **Consulted**: Research Orchestrator (for strategic priorities)
+- **Lead**: Source Hunter
+- **Executing**: Data Researcher
+- **Supporting**: Domain Specialist
+- **Consulted**: DeepResearch Chief (for strategic priorities)
 
 ## Inputs
 - Current source registry and library

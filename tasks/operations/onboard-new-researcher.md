@@ -11,8 +11,8 @@ Onboard a new researcher or agent into the squad by providing them with the cont
 - During squad restructuring that changes agent responsibilities
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Domain Analyst, Source Curator
+- **Lead**: DeepResearch Chief
+- **Executing**: Domain Specialist, Source Hunter
 - **Supporting**: All experienced squad agents (as mentors)
 - **Onboarding**: The new researcher being onboarded
 

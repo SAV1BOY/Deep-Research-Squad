@@ -11,10 +11,10 @@ Distill the full research output into a concise executive summary that communica
 - As the lead section of a comprehensive research delivery package
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
+- **Lead**: DeepResearch Chief
 - **Executing**: Synthesis Specialist
-- **Supporting**: Domain Analyst
-- **Reviewed by**: Contrarian Reviewer
+- **Supporting**: Domain Specialist
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - Complete synthesis report

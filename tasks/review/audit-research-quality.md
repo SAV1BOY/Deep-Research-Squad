@@ -11,9 +11,9 @@ Conduct a comprehensive quality audit of the entire research effort, evaluating 
 - When establishing quality baselines for new research domains
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Contrarian Reviewer, Evidence Validator
-- **Supporting**: Source Curator, Domain Analyst
+- **Lead**: DeepResearch Chief
+- **Executing**: Contrarian Analyst, Evidence Verifier
+- **Supporting**: Source Hunter, Domain Specialist
 - **Consulted**: All agents who contributed to the research
 
 ## Inputs

@@ -11,8 +11,8 @@ Update all squad registries (source registry, agent registry, task registry, kno
 - After onboarding new researchers or agents
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Source Curator, Domain Analyst
+- **Lead**: DeepResearch Chief
+- **Executing**: Source Hunter, Domain Specialist
 - **Supporting**: All agents who participated in the research
 - **Consulted**: Operations lead (for process registry updates)
 

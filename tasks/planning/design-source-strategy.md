@@ -10,8 +10,8 @@ Define the source acquisition strategy for a research plan, specifying which typ
 - When source bias is detected and diversification is required
 
 ## Agents Involved
-- **Lead**: Source Curator
-- **Supporting**: Research Orchestrator, Domain Analyst
+- **Lead**: Source Hunter
+- **Supporting**: DeepResearch Chief, Domain Specialist
 - **Consulted**: Specialist researchers for domain-specific source recommendations
 
 ## Inputs

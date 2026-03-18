@@ -11,10 +11,10 @@ Audit the quality, diversity, and reliability of all sources used in the researc
 - During periodic quality reviews of ongoing research
 
 ## Agents Involved
-- **Lead**: Source Curator
-- **Executing**: Evidence Validator
-- **Supporting**: Contrarian Reviewer
-- **Consulted**: Domain Analyst (for domain-specific source credibility)
+- **Lead**: Source Hunter
+- **Executing**: Evidence Verifier
+- **Supporting**: Contrarian Analyst
+- **Consulted**: Domain Specialist (for domain-specific source credibility)
 
 ## Inputs
 - Complete source registry with all sources used in the research

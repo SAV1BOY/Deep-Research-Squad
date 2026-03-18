@@ -12,9 +12,9 @@ Execute a structured technical or technology research process to evaluate techno
 
 ## Agents Involved
 - **Lead**: Technical Researcher
-- **Executing**: Deep Researcher, Domain Analyst
-- **Supporting**: Source Curator, Data Collector
-- **Validating**: Evidence Validator, Contrarian Reviewer
+- **Executing**: Data Researcher, Domain Specialist
+- **Supporting**: Source Hunter, Data Researcher
+- **Validating**: Evidence Verifier, Contrarian Analyst
 
 ## Inputs
 - Technical question or technology to evaluate

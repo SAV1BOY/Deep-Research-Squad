@@ -9,8 +9,8 @@ Transform a raw research request into a structured, actionable research plan wit
 - A complex question requires formal planning before execution begins
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Domain Analyst, Source Curator, Contrarian Reviewer
+- **Lead**: DeepResearch Chief
+- **Supporting**: Domain Specialist, Source Hunter, Contrarian Analyst
 - **Consulted**: All specialist researchers relevant to the domain
 
 ## Inputs

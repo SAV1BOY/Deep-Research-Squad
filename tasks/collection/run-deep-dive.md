@@ -10,10 +10,10 @@ Execute a full multi-layer deep dive research process, progressively building un
 - As the primary collection method for complex research questions
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Deep Researcher, Domain Analyst
-- **Supporting**: Source Curator, Contrarian Reviewer
-- **Validating**: Evidence Validator
+- **Lead**: DeepResearch Chief
+- **Executing**: Data Researcher, Domain Specialist
+- **Supporting**: Source Hunter, Contrarian Analyst
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Finalized research plan with question tree and agent assignments

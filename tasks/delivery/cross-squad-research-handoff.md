@@ -10,9 +10,9 @@ Execute a structured handoff of research findings, context, and supporting mater
 - When research findings need to be operationalized by a different team
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Synthesis Specialist, Domain Analyst
-- **Supporting**: Source Curator
+- **Lead**: DeepResearch Chief
+- **Executing**: Synthesis Specialist, Domain Specialist
+- **Supporting**: Source Hunter
 - **Receiving**: Designated contact from the receiving squad
 
 ## Inputs

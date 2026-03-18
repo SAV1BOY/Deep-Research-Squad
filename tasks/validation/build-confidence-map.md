@@ -10,9 +10,9 @@ Create a comprehensive confidence map that assigns calibrated confidence levels 
 - As a standard quality artifact for any research delivery
 
 ## Agents Involved
-- **Lead**: Evidence Validator
-- **Executing**: Contrarian Reviewer, Domain Analyst
-- **Supporting**: Research Orchestrator
+- **Lead**: Evidence Verifier
+- **Executing**: Contrarian Analyst, Domain Specialist
+- **Supporting**: DeepResearch Chief
 - **Consulted**: All agents who contributed findings
 
 ## Inputs

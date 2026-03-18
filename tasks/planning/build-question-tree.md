@@ -10,8 +10,8 @@ Decompose a complex research question into a hierarchical tree of sub-questions,
 - To identify gaps in the current understanding of a topic
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Domain Analyst
+- **Lead**: DeepResearch Chief
+- **Supporting**: Domain Specialist
 - **Consulted**: Specialist researchers for domain-specific sub-questions
 
 ## Inputs

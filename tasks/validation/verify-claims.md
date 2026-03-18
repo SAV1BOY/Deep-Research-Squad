@@ -11,10 +11,10 @@ Systematically verify specific claims against primary and secondary sources, pro
 - When contradictions are found and claims need resolution
 
 ## Agents Involved
-- **Lead**: Evidence Validator
-- **Executing**: Deep Researcher, Data Collector
-- **Supporting**: Source Curator, OSINT Investigator
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: Evidence Verifier
+- **Executing**: Data Researcher, Source Hunter
+- **Supporting**: Source Hunter, OSINT Investigator
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - List of claims to verify with their original sources

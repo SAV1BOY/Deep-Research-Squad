@@ -11,10 +11,10 @@ Execute focused data collection to gather specific data points, datasets, or qua
 - For periodic data refresh cycles on tracked metrics
 
 ## Agents Involved
-- **Lead**: Data Collector
-- **Executing**: Deep Researcher, Source Curator
-- **Supporting**: Domain Analyst
-- **Validating**: Evidence Validator
+- **Lead**: Data Researcher
+- **Executing**: Data Researcher, Source Hunter
+- **Supporting**: Domain Specialist
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Data requirements specification (what data points, format, granularity)

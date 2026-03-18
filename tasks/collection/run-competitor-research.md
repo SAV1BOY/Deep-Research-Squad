@@ -10,10 +10,10 @@ Execute a structured competitive intelligence research process to map the compet
 - For ongoing competitive monitoring and intelligence updates
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Executing**: Deep Researcher, Market Researcher
-- **Supporting**: Source Curator, Data Collector
-- **Validating**: Evidence Validator
+- **Lead**: Domain Specialist
+- **Executing**: Data Researcher, Insight Modeler
+- **Supporting**: Source Hunter, Contrarian Analyst
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Target entity or product to benchmark against competitors

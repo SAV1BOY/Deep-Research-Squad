@@ -10,9 +10,9 @@ Analyze the patent landscape for a given technology or domain, mapping key playe
 - When identifying potential partners, acquirers, or competitors by IP portfolio
 
 ## Agents Involved
-- **Lead**: Deep Researcher
-- **Supporting**: Domain Analyst, Data Collector
-- **Consulted**: Competitive Analyst, Trend Analyst
+- **Lead**: Data Researcher
+- **Supporting**: Domain Specialist, Data Researcher
+- **Consulted**: Contrarian Analyst, Timeline Analyst
 
 ## Inputs
 - Technology domain or specific technical area to analyze

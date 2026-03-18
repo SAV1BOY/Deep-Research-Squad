@@ -10,10 +10,10 @@ Execute a structured market research process to analyze market size, dynamics, s
 - To validate market assumptions in a business plan or investment thesis
 
 ## Agents Involved
-- **Lead**: Market Researcher
-- **Executing**: Deep Researcher, Domain Analyst
-- **Supporting**: Source Curator, Data Collector
-- **Validating**: Evidence Validator
+- **Lead**: Data Researcher
+- **Executing**: Data Researcher, Domain Specialist
+- **Supporting**: Source Hunter, Data Researcher
+- **Validating**: Evidence Verifier
 
 ## Inputs
 - Market definition (industry, segment, geography, timeframe)

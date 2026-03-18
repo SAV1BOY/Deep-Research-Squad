@@ -10,9 +10,9 @@ Synthesize findings from expert interviews into structured insights, extracting 
 - When the research topic lacks sufficient written sources
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Supporting**: Synthesis Architect, Evidence Validator
-- **Consulted**: Deep Researcher, Contrarian Reviewer
+- **Lead**: Domain Specialist
+- **Supporting**: Synthesis Writer, Evidence Verifier
+- **Consulted**: Data Researcher, Contrarian Analyst
 
 ## Inputs
 - Interview transcripts, notes, or structured summaries

@@ -10,9 +10,9 @@ Scan the regulatory landscape relevant to the research topic, identifying curren
 - When regulatory change is a key uncertainty in the research domain
 
 ## Agents Involved
-- **Lead**: Domain Analyst
-- **Supporting**: Deep Researcher, OSINT Investigator
-- **Consulted**: Source Curator, Evidence Validator
+- **Lead**: Domain Specialist
+- **Supporting**: Data Researcher, OSINT Investigator
+- **Consulted**: Source Hunter, Evidence Verifier
 
 ## Inputs
 - Research topic and geographic scope

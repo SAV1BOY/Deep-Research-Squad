@@ -8,12 +8,12 @@ Systematically audit the research process and findings for cognitive, methodolog
 - When the research topic is politically sensitive or commercially contested
 - When the source pool is dominated by a single perspective or stakeholder group
 - When initial findings strongly confirm pre-existing expectations
-- When the Contrarian Reviewer flags potential bias concerns
+- When the Contrarian Analyst flags potential bias concerns
 
 ## Agents Involved
-- **Lead**: Contrarian Reviewer
-- **Supporting**: Evidence Validator, Source Curator
-- **Consulted**: Research Orchestrator, Domain Analyst
+- **Lead**: Contrarian Analyst
+- **Supporting**: Evidence Verifier, Source Hunter
+- **Consulted**: DeepResearch Chief, Domain Specialist
 
 ## Inputs
 - Draft research findings and conclusions

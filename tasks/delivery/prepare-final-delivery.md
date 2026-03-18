@@ -10,10 +10,10 @@ Assemble, quality-check, and package all research outputs into a complete, polis
 - Before any formal presentation or distribution of research findings
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Synthesis Specialist, Domain Analyst
-- **Supporting**: Source Curator, Evidence Validator
-- **Reviewed by**: Contrarian Reviewer (final pass)
+- **Lead**: DeepResearch Chief
+- **Executing**: Synthesis Specialist, Domain Specialist
+- **Supporting**: Source Hunter, Evidence Verifier
+- **Reviewed by**: Contrarian Analyst (final pass)
 
 ## Inputs
 - Synthesis report and executive summary

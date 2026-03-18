@@ -10,9 +10,9 @@ Identify and assess risks that could compromise research quality, timeline, or r
 - When the research domain is unfamiliar to the assigned agents
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Contrarian Reviewer, Evidence Validator
-- **Consulted**: Domain Analyst, Source Curator
+- **Lead**: DeepResearch Chief
+- **Supporting**: Contrarian Analyst, Evidence Verifier
+- **Consulted**: Domain Specialist, Source Hunter
 
 ## Inputs
 - Draft research plan with scope and timeline

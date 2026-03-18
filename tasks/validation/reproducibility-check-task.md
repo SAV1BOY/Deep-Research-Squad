@@ -11,9 +11,9 @@ Verify that key research findings can be independently reproduced by re-executin
 - When updating previously delivered research with new data
 
 ## Agents Involved
-- **Lead**: Evidence Validator
-- **Supporting**: Data Collector, Deep Researcher
-- **Reviewed by**: Contrarian Reviewer, Research Orchestrator
+- **Lead**: Evidence Verifier
+- **Supporting**: Data Researcher, Data Researcher
+- **Reviewed by**: Contrarian Analyst, DeepResearch Chief
 
 ## Inputs
 - Finalized research findings with documented methodology

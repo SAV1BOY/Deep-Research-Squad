@@ -10,8 +10,8 @@ Align research objectives, scope, and deliverables with stakeholder needs, ensur
 - Before committing significant resources to a research track
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Supporting**: Domain Analyst, Synthesis Architect
+- **Lead**: DeepResearch Chief
+- **Supporting**: Domain Specialist, Synthesis Writer
 - **Consulted**: All agents assigned to the research plan
 
 ## Inputs

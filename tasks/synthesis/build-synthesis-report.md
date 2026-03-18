@@ -10,10 +10,10 @@ Integrate findings from all research layers, branches, and validation steps into
 - When updating a previous synthesis with new evidence
 
 ## Agents Involved
-- **Lead**: Research Orchestrator
-- **Executing**: Domain Analyst, Synthesis Specialist
-- **Supporting**: Evidence Validator
-- **Reviewed by**: Contrarian Reviewer
+- **Lead**: DeepResearch Chief
+- **Executing**: Domain Specialist, Synthesis Specialist
+- **Supporting**: Evidence Verifier
+- **Reviewed by**: Contrarian Analyst
 
 ## Inputs
 - All validated findings organized by research branch

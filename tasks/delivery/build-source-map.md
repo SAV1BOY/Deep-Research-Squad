@@ -11,9 +11,9 @@ Create a comprehensive source map that documents all sources used in the researc
 - To enable future researchers to build on existing source work
 
 ## Agents Involved
-- **Lead**: Source Curator
-- **Executing**: Data Collector, Evidence Validator
-- **Supporting**: Domain Analyst
+- **Lead**: Source Hunter
+- **Executing**: Data Researcher, Evidence Verifier
+- **Supporting**: Domain Specialist
 - **Consulted**: All agents who collected sources
 
 ## Inputs
