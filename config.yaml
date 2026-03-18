@@ -807,3 +807,271 @@ defaults:
   citation_style: "APA-7"
   max_report_pages: 25
   executive_summary_max_words: 500
+
+# ----------------------------------------------------------------------------
+# Escalation Protocols
+# ----------------------------------------------------------------------------
+escalation_protocols:
+
+  gate_failure:
+    consecutive_failure_threshold: 2
+    actions:
+      - at_failures: 2
+        action: "chief-intervention"
+        description: >
+          After 2 consecutive quality gate failures on the same artifact,
+          the Chief Research Architect intervenes directly — reviews the
+          artifact, diagnoses root cause, and issues targeted remediation
+          instructions to the responsible agent.
+      - at_failures: 3
+        action: "task-rescope"
+        description: >
+          After 3 consecutive failures, the task is returned to the
+          Scope Mapper for re-decomposition. The original sub-question is
+          split into smaller, more tractable components and reassigned
+          with adjusted quality thresholds.
+
+  agent_stall:
+    description: >
+      Maximum allowed time per pipeline stage before the Chief Research
+      Architect is notified and reassignment or escalation is triggered.
+    timeouts:
+      planning: "30min"
+      collection: "60min"
+      verification: "45min"
+      synthesis: "45min"
+      decision: "30min"
+      audit: "20min"
+    on_timeout:
+      - action: "notify-chief"
+        description: "Alert the Chief Research Architect with stage, agent, and elapsed time"
+      - action: "reassign-or-assist"
+        description: >
+          Chief may reassign to a fallback agent, split the task, or
+          inject additional context to unblock the stalled agent.
+
+  kpi_breach:
+    description: >
+      When a tracked KPI crosses its threshold, the Chief Research Architect
+      is notified for review and corrective action.
+    thresholds:
+      - kpi: evidence-density-score
+        breach_condition: "< 0.90"
+        action: "chief-review — return to collection for additional sourcing"
+      - kpi: source-diversity-index
+        breach_condition: "< 2.5"
+        action: "chief-review — expand source strategy with alternative source types"
+      - kpi: rework-rate
+        breach_condition: "> 0.15"
+        action: "chief-review — audit upstream stages for systemic quality issues"
+      - kpi: quality-gate-pass-rate
+        breach_condition: "< 0.80"
+        action: "chief-review — identify failing gates and retrain responsible agents"
+      - kpi: pipeline-completion-rate
+        breach_condition: "< 0.85"
+        action: "chief-review — investigate abandonment causes and process bottlenecks"
+
+  cross_squad_failure:
+    description: >
+      Protocols for when a cross-squad handoff is declined, delayed, or
+      returns incomplete results.
+    actions:
+      - trigger: "handoff-declined"
+        action: >
+          Chief Research Architect notifies the requesting squad, logs the
+          decline reason, and attempts an alternative squad or internal
+          workaround within 30 minutes.
+      - trigger: "handoff-delayed"
+        timeout: "60min"
+        action: >
+          If the receiving squad has not acknowledged within 60 minutes,
+          the Chief escalates to advisory-board shared channel and begins
+          internal fallback research in parallel.
+      - trigger: "handoff-incomplete"
+        action: >
+          Chief reviews returned artifacts against the original request
+          spec, identifies gaps, and either requests remediation from the
+          receiving squad or fills gaps internally.
+
+# ----------------------------------------------------------------------------
+# Error Handling
+# ----------------------------------------------------------------------------
+error_handling:
+
+  retry_policy:
+    max_retries: 3
+    backoff_strategy: "exponential"
+    backoff_base_seconds: 10
+    backoff_multiplier: 2
+    description: >
+      Each agent action is retried up to 3 times on failure.
+      Backoff intervals: 10s, 20s, 40s. After 3 failures the
+      action is marked as failed and escalated per escalation_protocols.
+
+  fallback_agents:
+    description: >
+      When a primary agent is unavailable or repeatedly failing, these
+      substitutes can assume the role with reduced but acceptable coverage.
+    substitutions:
+      - primary: scope-mapper
+        fallback: research-architect
+        capability_coverage: "90%"
+        notes: "Research Architect can decompose questions but lacks Scope Mapper's MECE specialization"
+      - primary: literature-analyst
+        fallback: reference-intellectual
+        capability_coverage: "80%"
+        notes: "Reference Intellectual covers academic context but not systematic review protocols"
+      - primary: timeline-analyst
+        fallback: data-researcher
+        capability_coverage: "75%"
+        notes: "Data Researcher can handle temporal data but lacks Timeline Analyst's trend projection models"
+
+  recovery_workflows:
+    description: >
+      When a pipeline stage fails after exhausting retries, these workflows
+      define the recovery path to maintain pipeline continuity.
+    stages:
+      - failed_stage: collection
+        recovery_action: "alternative-source-strategy"
+        description: >
+          Route back to Source Hunter and Query Strategist to design an
+          alternative source plan using different databases, search terms,
+          or collection methods. Discovery Scout is activated to find
+          unconventional sources.
+        recovery_agents:
+          - source-hunter
+          - query-strategist
+          - discovery-scout
+
+      - failed_stage: verification
+        recovery_action: "expanded-collection"
+        description: >
+          Return to collection stage with expanded source requirements.
+          Minimum source count is doubled and source type diversity is
+          enforced to provide stronger corroboration paths.
+        recovery_agents:
+          - data-researcher
+          - source-hunter
+          - evidence-verifier
+
+      - failed_stage: synthesis
+        recovery_action: "verification-gap-fill"
+        description: >
+          Return to verification stage to identify and fill evidence gaps
+          that prevented coherent synthesis. Evidence Verifier produces a
+          gap report and collection is targeted to fill specific holes.
+        recovery_agents:
+          - evidence-verifier
+          - data-researcher
+          - synthesis-writer
+
+# ----------------------------------------------------------------------------
+# Agent Capability Matrix — routing for previously unrouted agents
+# ----------------------------------------------------------------------------
+agent_capability_matrix:
+
+  design-research-methodology:
+    description: "Design research methodology, define analytical approach, and build execution blueprints"
+    agents:
+      - research-architect
+      - scope-mapper
+      - query-strategist
+    frameworks:
+      - "frameworks/architect"
+      - "frameworks/scope-mapper"
+    checklists:
+      - "checklists/architect"
+      - "checklists/scope"
+    templates:
+      - "templates/briefs"
+      - "templates/analysis"
+    registry:
+      - "data/registries"
+
+  activate-domain-expert:
+    description: "Activate domain-specific expertise for specialized analysis and validation"
+    agents:
+      - domain-specialist
+      - evidence-verifier
+      - reference-intellectual
+    frameworks:
+      - "frameworks/domain-specialist"
+      - "frameworks/evidence-verifier"
+    checklists:
+      - "checklists/domain-stacks"
+      - "checklists/evidence"
+    templates:
+      - "templates/analysis"
+      - "templates/evidence"
+    registry:
+      - "data/registries"
+
+  manage-knowledge-base:
+    description: "Archive findings, maintain knowledge repositories, and curate institutional memory"
+    agents:
+      - knowledge-librarian
+      - research-auditor
+      - data-researcher
+    frameworks:
+      - "frameworks/validation"
+      - "frameworks/data-researcher"
+    checklists:
+      - "checklists/audit"
+      - "checklists/data"
+    templates:
+      - "templates/operational"
+    registry:
+      - "data/registries"
+
+# ----------------------------------------------------------------------------
+# SLAs — per-stage time budgets and cross-squad commitments
+# ----------------------------------------------------------------------------
+slas:
+
+  per_stage:
+    description: >
+      Maximum time budgets for each pipeline stage. Stages exceeding their
+      SLA trigger escalation per escalation_protocols.agent_stall.
+    budgets:
+      - stage: scope-decomposition
+        max_duration: "30min"
+        agents: ["scope-mapper", "query-strategist"]
+      - stage: source-planning
+        max_duration: "30min"
+        agents: ["source-hunter", "query-strategist", "discovery-scout"]
+      - stage: primary-collection
+        max_duration: "60min"
+        agents: ["data-researcher", "source-hunter", "osint-investigator"]
+      - stage: evidence-verification
+        max_duration: "45min"
+        agents: ["evidence-verifier", "contrarian-analyst"]
+      - stage: synthesis
+        max_duration: "45min"
+        agents: ["synthesis-writer", "insight-modeler"]
+      - stage: decision-brief
+        max_duration: "30min"
+        agents: ["decision-analyst", "synthesis-writer"]
+      - stage: quality-audit
+        max_duration: "20min"
+        agents: ["research-auditor", "deepresearch-chief"]
+
+  cross_squad:
+    description: >
+      SLAs governing handoff responsiveness and artifact quality when
+      working with external squads.
+    commitments:
+      - type: "handoff-acknowledgment"
+        sla: "30min"
+        description: "Receiving squad must acknowledge a handoff request within 30 minutes"
+      - type: "artifact-delivery"
+        sla: "4h"
+        description: "Requested research artifacts delivered within 4 hours of acknowledgment"
+      - type: "fact-check-turnaround"
+        sla: "2h"
+        description: "Fact-check and verification requests completed within 2 hours"
+      - type: "urgent-intelligence"
+        sla: "1h"
+        description: "Urgent competitive intelligence requests receive initial findings within 1 hour"
+      - type: "revision-response"
+        sla: "2h"
+        description: "Revision requests on delivered artifacts addressed within 2 hours"

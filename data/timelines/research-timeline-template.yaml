@@ -1,0 +1,54 @@
+# Research Timeline Template
+# Tracks the temporal progression of a research engagement
+# Updated by: deepresearch-chief, timeline-analyst
+# Referenced by: workflows/, ARCHITECTURE.md
+
+schema:
+  fields:
+    - name: engagement_id
+      type: string
+      description: "Unique engagement identifier"
+    - name: title
+      type: string
+      description: "Research engagement title"
+    - name: start_date
+      type: date
+    - name: target_delivery
+      type: date
+    - name: actual_delivery
+      type: date
+    - name: stages
+      type: list
+      description: "Timeline entries per pipeline stage"
+
+stage_schema:
+  fields:
+    - name: stage
+      type: string
+      description: "Pipeline stage name (from workflows/)"
+    - name: workflow
+      type: string
+      description: "Reference to workflow file"
+    - name: started
+      type: datetime
+    - name: completed
+      type: datetime
+    - name: duration
+      type: string
+      description: "Actual duration"
+    - name: sla
+      type: string
+      description: "SLA budget for this stage"
+    - name: sla_met
+      type: boolean
+    - name: gate_result
+      type: enum
+      values: ["passed", "failed-once", "failed-twice", "escalated"]
+    - name: rework_cycles
+      type: integer
+    - name: agents_active
+      type: list
+    - name: notes
+      type: string
+
+entries: []

@@ -1,0 +1,48 @@
+# RalphLoop / Kaizen Improvement Log
+# Tracks continuous improvement actions, their triggers, and outcomes
+# Updated by: deepresearch-chief, research-auditor, knowledge-librarian
+# Referenced by: ARCHITECTURE.md (RalphLoop / Kaizen Protocol)
+
+schema:
+  fields:
+    - name: improvement_id
+      type: string
+      description: "Unique identifier (format: RL-YYYY-MM-NNN)"
+    - name: date_identified
+      type: date
+      description: "When the improvement need was identified"
+    - name: date_implemented
+      type: date
+      description: "When the improvement was made"
+    - name: trigger
+      type: enum
+      values: ["gate-failure-pattern", "kpi-breach", "quarterly-review", "semi-annual-review", "ad-hoc-observation", "cross-squad-feedback", "retrospective"]
+      description: "What triggered the improvement"
+    - name: category
+      type: enum
+      values: ["framework-update", "checklist-update", "agent-prompt-tuning", "routing-change", "process-change", "registry-update", "template-update"]
+      description: "Type of improvement"
+    - name: description
+      type: string
+      description: "What was changed and why"
+    - name: files_affected
+      type: list
+      description: "Which files were modified"
+    - name: before_state
+      type: string
+      description: "How things worked before the improvement"
+    - name: after_state
+      type: string
+      description: "How things work after the improvement"
+    - name: expected_impact
+      type: string
+      description: "What KPI or quality dimension this should improve"
+    - name: actual_impact
+      type: string
+      description: "Measured impact after implementation (filled later)"
+    - name: status
+      type: enum
+      values: ["identified", "in-progress", "implemented", "measured", "validated", "reverted"]
+      description: "Current status of the improvement"
+
+entries: []

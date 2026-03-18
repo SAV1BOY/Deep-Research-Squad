@@ -1,0 +1,55 @@
+# Research Output Registry
+# Indexes completed research outputs for retrieval and cross-squad access
+# Updated by: knowledge-librarian
+# Referenced by: ARCHITECTURE.md (Operational Memory Architecture)
+
+schema:
+  fields:
+    - name: output_id
+      type: string
+      description: "Unique identifier (format: RO-YYYY-MM-NNN)"
+    - name: date_completed
+      type: date
+      description: "Date research was delivered"
+    - name: project_type
+      type: enum
+      values: ["deep-dive", "competitor-war-room", "market-intelligence", "technical-evaluation", "due-diligence", "literature-review", "trend-monitoring", "decision-support"]
+      description: "Project type classification"
+    - name: title
+      type: string
+      description: "Research engagement title"
+    - name: requester
+      type: string
+      description: "Who commissioned the research (squad or stakeholder)"
+    - name: domain
+      type: string
+      description: "Primary domain (finance, technology, health, legal, etc.)"
+    - name: confidence_score
+      type: float
+      description: "Overall confidence score (0.0-1.0)"
+    - name: source_count
+      type: integer
+      description: "Number of unique sources cited"
+    - name: source_diversity_index
+      type: float
+      description: "Shannon diversity index of source types"
+    - name: contrarian_survival_rate
+      type: float
+      description: "Percentage of theses surviving contrarian review"
+    - name: quality_gate_pass_rate
+      type: float
+      description: "First-pass rate through quality gates"
+    - name: key_findings
+      type: list
+      description: "Top 3-5 findings (one-line summaries)"
+    - name: limitations
+      type: list
+      description: "Known limitations and caveats"
+    - name: agents_involved
+      type: list
+      description: "Which agents participated"
+    - name: related_outputs
+      type: list
+      description: "Links to related prior research"
+
+entries: []

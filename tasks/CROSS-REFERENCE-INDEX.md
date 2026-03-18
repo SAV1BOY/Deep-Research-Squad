@@ -259,6 +259,45 @@ The following tasks have direct routing entries in `config.yaml`. Each entry sho
 
 ---
 
+### design-research-methodology
+
+- **Task File**: `tasks/planning/build-research-plan.md` (shared)
+- **Config Route**: `agent_capability_matrix.design-research-methodology`
+- **Description**: Design research methodology, define analytical approach, and build execution blueprints
+- **Agents**: research-architect, scope-mapper, query-strategist
+- **Frameworks**: frameworks/architect, frameworks/scope-mapper
+- **Checklists**: checklists/architect, checklists/scope
+- **Templates**: templates/briefs, templates/analysis
+- **Registry**: data/registries
+
+---
+
+### activate-domain-expert
+
+- **Task File**: `tasks/collection/run-deep-dive.md` (shared, domain-specific activation)
+- **Config Route**: `agent_capability_matrix.activate-domain-expert`
+- **Description**: Activate domain-specific expertise for specialized analysis and validation
+- **Agents**: domain-specialist, evidence-verifier, reference-intellectual
+- **Frameworks**: frameworks/domain-specialist, frameworks/evidence-verifier
+- **Checklists**: checklists/domain-stacks, checklists/evidence
+- **Templates**: templates/analysis, templates/evidence
+- **Registry**: data/registries
+
+---
+
+### manage-knowledge-base
+
+- **Task File**: `tasks/operations/update-registries.md` (shared, knowledge management)
+- **Config Route**: `agent_capability_matrix.manage-knowledge-base`
+- **Description**: Archive findings, maintain knowledge repositories, and curate institutional memory
+- **Agents**: knowledge-librarian, research-auditor, data-researcher
+- **Frameworks**: frameworks/validation, frameworks/data-researcher
+- **Checklists**: checklists/audit, checklists/data
+- **Templates**: templates/operational
+- **Registry**: data/registries
+
+---
+
 ## Non-Routed Tasks
 
 The following 36 tasks do not have direct routing entries in `config.yaml`. Each is mapped to the routing entry it most likely supports based on its category, name, and functional purpose.
@@ -343,7 +382,7 @@ This matrix shows which of the 19 agents participate in which routed tasks. An *
 | Agent | build-research-plan | design-source-strategy | run-deep-dive | run-competitor-research | run-market-research | run-technical-research | run-literature-review | run-osint-investigation | run-due-diligence | run-trend-analysis | run-thesis-test | run-contrarian-pass | build-synthesis-report | build-decision-brief | audit-research-quality | compress-to-exec-summary | cross-squad-handoff | update-registries | quarterly-quality-review | **Total** |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | deepresearch-chief | X | | | | | | | | | | | | X | X | X | | X | X | X | **6** |
-| research-architect | | | | | | | | | | | | | | | | | | | | **0** |
+| research-architect | | | | | | | | | | | | | | | | | | | | **1** (+ design-research-methodology) |
 | scope-mapper | X | | | | | | | | | | | | | | | | | | | **1** |
 | query-strategist | X | X | | | | | | | | | | | | | | | | | | **2** |
 | source-hunter | | X | X | X | X | X | | X | | | | | | | | | | | | **6** |
@@ -359,15 +398,15 @@ This matrix shows which of the 19 agents participate in which routed tasks. An *
 | research-auditor | | | | | | | | | | | | | | | X | | | X | X | **3** |
 | discovery-scout | | X | | | | | | | | X | | | | | | | | | | **2** |
 | reference-intellectual | | | | | | X | X | | | | | X | | | | | | | | **3** |
-| domain-specialist | | | | | | | | | | | | | | | | | | | | **0** |
-| knowledge-librarian | | | | | | | | | | | | | | | | | | | | **0** |
+| domain-specialist | | | | | | | | | | | | | | | | | | | | **1** (+ activate-domain-expert) |
+| knowledge-librarian | | | | | | | | | | | | | | | | | | | | **1** (+ manage-knowledge-base) |
 
 ### Coverage Summary
 
 - **Most utilized agents** (6-7 routes): data-researcher (7), deepresearch-chief (6), source-hunter (6), evidence-verifier (6), insight-modeler (6)
 - **Moderately utilized agents** (3-5 routes): timeline-analyst (5), contrarian-analyst (4), synthesis-writer (4), research-auditor (3), reference-intellectual (3)
 - **Lightly utilized agents** (1-2 routes): scope-mapper (1), query-strategist (2), literature-analyst (1), osint-investigator (2), decision-analyst (2), discovery-scout (2)
-- **Not routed** (0 routes): research-architect, domain-specialist, knowledge-librarian -- these agents are listed in `squad.agents` but have no direct routing entries; they are invoked dynamically by the Chief Research Architect or serve infrastructure roles
+- **Capability-matrix routed** (1 route each): research-architect (design-research-methodology), domain-specialist (activate-domain-expert), knowledge-librarian (manage-knowledge-base) -- these agents are routed through `config.yaml agent_capability_matrix` and are also invoked dynamically by the Chief Research Architect
 
 ---
 
@@ -394,3 +433,6 @@ This matrix shows which of the 19 agents participate in which routed tasks. An *
 | `routing.cross-squad-research-handoff` | `tasks/delivery/cross-squad-research-handoff.md` | Delivery |
 | `routing.update-registries` | `tasks/operations/update-registries.md` | Operations |
 | `routing.quarterly-research-quality-review` | `tasks/operations/review-research-quality-trends.md` | Operations |
+| `agent_capability_matrix.design-research-methodology` | `tasks/planning/build-research-plan.md` (shared) | Planning |
+| `agent_capability_matrix.activate-domain-expert` | `tasks/collection/run-deep-dive.md` (shared) | Collection |
+| `agent_capability_matrix.manage-knowledge-base` | `tasks/operations/update-registries.md` (shared) | Operations |

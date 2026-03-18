@@ -1,0 +1,53 @@
+# Decision Log — Deep Research Squad
+# Records Chief Research Architect routing, escalation, and quality decisions
+# Updated by: deepresearch-chief
+# Referenced by: ARCHITECTURE.md (Operational Memory Architecture), data/registries/decision-registry.yaml
+
+schema:
+  fields:
+    - name: decision_id
+      type: string
+      description: "Unique identifier (format: DEC-YYYY-MM-NNN)"
+    - name: date
+      type: date
+      description: "Date of decision"
+    - name: decision_type
+      type: enum
+      values: ["routing", "escalation", "quality-gate", "scope-change", "agent-assignment", "handoff", "methodology"]
+      description: "Category of decision"
+    - name: context
+      type: string
+      description: "What situation prompted this decision"
+    - name: options_considered
+      type: list
+      description: "What alternatives were evaluated"
+    - name: decision_made
+      type: string
+      description: "What was decided"
+    - name: rationale
+      type: string
+      description: "Why this option was chosen over alternatives"
+    - name: agents_affected
+      type: list
+      description: "Which agents were impacted by this decision"
+    - name: outcome
+      type: string
+      description: "What happened as a result (filled post-engagement)"
+    - name: lessons_learned
+      type: string
+      description: "What would be done differently next time"
+
+entries:
+  - decision_id: "DEC-2026-03-001"
+    date: "2026-03-15"
+    decision_type: routing
+    context: "Incoming request for competitive landscape analysis with tight deadline"
+    options_considered:
+      - "Full pipeline with all 7 layers"
+      - "Expedited pipeline skipping contrarian pass"
+      - "Parallel collection and verification"
+    decision_made: "Parallel collection and verification with expedited contrarian pass"
+    rationale: "Tight deadline requires parallelization. Contrarian pass is mandatory per config.yaml but can be scoped to top 3 findings only."
+    agents_affected: ["data-researcher", "source-hunter", "evidence-verifier", "contrarian-analyst"]
+    outcome: "Delivered within SLA. 2 of 3 contrarian challenges led to scope refinements."
+    lessons_learned: "Scoped contrarian pass is effective for time-constrained engagements. Consider making this a standard option."

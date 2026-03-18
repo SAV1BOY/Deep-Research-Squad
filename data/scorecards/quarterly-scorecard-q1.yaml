@@ -1,0 +1,116 @@
+# Quarterly Scorecard — Q1 2026
+# Aggregated squad performance snapshot for the quarterly review cycle
+# Produced by: research-auditor, deepresearch-chief
+# Referenced by: config.yaml kpis, ARCHITECTURE.md RalphLoop
+
+period: "Q1 2026 (January - March)"
+generated_date: "2026-03-31"
+generated_by: "research-auditor"
+
+research_quality:
+  evidence_density_score:
+    target: ">= 0.90"
+    actual: null
+    status: "pending-measurement"
+    notes: "Claims with evidence / total claims"
+  source_diversity_index:
+    target: ">= 2.5"
+    actual: null
+    status: "pending-measurement"
+    notes: "Shannon diversity index of source types"
+  confidence_calibration_accuracy:
+    target: "<= 0.15 Brier score"
+    actual: null
+    status: "pending-measurement"
+    notes: "Retrospective comparison of confidence scores vs outcomes"
+  contrarian_survival_rate:
+    target: "60-80%"
+    actual: null
+    status: "pending-measurement"
+    notes: "Percentage of theses surviving adversarial review"
+
+efficiency:
+  time_to_first_brief:
+    target: "domain-dependent"
+    actual: null
+    status: "pending-measurement"
+    notes: "Tracked against rolling average per project type"
+  source_hit_rate:
+    target: ">= 0.50"
+    actual: null
+    status: "pending-measurement"
+    notes: "Sources yielding usable evidence / total sources consulted"
+  rework_rate:
+    target: "<= 0.15"
+    actual: null
+    status: "pending-measurement"
+    notes: "Outputs needing revision post-audit / total outputs"
+  sub_question_resolution_rate:
+    target: ">= 0.85"
+    actual: null
+    status: "pending-measurement"
+    notes: "Sub-questions resolved per engagement cycle"
+
+impact:
+  decision_adoption_rate:
+    target: ">= 0.70"
+    actual: null
+    status: "pending-measurement"
+    notes: "Recommendations adopted by requesters"
+  prediction_accuracy:
+    target: ">= 0.65"
+    actual: null
+    status: "pending-measurement"
+    notes: "Forward-looking assessments vs outcomes"
+  stakeholder_satisfaction:
+    target: ">= 4.2 / 5.0"
+    actual: null
+    status: "pending-measurement"
+    notes: "Post-engagement feedback score"
+  cross_squad_utility:
+    target: ">= 3 references per deliverable"
+    actual: null
+    status: "pending-measurement"
+    notes: "How often other squads reference our outputs"
+
+operational:
+  registry_freshness:
+    target: ">= 0.90"
+    actual: null
+    status: "pending-measurement"
+    notes: "Registries updated within recency window / total registries"
+  pipeline_completion_rate:
+    target: ">= 0.85"
+    actual: null
+    status: "pending-measurement"
+    notes: "Engagements completing full pipeline / total engagements"
+  quality_gate_pass_rate:
+    target: ">= 0.80"
+    actual: null
+    status: "pending-measurement"
+    notes: "First-pass through mandatory gates"
+  agent_utilization:
+    target: "70-90%"
+    actual: null
+    status: "pending-measurement"
+    notes: "Active engagement time / available time"
+
+gate_performance:
+  level_1_first_pass: null
+  level_2_first_pass: null
+  level_3_first_pass: null
+  average_rework_cycles: null
+  top_failure_reasons: []
+
+cross_squad:
+  total_handoffs: null
+  outbound_acceptance_rate: null
+  inbound_quality_score: null
+  sla_compliance_rate: null
+
+summary:
+  overall_score: null
+  overall_level: "pending-assessment"
+  key_strengths: []
+  key_improvements_needed: []
+  action_items: []

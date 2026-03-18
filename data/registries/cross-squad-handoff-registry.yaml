@@ -1,0 +1,93 @@
+# Cross-Squad Handoff Registry
+# Track all handoffs between Deep Research Squad and other squads
+
+description: >
+  Registry for tracking individual handoff events between Deep Research Squad
+  and integrated squads. Each entry represents a single directional handoff
+  (inbound or outbound). Used for SLA tracking, quality monitoring, and
+  contract compliance auditing.
+
+schema:
+  fields:
+    - name: handoff_id
+      type: string
+      required: true
+      description: "Unique identifier (format: HO-YYYY-NNN)"
+    - name: date
+      type: date
+      required: true
+      description: "Date the handoff was initiated"
+    - name: direction
+      type: enum
+      values: [inbound, outbound]
+      required: true
+      description: "Whether Deep Research is sending (outbound) or receiving (inbound)"
+    - name: squad
+      type: string
+      required: true
+      description: "The counterpart squad in the handoff"
+    - name: deliverable
+      type: string
+      required: true
+      description: "Name or title of the deliverable being handed off"
+    - name: deliverable_type
+      type: enum
+      values: [research_brief, dataset, analysis, recommendation, intelligence_report, compliance_report, keyword_report, evidence_package, fact_check, trend_report]
+      description: "Category of deliverable"
+    - name: status
+      type: enum
+      values: [pending, delivered, acknowledged, accepted, rejected, remediated]
+      required: true
+      description: "Current status of the handoff"
+    - name: quality_score
+      type: number
+      range: [0, 100]
+      description: "Cross-squad delivery checklist score (percentage)"
+    - name: sla_met
+      type: boolean
+      description: "Whether the handoff was completed within the contracted SLA"
+    - name: rejection_reason
+      type: string
+      description: "If rejected, the specific deficiency (references contract section)"
+    - name: remediation_date
+      type: date
+      description: "Date remediation was completed, if applicable"
+    - name: notes
+      type: string
+      description: "Additional context or follow-up notes"
+
+entries:
+
+  - handoff_id: "HO-2026-001"
+    date: "2026-03-10"
+    direction: outbound
+    squad: "copy_squad"
+    deliverable: "Q1 2026 Product Launch Talking Points"
+    deliverable_type: research_brief
+    status: accepted
+    quality_score: 88
+    sla_met: true
+    rejection_reason: null
+    remediation_date: null
+    notes: "Delivered 14 evidence-backed talking points with source citations. Copy Squad confirmed integration into launch campaign copy."
+
+  - handoff_id: "HO-2026-002"
+    date: "2026-03-14"
+    direction: inbound
+    squad: "cybersecurity_squad"
+    deliverable: "Threat Actor Profile Research Request -- APT Group X"
+    deliverable_type: intelligence_report
+    status: delivered
+    quality_score: 84
+    sla_met: true
+    rejection_reason: null
+    remediation_date: null
+    notes: "Cybersecurity Squad requested threat actor research with TTP analysis. Delivered threat landscape report with confidence-scored attributions. Follow-up window open until 2026-03-21."
+
+usage_notes:
+  - Every handoff (inbound and outbound) must be logged here at initiation
+  - Status must be updated as the handoff progresses through its lifecycle
+  - Quality scores reference the cross-squad delivery checklist percentage
+  - Rejected handoffs must include a rejection_reason referencing the relevant contract section
+  - SLA compliance is audited quarterly per the cross-squad handoff contracts
+  - This registry feeds into the cross-squad-utility KPI in config.yaml
