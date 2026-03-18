@@ -4,7 +4,7 @@
 
 McKinsey & Company developed its structured problem-solving methodology over six decades of management consulting, beginning with Marvin Bower's insistence on fact-based analysis in the 1950s and formalized by Barbara Minto's Pyramid Principle in 1967. The methodology has since trained tens of thousands of consultants to decompose ambiguous business problems into researchable components, test hypotheses against evidence, and synthesize findings into decision-ready outputs. What makes this methodology distinctive is not any single technique but the disciplined integration of hypothesis generation, MECE decomposition, and answer-first communication into a repeatable research pipeline.
 
-McKinsey's approach matters to the Deep Research Squad because it solved a problem we also face: how to move from an ill-defined question to a structured, evidence-backed recommendation under time pressure, without sacrificing analytical rigor.
+McKinsey's approach matters to the Deep Research Squad because it solved a problem we also face: how to move from an ill-defined question to a structured, evidence-backed recommendation under time pressure, without sacrificing analytical rigor. Understanding both the strengths and the blind spots of this methodology sharpens every stage of our pipeline, from scoping through delivery.
 
 ## Core Methodology
 
@@ -74,3 +74,6 @@ McKinsey applies the Pareto principle to research effort. Not all sub-questions 
 - Rasiel, Ethan and Paul Friga. *The McKinsey Mind*. McGraw-Hill, 2001.
 - Chevallier, Arnaud. *Strategic Thinking in Complex Problem Solving*. Oxford University Press, 2016.
 - McKinsey & Company. "How to Build a Problem-Solving Culture." *McKinsey Quarterly*, 2019.
+- See also: `archive/iconic-research/mckinsey-problem-solving.md` for the foundational reference.
+- See also: `frameworks/scope-mapper/scope-mapper-question-pyramid.md` for the question decomposition structure adapted from the pyramid principle.
+- See also: `frameworks/evidence-verifier/evidence-verifier-falsification.md` for the falsification protocol that prevents hypothesis lock-in.
