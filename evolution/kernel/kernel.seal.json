@@ -1,0 +1,30 @@
+{
+  "_doc": "Bootstrap kernel seal. NOT human-approved. See evolution/README.md root-of-trust.",
+  "combined_hash": "sha256:367fab50e00cc883b19b4f3301dfac69a2ae9d9cb7b31145c539c7d79014a022",
+  "components": {
+    "fitness_hash": "sha256:edc77814ddb1eda77b3f4c71c658d8495a87204a13503ac8ea1492dcacadef15",
+    "gates_hash": "sha256:6aaa935f71aedb8ab15997c368692188ae74579575470ac7eb87c40dbea4357e",
+    "meta_hash": "sha256:2254c1981e200ea5ed0ec8b0eeb4d8eb2d7f1c7600b1cd84ab475f5f29f70054",
+    "scripts_hash": "sha256:1fbd56b0f6a2d740b2704a98eced3da222d1fb54336c20d4d92576e35055b6fa",
+    "gate_definitions_hash": "sha256:NA",
+    "data_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "loop_scripts_hash": "sha256:77aa0bc483b8bcb471febc159f12a5c453741fa4ddf6b3e683958c5c7bc859d9"
+  },
+  "scripts_manifest": [
+    "evolution/harness_lock.py",
+    "evolution/lineage_audit.py",
+    "scripts/reporting/fitness.py"
+  ],
+  "data_manifest": [],
+  "loop_manifest": [
+    "evolution/selection.py",
+    "evolution/archive.py",
+    "evolution/stagnation.py"
+  ],
+  "status": "PENDING_HUMAN_SEAL",
+  "armed": false,
+  "approved_sig": null,
+  "approved_by": null,
+  "approved_ts": null,
+  "git_commit": "fe83e078560882fdbab33ce85087e3b2fb60e05e"
+}

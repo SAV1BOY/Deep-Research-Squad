@@ -1075,3 +1075,35 @@ slas:
       - type: "revision-response"
         sla: "2h"
         description: "Revision requests on delivered artifacts addressed within 2 hours"
+
+# ============================================================
+# SECTION 19 — EVOLUTION LAYER (leaf)        # EVOLUTION-ANCHOR: section-19
+# 2nd drop-in. KPI = citation_accuracy (auto/external -> MAY drive fitness). Ships DISARMED.
+# ============================================================
+evolution:
+  enabled: true
+  role: "leaf"
+  mode: "hill_climb"
+  l1_l2_armed: false
+  kernel:
+    fitness_metric: "citation_accuracy"
+    fitness_direction: "maximize"
+    conformance: false
+    seal: "evolution/kernel/kernel.seal.json"
+    budget_per_attempt: { max_tokens: 12000, max_seconds: 90, max_cost_usd: 0.20 }
+    diversity_floor: 0.40
+    level1_patience: 10
+    level2_patience: 50
+  archive:
+    location: "data/registries/evolution/"
+    selection: { method: "score_child_prop", novelty_weight: 0.30, keep_stepping_stones: true }
+    update_policy: "keep_all"
+  skill_library:
+    enabled: true
+    crystallize_on: "quality_gate_pass"
+    location: "lib/skill_library/learned/"
+    consult_before_solving: true
+  operation:
+    never_stop: { semantics: "event_driven_L0 + cadence_driven_L1_L2", l0_trigger: "per_task" }
+    log: "data/metrics/evolution_log.tsv"
+    audit: "data/registries/evolution/lineage.jsonl"

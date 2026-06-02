@@ -1,0 +1,20 @@
+# Evolution archive (Pareto, keep_stepping_stones). Canonical JSON: archive.json
+variants:
+  - variant_id: g_a
+    parent_id: null
+    score: 0.6
+    children: 2
+    novelty: 0.0
+    on_pareto_front: true
+  - variant_id: g_b
+    parent_id: g_a
+    score: 0.8
+    children: 0
+    novelty: 0.0
+    on_pareto_front: true
+  - variant_id: g_c
+    parent_id: g_a
+    score: 0.8
+    children: 5
+    novelty: 0.0
+    on_pareto_front: false

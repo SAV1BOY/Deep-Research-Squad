@@ -1,0 +1,46 @@
+{
+  "variants": [
+    {
+      "variant_id": "g_a",
+      "parent_id": null,
+      "score": 0.6,
+      "novelty": 0.0,
+      "children": 2,
+      "obj": {
+        "quality": 0.6,
+        "ncost": -0.2,
+        "nlatency": -0.1,
+        "diversity": 0.5
+      },
+      "on_pareto_front": true
+    },
+    {
+      "variant_id": "g_b",
+      "parent_id": "g_a",
+      "score": 0.8,
+      "novelty": 0.0,
+      "children": 0,
+      "obj": {
+        "quality": 0.8,
+        "ncost": -0.2,
+        "nlatency": -0.1,
+        "diversity": 0.3
+      },
+      "on_pareto_front": true
+    },
+    {
+      "variant_id": "g_c",
+      "parent_id": "g_a",
+      "score": 0.8,
+      "novelty": 0.0,
+      "children": 5,
+      "obj": {
+        "quality": 0.8,
+        "ncost": -0.5,
+        "nlatency": -0.3,
+        "diversity": 0.2
+      },
+      "on_pareto_front": false
+    }
+  ]
+}

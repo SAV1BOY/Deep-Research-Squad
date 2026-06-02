@@ -1,0 +1,11 @@
+# Deep-Research LEAF meta.
+meta_metric: "citation_accuracy"
+forbidden_targets:
+  - "evolution/kernel/*"
+  - "evolution/harness_lock.py"
+  - "evolution/lineage_audit.py"
+diversity_floor: 0.40
+level1_patience: 10
+level2_patience: 50
+novelty_weight: 0.30
+meta_metric_hash: "sha256:2254c1981e200ea5ed0ec8b0eeb4d8eb2d7f1c7600b1cd84ab475f5f29f70054"

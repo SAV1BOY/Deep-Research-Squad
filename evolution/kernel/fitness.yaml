@@ -1,0 +1,8 @@
+# Deep-Research LEAF kernel — FROZEN. fitness = citation_accuracy (auto, EXTERNAL ground-truth:
+# citations resolve). Not a conformance KPI, so it MAY drive fitness (no drives_fitness:false).
+fitness_metric: "citation_accuracy"
+fitness_direction: "maximize"
+fitness_formula: "resolved_citations / total_citations"
+acceptance_threshold: 0.85
+ema_alpha: 0.2
+metric_hash: "sha256:edc77814ddb1eda77b3f4c71c658d8495a87204a13503ac8ea1492dcacadef15"

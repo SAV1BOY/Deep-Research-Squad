@@ -1,0 +1,6 @@
+task_id	timestamp	task_type	gate_pass	citation_accuracy	gate_score	reflexion_verdict	crystallized_skill_ref
+seed-001	2026-06-02T11:00:00	due-diligence	1	0.91	0.90	good
+seed-002	2026-06-02T11:05:00	market-intel	1	0.88	0.89	good	source-triangulation-v1
+seed-003	2026-06-02T11:10:00	lit-review	1	0.86	0.87	good
+seed-004	2026-06-02T11:15:00	deep-dive	0	0.79	0.78	bad
+seed-005	2026-06-02T11:20:00	competitor	1	0.90	0.91	good

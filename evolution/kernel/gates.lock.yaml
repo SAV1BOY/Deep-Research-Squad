@@ -1,0 +1,4 @@
+# Deep-Research LEAF gates lock.
+acceptance_threshold: 0.85
+mutation_may_lower: false
+gates_hash: "sha256:6aaa935f71aedb8ab15997c368692188ae74579575470ac7eb87c40dbea4357e"

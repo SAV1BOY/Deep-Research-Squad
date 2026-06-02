@@ -1,0 +1,3 @@
+{"loop": "L1", "event": "add_variant", "variant_id": "g_a", "parent_id": null, "score": 0.6, "novelty": 0.0, "prev_line_hash": "GENESIS", "line_hash": "sha256:86688926ba247875"}
+{"loop": "L1", "event": "add_variant", "variant_id": "g_b", "parent_id": "g_a", "score": 0.8, "novelty": 0.0, "prev_line_hash": "sha256:86688926ba247875", "line_hash": "sha256:88ba6472ede86fac"}
+{"loop": "L1", "event": "add_variant", "variant_id": "g_c", "parent_id": "g_a", "score": 0.8, "novelty": 0.0, "prev_line_hash": "sha256:88ba6472ede86fac", "line_hash": "sha256:38f9a11fcc07fb00"}
