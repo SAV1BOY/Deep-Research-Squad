@@ -94,3 +94,7 @@ All 19 agents as defined in `config.yaml`:
 5. **Config changes:** `config.yaml` controls routing logic. Changes to agent sequences or quality thresholds go here, not in agent files. Agents do not decide what comes next -- the config does.
 6. **Pipeline integrity:** Data flows strictly downward. Feedback loops exist only at quality gate failures with specific remediation instructions.
 7. **New agents:** Must be added to `config.yaml` under `squad.agents`, given an agent file in `agents/`, and wired into relevant routing entries.
+
+<!-- BEGIN managed:agent-permissions v1 -->
+@AGENTS.md
+<!-- END managed:agent-permissions v1 -->
